@@ -1,0 +1,5374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2023808030"
+    android:versionName="38.8.3"
+    android:installLocation="0"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    package="com.zhiliaoapp.musically"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+
+    <queries>
+
+        <package
+            android:name="com.zhiliao.musically.livewallpaper" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="*"
+                android:host="*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.vkontakte.android.action.SDK_AUTH" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SENDTO" />
+
+            <data
+                android:scheme="*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.DIAL" />
+
+            <data
+                android:scheme="tel" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND_MULTIPLE" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.INSERT" />
+
+            <data
+                android:mimeType="vnd.android.cursor.item/event" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.PICK" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <package
+            android:name="com.google.ar.core" />
+
+        <package
+            android:name="com.sprint.w.installer" />
+
+        <package
+            android:name="com.sec.android.app.sbrowser" />
+
+        <package
+            android:name="com.android.chrome" />
+
+        <package
+            android:name="org.mozilla.firefox" />
+
+        <package
+            android:name="com.dti.tracfone" />
+
+        <package
+            android:name="com.moonvideo.android.resso" />
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.snapchat.android" />
+
+        <package
+            android:name="com.twitter.android" />
+
+        <package
+            android:name="com.twitter.android.beta" />
+
+        <package
+            android:name="projekt.substratum" />
+
+        <package
+            android:name="com.vkontakte.android" />
+
+        <package
+            android:name="com.reddit.frontpage" />
+
+        <package
+            android:name="com.facebook.mlite" />
+
+        <package
+            android:name="com.facebook.orca" />
+
+        <package
+            android:name="com.LogiaGroup.LogiaDeck" />
+
+        <package
+            android:name="com.nhn.android.band" />
+
+        <package
+            android:name="com.kakao.story" />
+
+        <package
+            android:name="com.nhn.android.blog" />
+
+        <package
+            android:name="com.zing.zalo" />
+
+        <package
+            android:name="com.dti.cricket" />
+
+        <package
+            android:name="jp.naver.line.android" />
+
+        <package
+            android:name="org.telegram.messenger" />
+
+        <package
+            android:name="com.imgur.mobile" />
+
+        <package
+            android:name="com.viber.voip" />
+
+        <package
+            android:name="com.facebook.lite" />
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.kakao.talk" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.nhn.android.navercafe" />
+
+        <package
+            android:name="com.ironsrc.aura.tmo" />
+
+        <package
+            android:name="com.chrome.beta" />
+
+        <package
+            android:name="com.chrome.dev" />
+
+        <package
+            android:name="com.ironsrc.aura.appmanager.tmo" />
+
+        <package
+            android:name="com.zhiliaoapp.musically.go" />
+
+        <package
+            android:name="com.ss.android.lark" />
+
+        <package
+            android:name="com.tiktok.android.music" />
+
+        <package
+            android:name="com.ss.android.ugc.now" />
+
+        <package
+            android:name="com.ticketmaster.mobile.android.na" />
+
+        <package
+            android:name="com.apple.android.music" />
+
+        <package
+            android:name="com.amazon.mp3" />
+
+        <package
+            android:name="com.iloen.melon" />
+
+        <package
+            android:name="deezer.android.app" />
+
+        <package
+            android:name="com.soundcloud.android" />
+
+        <package
+            android:name="com.google.android.apps.youtube.music" />
+
+        <package
+            android:name="com.anghami" />
+
+        <package
+            android:name="com.sprint.ce.updater" />
+
+        <package
+            android:name="com.samsung.android.mapsagent" />
+
+        <package
+            android:name="com.tmobile.dm.cm" />
+
+        <provider
+            android:authorities="com.zhiliaoapp.musically.identifierprovider" />
+
+        <package
+            android:name="com.android.vending" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="text/plain" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="image/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="video/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.settings.CHANNEL_NOTIFICATION_SETTINGS" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.settings.APP_NOTIFICATION_SETTINGS" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <package
+            android:name="com.google.android.webview" />
+
+        <package
+            android:name="com.google.android.webview.beta" />
+
+        <package
+            android:name="com.google.android.webview.dev" />
+
+        <package
+            android:name="com.google.android.webview.canary" />
+
+        <package
+            android:name="com.google.android.webview.debug" />
+
+        <package
+            android:name="com.android.webview" />
+
+        <package
+            android:name="com.coloros.karaoke" />
+
+        <package
+            android:name="com.coloros.ocs.opencapabilityservice" />
+
+        <package
+            android:name="com.oplus.ocs" />
+
+        <package
+            android:name="com.bairenkeji.icaller" />
+
+        <package
+            android:name="com.coloros.safecenter" />
+
+        <package
+            android:name="com.yulong.android.security" />
+
+        <package
+            android:name="com.meizu.safe.security.SHOW_APPSEC" />
+
+        <package
+            android:name="com.miui.securitycenter" />
+
+        <package
+            android:name="com.sonymobile.cta" />
+
+        <package
+            android:name="com.discord" />
+
+        <package
+            android:name="com.pinterest" />
+
+        <package
+            android:name="com.google.android.youtube" />
+
+        <package
+            android:name="com.whatsapp.w4b" />
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <package
+            android:name="com.bd.nproject" />
+
+        <package
+            android:name="com.google.android.engage.verifyapp" />
+
+        <intent>
+
+            <action
+                android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+
+        <package
+            android:name="com.oplus.cosa" />
+
+        <package
+            android:name="com.coloros.gamespace" />
+
+        <package
+            android:name="com.kakao.talk.alpha" />
+
+        <package
+            android:name="com.kakao.talk.sandbox" />
+
+        <package
+            android:name="com.kakao.onetalk" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.google.android.play.core.install.BIND_INSTALL_SERVICE" />
+        </intent>
+
+        <package
+            android:name="com.spotify.music" />
+
+        <package
+            android:name="com.spotify.music.debug" />
+
+        <package
+            android:name="com.spotify.music.canary" />
+
+        <package
+            android:name="com.spotify.music.partners" />
+
+        <intent>
+
+            <action
+                android:name="com.spotify.sso.action.START_AUTH_FLOW" />
+
+            <data
+                android:mimeType="text/plain" />
+        </intent>
+
+        <package
+            android:name="com.google.android.gms.policy_cast_dynamite" />
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.DETECT_SCREEN_CAPTURE" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+
+    <permission
+        android:label="@ref/0x7f1216ba"
+        android:name="com.zhiliaoapp.musically.permission.wallpaper"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.zhiliaoapp.musically.permission.WRITE_OTL_TOKEN"
+        android:protectionLevel="0x2" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.orange.update.permission.READ_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO" />
+
+    <uses-permission
+        android:name="com.tiktok.preload.permission.IDENTIFY" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.SET_WALLPAPER" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oplus.ocs.permission.third" />
+
+    <meta-data
+        android:name="TS_VERSION_CODE"
+        android:value="100" />
+
+    <uses-permission
+        android:name="com.zhiliao.musically.livewallpaper.permission.wallpaperplugin" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <permission
+        android:label="preinstall_attribution"
+        android:name="com.zhiliaoapp.musically.permission.ATTRIBUTION_INFO"
+        android:protectionLevel="0x2" />
+
+    <instrumentation
+        android:name="androidx.test.runner.AndroidJUnitRunner"
+        android:targetPackage="com.bytedance.forest" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.zhiliaoapp.musically.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.zhiliaoapp.musically.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <permission
+        android:name="com.zhiliaoapp.musically.permission.RECEIVE_ADM_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.zhiliaoapp.musically.permission.RECEIVE_ADM_MESSAGE" />
+
+    <uses-permission
+        android:name="com.amazon.device.messaging.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f13031e"
+        android:label="@ref/0x7f123d19"
+        android:icon="@ref/0x7f100002"
+        android:name="com.ss.android.ugc.aweme.app.host.AwemeHostApplication"
+        android:persistent="false"
+        android:launchMode="3"
+        android:alwaysRetainTaskState="true"
+        android:backupAgent="com.ss.android.ugc.aweme.AutoBackupAgent"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:fullBackupOnly="true"
+        android:fullBackupContent="@ref/0x7f160009"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:networkSecurityConfig="@ref/0x7f160014"
+        android:roundIcon="@ref/0x7f100002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:allowNativeHeapPointerTagging="false">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6536861780333891~4547192519" />
+
+        <meta-data
+            android:name="com.google.android.engage.service.ENV"
+            android:value="PRODUCTION" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.cut.AvatarChooseActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.cut.AvatarCutActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="com.googleusercontent.apps.616463764658-p01hhcj82u4mqjnp1oca04i3o67fjsm1" />
+
+                <data
+                    android:scheme="com.googleusercontent.apps.616463764658-p01hhcj82u4mqjnp1oca04i3o67fjsm1" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.app.auth.addtodsp.oauth.RedirectUriReceiverActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.amazon.service.BwaRedirectUriReceiverActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.deeplink.AppLinkHandler"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDIo7dOIVCd0lnPiREiSF7qHVNm9EVkoJc" />
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@ref/0x7f121729" />
+
+        <meta-data
+            android:name="com.coloros.ocs.camera.AUTH_CODE"
+            android:value="ATBEAiAi3FT50YsEMigDkqwdEXNL/0ZDgmS+/+5tG9//nLhwHQIgHe8WWNZ1OO7PUM7CPpdcohZDT210dqiQ3cY6RfowpINrbDUtfAAAAA==" />
+
+        <meta-data
+            android:name="UPDATE_VERSION_CODE"
+            android:value="2023808030" />
+
+        <meta-data
+            android:name="SS_VERSION_NAME"
+            android:value="38.8.3" />
+
+        <meta-data
+            android:name="SS_VERSION_CODE"
+            android:value="2023808030" />
+
+        <activity
+            android:theme="@ref/0x7f13031f"
+            android:name="com.ss.android.ugc.aweme.detail.ui.DetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xff0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f130321"
+            android:name="com.ss.android.ugc.aweme.journey.NewUserJourneyActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.main.MainActivity"
+            android:exported="true"
+            android:clearTaskOnLaunch="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xff0"
+            android:alwaysRetainTaskState="true"
+            android:hardwareAccelerated="true" />
+
+        <activity-alias
+            android:name="com.ss.android.ugc.aweme.splash.SplashActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:targetActivity="com.ss.android.ugc.aweme.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.hybrid.spark.page.SparkActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x480" />
+
+        <meta-data
+            android:name="google_analytics_automatic_screen_reporting_enabled"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.commercialize.hybrid.impl.web.service.impl.AdWebSparkActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x480" />
+
+        <meta-data
+            android:name="google_analytics_automatic_screen_reporting_enabled"
+            android:value="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:enabled="false"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.androidx-startup" />
+
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="kakao61f447fe9723aa9c0b67a52eeb998e77"
+                    android:host="oauth" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.showcase.store.StoreActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.showcase.showcase.ShowcaseActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.anchor.fragment.EcCommentAnchorPanelActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.ecommerce.anchor.fragment.EcVideoAnchorPanelActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.payment.billingaddress.BillingAddressActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.page.OrderSubmitActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1304f7"
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.page.HalfPageOrderSubmitActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.payment.subpayment.SubPaymentListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f1304f7"
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.page.TransparentLoadingOSPActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.pdp.ui.PdpActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.pdpv2.PdpV2Activity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.address.edit.AddressEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.address.edit.detail.AddressEditDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.widget.regionpicker.activity.DistrictActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.address.list.AddressListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.messagecenter.MessageCenterActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.common.BackInterceptContainerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.review.ProductReviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f1304f6"
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.review.gallery.ReviewGalleryActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f1304f7"
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.payment.bnpl.BnplMiddleActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.base.osp.payment.view.PaymentTransitionActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.ecommerce.ug.popup.view.ShopTabOverlayActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xff0" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@ref/0x7f160000" />
+
+        <meta-data
+            android:name="TTOPEN_SDK_NEWSARTICLE_CLIENT_KEY"
+            android:value="fc169c8d3a2eec4a" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1075419520.000000" />
+
+        <meta-data
+            android:name="android.vivo_multidisplay_support"
+            android:value="true" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.challenge.ui.ChallengeDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.question.QuestionDetailActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.profile.business.ur.ui.HeaderDetailActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.profile.business.ur.ui.CropActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.ui.ProfileEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.ui.ProfileEditBioUrlActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.search.SearchMusicActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.ui.MusicDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.choosemusic.activity.ChooseMusicActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.choosemusic.activity.MusicDetailListActivity"
+            android:screenOrientation="3" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.common.net.NetworkReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.ss.android.push.DefaultReceiver" />
+
+        <service
+            android:name="com.ss.android.push.DefaultService" />
+
+        <meta-data
+            android:name="APPKEY"
+            android:value="10652857" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.ui.EditOriginMusicTitleActivity" />
+
+        <service
+            android:name="com.bytedance.ies.telecom.RequestMobileService" />
+
+        <receiver
+            android:name="com.ss.android.common.applog.HotsoonReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_INSTALL" />
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.ss.android.ttplatformsdk.provider.TTPlatformAccountProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zhiliaoapp.musically.ttplatformapi.AccountProvider" />
+
+        <provider
+            android:name="com.ss.android.ugc.aweme.livewallpaper.WallPaperDataProvider"
+            android:permission="com.zhiliaoapp.musically.permission.wallpaper"
+            android:exported="true"
+            android:authorities="com.zhiliaoapp.musically.wallpapercaller" />
+
+        <provider
+            android:name="com.ss.android.ugc.aweme.account.provider.OneTapLoginTokenProvider"
+            android:writePermission="com.zhiliaoapp.musically.permission.WRITE_OTL_TOKEN"
+            android:exported="true"
+            android:authorities="com.zhiliaoapp.musically.provider.onetaplogintoken" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.livewallpaper.ui.LocalLiveWallPaperActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x7f130325"
+            android:name="com.ss.android.ugc.aweme.livewallpaper.ui.LiveWallPaperPreviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x7f130320"
+            android:label="@ref/0x7f1216ba"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.qrcode.TextQRCodeActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.notification.UserListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.trill.main.shortcut.ShortcutShootingActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.trill.main.shortcut.ShortcutMessageActivity"
+            android:launchMode="2"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.compliance.business.report.ReportWebPageDialogActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.trill.setting.PushSettingActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.wiki.AddWikiActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.general.AnchorGeneralHybridActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.serviceplugin.AddServicePluginAnchorActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.donation.webpage.DonationWebPageActivity"
+            android:launchMode="1"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.donation.webpage.DonationWebPageDialogActivity"
+            android:launchMode="1"
+            android:screenOrientation="3" />
+
+        <service
+            android:name="com.ss.android.ugc.trill.account.TiktokAuthService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@ref/0x7f160008" />
+        </service>
+
+        <service
+            android:name="com.bytedance.ttnet.hostmonitor.HostMonitor" />
+
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.ss.android.ugc.trill.abtest.impl.NotificationBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="notification_cancelled" />
+
+                <action
+                    android:name="notification_clicked" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.WsChannelMultiProcessSharedProvider" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0c0044" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f1236fb" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="3cb5bfc87d653387f576c913b24a37d0" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160010" />
+        </provider>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:enabled="false"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.common.net.NetWorkStateReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.anchor.liveevent.LiveEventSelectionActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.app.PushCameraBlurActivity"
+            android:launchMode="2"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.setting.ui.AdSettingsActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.setting.ui.VideoAuthorizationActivity"
+            android:screenOrientation="3" />
+
+        <receiver
+            android:name="com.ss.android.message.MessageReceiver"
+            android:exported="false"
+            android:process=":push"
+            android:priority="2147483647">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <action
+                    android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <action
+                    android:name="android.intent.action.SCREEN_OFF" />
+
+                <action
+                    android:name="android.intent.action.SCREEN_ON" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.creatoredit.CreatorCaptionEditActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.newcreatoredit.NewCreatorCaptionEditActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.creatortools.videogift.VideoGiftSettingActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.creatortools.videogift.VideoGiftEligibilityActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.profile.business.ur.ui.I18nHeaderDetailActivity"
+            android:screenOrientation="3" />
+
+        <service
+            android:label="@ref/0x7f1227f6"
+            android:icon="@ref/0x7f0908f8"
+            android:name="com.ss.android.ugc.aweme.tile.PublishTileService"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:enabled="false"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
+        </service>
+
+        <service
+            android:label="@ref/0x7f1227f7"
+            android:icon="@ref/0x7f090862"
+            android:name="com.ss.android.ugc.aweme.tile.HotVideoTileService"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:enabled="false"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="true" />
+        </service>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.notification.MusNotificationDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tt.appbrandimpl.bdp.View.BdpTransferActivity" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.share.systemshare.SystemShareTargetChosenReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.systemshare.targetchosen.action" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.push.CustomActionPushReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.action.PUSH_CUSTOM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.anchor.AnchorBaseActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.app.PushLoginActivity"
+            android:launchMode="1"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.fe.method.upload.PreviewUploadActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.sdk.activity.BootstrapActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="snssdk0" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.fe.method.upload.ImageChooseUploadActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.fe.method.ImageChooseActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.bullet.BulletContainerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.bullet.SingleTaskBulletContainerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.crossplatform.activity.CrossPlatformActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.autofill.settings.AdBrowserSettingsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.child.ChildEmptyFinishActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.ss.android.sdk.activity.LiveDummyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.profile.business.ur.following.ui.FollowRelationTabActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.miniapp.RecentlyUsedMicroAppActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.miniapp.appgroup.MicroAppGroupActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.login.ui.LogoutDialogActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.commercialize.im.ChatCheckLoginActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.setting.ui.BusinessAccountActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.favorites.ui.UserFavoritesActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x400" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.setting.I18nSettingManageMyAccountActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.setting.ui.PushSettingNotificationChoiceActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.setting.page.accessibility.DynamicFontSizeActivity"
+            android:screenOrientation="3" />
+
+        <service
+            android:name="com.benchmark.BenchmarkService"
+            android:process=":bm" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.effect.EffectJobService"
+            android:exported="false" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.effect.EffectCompatJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.live.livehostimpl.BgBroadcastService"
+            android:enabled="true"
+            android:foregroundServiceType="0xa0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.nows.feed.caption.NowCaptionEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x4" />
+
+        <service
+            android:name="com.ss.android.ugc.awemepushlib.di.ies.MessageHandler"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.message" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.newmedia.message.cache.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.newmedia.message.notify.delete.action" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.fcm.message" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.adm.message" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.message.NotifyService"
+            android:exported="true"
+            android:process=":push">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.message.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f1300fe"
+            android:name="com.bytedance.push.notification.PushActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.pushsdk.action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ss.android.http.OpenUrlService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.action.openurl" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.ugc.awemepushlib.interaction.MainProcessRedbadgeService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.ss.android.ugc.awemepushlib.os.receiver.NotificationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="notification_cancelled" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.ss.android.ugc.awemepushlib.PushDislikeActionReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.action.PUSH_DISLIKE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.ss.android.ugc.awemepushlib.PushDirectReplyReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.action.PUSH_DIRECT_REPLY" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.duet.ui.DuetDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.aime.AIMEDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.prop.activity.StickerPropDetailActicity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.activity.MoreInfoActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.prop.activity.EffectMobileTemplateEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.prop.activity.EffectDraftDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.prop.failreview.FailedReviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mvtemplate.view.MovieDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.main.replace.OpenEditPageHandlerActivity"
+            android:launchMode="2"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.activity.OpenRecordPageHandlerActivity"
+            android:launchMode="2"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ttsvoice.ui.TTSVoiceDetailsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.voiceconversion.ui.VoiceConversionDetailsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.template.TemplateDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.publish.activity.EffectMobileTemplatePublishActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.commercialize.ba.impl.automessage.ui.activity.BaAutoReplyEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.commercialize.ba.impl.automessage.ui.activity.BaAutoReplyListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.commercialize.ba.impl.automessage.ui.activity.BaMessageSettingActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.commercialize.ba.impl.automessage.ui.activity.BaWelcomeMessageEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.creatortools.CreatorToolsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.setting.ui.SettingContainerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.host.TikTokHostActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.shortcut.ShortcutProxyActivity" />
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_analytics_storage"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_storage"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_user_data"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_personalization_signals"
+            android:value="false" />
+
+        <provider
+            android:name="com.ss.android.ugc.aweme.legoImp.task.appkiller.RestartContentProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.RestartContentProvider" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.app.crash.LaunchProtectService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":launch_protect" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.lancet.jobscheduler.SubJobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":jobInfoSchedulerService" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.homepage.msadapt.DoubleFragmentMainActivity"
+            android:launchMode="2"
+            android:configChanges="0xfb0"
+            android:resizeableActivity="true" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.compliance.protection.timelock.ui.TimeUnlockActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.LiveBgBroadcastActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.live.LiveBroadcastEndSafetyToolsActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f130557"
+            android:name="com.ss.android.ugc.aweme.live.LivePlayActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xfa0"
+            android:autoRemoveFromRecents="true"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.toplive.ToplivePageActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.live.activity.StartLiveActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.live.LiveBroadcastSigningActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.live.activity.GiftAdActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.live.LiveSandboxRoomsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130134"
+            android:name="com.ss.android.ugc.aweme.live.LiveSettingActivity" />
+
+        <service
+            android:name="com.bytedance.android.livesdk.notificatoin.AudioLiveService"
+            android:exported="false"
+            android:foregroundServiceType="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.live.LiveContainerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.LiveBroadcastActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.LiveBroadcastSceneWrapperActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.LiveBroadcastBgSceneWrapperActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.VoiceBroadcastSceneWrapperActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.LiveStudioMonitorActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f130555"
+            android:name="com.ss.android.ugc.aweme.live.VoiceBroadcastActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f130558"
+            android:name="com.ss.android.ugc.aweme.live.GoLiveActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.live.livehostimpl.livereply.clip.LiveReplayVideoClipActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.live.livehostimpl.livereply.replaylist.LiveReplayListActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.live.LiveDummyActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130556"
+            android:name="com.ss.android.ugc.aweme.live.LiveCoverCameraActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f130557"
+            android:name="com.ss.android.ugc.aweme.live.LiveGameDualDeviceActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.live.rank.LiveOfflineRankListActivity"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:label="@ref/0x7f125eb8"
+            android:name="com.ss.android.ugc.aweme.follow.widget.FollowBigWidgetProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="com.ss.android.ugc.aweme.follow.BIG_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160013" />
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.audiomode.vopclone.instantclone.InstantCloneVoiceActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.series.payment.activity.SeriesRefundConfirmationActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.series.creation.activity.SeriesDraftActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.series.creation.activity.SeriesCreationSuccessActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13031f"
+            android:name="com.ss.android.ugc.aweme.series.innerfeed.activity.SeriesInnerFeedActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xff0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.feed.landscape.LandscapeFeedActivity"
+            android:exported="false"
+            android:screenOrientation="6"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.feed.landscape.Landscape270FeedActivity"
+            android:exported="false"
+            android:screenOrientation="8"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.ecommerce.search.vision.PhotoSearchActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ecommerce.search.page.EcSearchActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.ecommerce.search.vision.record.EcTakePhotoActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.search.pages.core.ui.activity.SearchResultActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.search.pages.result.topsearch.minis.core.SearchMinisAllResultsActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.search.pages.result.livelist.core.ui.SearchLiveListActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.search.pages.result.effectlist.core.ui.SearchEffectListActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.videodetail.MixVideoDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.mixdetail.MixFeedManagerActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.createmix.CreatePlaylistActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.editname.ChangePlaylistNameActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.manageplaylist.ManagePlaylistActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.mix.editplaylist.EditPlaylistActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.feed.ui.VideoPlayActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.coverpreview.activity.NewCoverPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.share.qrcode.UserQRCodeActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f130592"
+            android:name="com.ss.android.ugc.aweme.share.gif.ui.VideoShare2GifEditActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x7f130592"
+            android:name="com.ss.android.ugc.aweme.share.gif.ui.VideoShare2GifPreviewActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ui.activity.PostModeDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.commerce.fullpage.CommercePhotoDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.shoutouts.player.ShoutoutsPlayActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.comment.photocomment.PhotoDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.comment.photocomment.PhotoDetailActivityV2"
+            android:exported="false"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f130329"
+            android:name="com.ss.android.ugc.aweme.ailivephoto.AILivePhotoMiddleActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.scheduler.PublishService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.tools.policysecurity.OriginalSoundUploadService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.tools.extract.video.VideoFramesUploadService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f130332"
+            android:name="com.ss.android.ugc.aweme.shortvideo.ui.VideoPublishPreviewContainerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130265"
+            android:name="com.ss.android.ugc.aweme.shortvideo.ui.TTEPVideoSaveActivity"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.ftc.pages.FTCVideoPublishActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f130332"
+            android:name="com.ss.android.ugc.aweme.ftc.pages.FTCVideoPublishPreviewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.ftc.pages.FTCChooseCoverActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.shortvideo.vechoosecover.ChooseCoverActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130332"
+            android:name="com.ss.android.ugc.aweme.shortvideo.vechoosecover.ImageChooseCoverActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.geofencing.ui.GeoFencingStatusActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.geofencing.ui.GeoFencingSelectionActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.shortvideo.mentionvideo.MentionVideoActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.shortvideo.mentionvideo.MentionUserVideoActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.shortvideo.editpost.EditPostedVideoPublishActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.scheduler.PublishBroadcastReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.story.feed.immersive.gallery.StoryGalleryActivity"
+            android:screenOrientation="14" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.story.note.StoryThoughtCreationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.social.creation.mediapicker.SocialMediaPickerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1304b6"
+            android:name="com.ss.android.ugc.aweme.aimoji.view.AIMojiCameraActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.aimoji.view.v2.AIMojiChoosePhotoActivity"
+            android:exported="false"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.sharepanel.impl.relations.ui.activity.RelationSelectActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x22" />
+
+        <activity
+            android:theme="@ref/0x7f130579"
+            android:name="com.ss.android.ugc.aweme.view.ProfileNaviActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x400" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.profile.business.ur.aigc.ProfileAigcMainActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.profile.business.ur.socialavatar.SocialAvatarMainActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.profile.business.ur.socialavatar.SocialAvatarDownloadShareActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.profile.business.ur.utils.ProfileAvatarChoosePhotoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.profile.business.user.creator.product.hybrid.activity.AuthTransitActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.enlarge.EnlargeAvatarActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.enlarge.EnlargeAvatarOptActivity"
+            android:screenOrientation="3" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.tools.cutsamemv.CutSameSdkDownloadService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.ss.android.ugc.cut_downloader.DOWNLOAD" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f13031f"
+            android:name="com.ss.android.ugc.aweme.tools.mvtemplate.mvpreview.TemplateFeedActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.tools.mvtemplate.mvpreview.TemplateUseActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130332"
+            android:name="com.ss.android.ugc.aweme.tools.mvtemplate.ugcpreview.UGCPreviewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.tools.draft.DraftBoxActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.property.TestSettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130331"
+            android:name="com.ss.android.ugc.aweme.shortvideo.cut.VECutVideoActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.shortvideo.mvtemplate.aigc.AimeCameraActivity"
+            android:exported="false"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.shortvideo.mvtemplate.choosemedia.MvChoosePhotoActivity"
+            android:exported="false"
+            android:configChanges="0x4b0">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.ugc.cut_ui.process.PICKER" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.ttep.TTEPEffectPreviewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.ftc.FTCVideoRecordNewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f130328"
+            android:name="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordPermissionActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.intent.action.redirect.record" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130329"
+            android:name="com.ss.android.ugc.gamora.recorder.sticker.aigc.AIGCGenerationDraftCompatActivity"
+            android:exported="true"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.compliance.business.phl.PhlActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.compliance.business.banappeal.popup.ui.AppealDialogActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.compliance.business.kidsmode.KidsRelaunchPopup"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.poi.uiwidget.gallery.PoiGalleryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.poi.detail.gallery.PoiGalleryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.poi.detail.dishes.PoiRecommendDishesDetailActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.poi.uiwidget.gallery.PoiGalleryActivityForReviews"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.share.SystemShareActivity"
+            android:exported="true"
+            android:excludeFromRecents="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/png" />
+
+                <data
+                    android:mimeType="image/jpg" />
+
+                <data
+                    android:mimeType="image/jpeg" />
+
+                <data
+                    android:mimeType="image/webp" />
+
+                <data
+                    android:mimeType="image/heif" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/png" />
+
+                <data
+                    android:mimeType="image/jpg" />
+
+                <data
+                    android:mimeType="image/jpeg" />
+
+                <data
+                    android:mimeType="image/webp" />
+
+                <data
+                    android:mimeType="image/heif" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.share.linkshare.OpenLinkShareActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.LINK" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.VIDEO" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.IMAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.MUSIC" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.MUSIC_FEED" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.MUSIC_MESSAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.LINK_SHARE_V1" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.share.linkshare.OpenLinkShareMainActivity"
+            android:exported="true"
+            android:excludeFromRecents="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.tiktok.opensdk.share.PROXY_LINK_SHARE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.openauthorize.ScanQrcodeAuthorizedActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.openauthorize.DeeplinkAuthorizedActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.openauthorize.AwemeAuthorizeLoginActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.minis.page.main.MinisAppActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.minis.page.main.fragment.TestMinisAppActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.minis.page.main.MinisAuditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.minis.page.main.MinisPreviewActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.minis.page.debug.MinisDebugActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisReportActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisReportFeedbackActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisReportOrderActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisPrivacySettingActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisAboutActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.ThanksReportActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.minis.page.MinisRefundStatusActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.hybridkit.spark.TranslucentActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.ffp.ui.FindFriendsPageActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.ffp.ui.FindFriendsContactAuthActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.relation.ffp.ui.FindFriendsTabActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.tako.ui.TakoChatActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.tako.otherpage.image.TakoImageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.tako.otherpage.waiting.TakoWaitingListActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.tako.otherpage.share.ui.TakoSharePageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.sdk.chat.ui.powerpage.SelectChatMsgHostActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.sdk.chatdetail.ui.activity.FriendChatDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.sdk.chatdetail.group.activity.GroupChatDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.sdk.chat.ui.singleactivity.ChatShellActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.im.sdk.notification.PushQuickActionReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.zhiliaoapp.musically.action.PUSH_DIRECT_REPLY_CONTENT_ACHIEVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.interest.UpdateInterestActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130331"
+            android:name="com.ss.android.ugc.aweme.shortvideo.stitch.StitchTrimmingActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130331"
+            android:name="com.ss.android.ugc.aweme.infoSticker.customsticker.activity.CustomStickerPreviewActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130331"
+            android:name="com.ss.android.ugc.aweme.adaptation.saa.SAAActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130018"
+            android:name="com.ss.android.ugc.aweme.shortvideo.video2sticker.ui.Video2StickerEditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.gamora.editorpro.anchor.EditorProAnchorActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.im.chatlist.impl.feature.messagerequest.ui.MessageRequestActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.ui.RewardAdActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.feed.background.BackgroundAudioBrowserService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.ugc.aweme.feed.background.AudioMediaSessionService"
+            android:exported="false"
+            android:foregroundServiceType="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f13031f"
+            android:name="com.ss.android.ugc.aweme.qrcode.view.ScanQRCodeActivityV2"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.qrcode.view.QRCodePermissionActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.deeplink.RequireLoginActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.deeplink.DeepLinkHandlerActivity"
+            android:launchMode="2"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.deeplink.UpdateTipActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.specact.mesentra.LoadingWebPageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.ecommerce.singpass.RedirectUriReceiverActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.ecommerce.singpass.TransparentSingPassHandleActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.livewallpaper.AmeLiveWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":wallpaper">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@ref/0x7f160001" />
+        </service>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.ui.EmailConsentPageActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.reactive.ReactiveAccountActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.account.login.authorize.AuthorizeActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.agegate.activity.FtcActivity"
+            android:screenOrientation="3"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.agegate.activity.AccountDeletedActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.ui.MusCountryListActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1304bd"
+            android:name="com.ss.android.ugc.aweme.account.login.auth.I18nSignUpActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f1304bf"
+            android:name="com.ss.android.ugc.aweme.account.login.auth.I18nSignUpActivityWithNoAnimation"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:theme="@ref/0x7f1304be"
+            android:name="com.ss.android.ugc.aweme.account.login.auth.I18nSignUpActivityFullScreen"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.otl.BaseOTLIntentHandlerActivity"
+            android:screenOrientation="3"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.twostep.TwoStepAuthActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.account.login.auth.Authorize3pJSBridgeActivity" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.agegate.activity.OperatorCompleteActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.v2.ui.SignUpOrLoginActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.ui.BindOrModifyPhoneActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.recover.RecoverAccountActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.v2.base.CommonFlowActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1304bd"
+            android:name="com.ss.android.ugc.aweme.account.login.rememberaccount.LoginMethodListActivity"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f1304be"
+            android:name="com.ss.android.ugc.aweme.account.login.rememberaccount.LoginMethodListActivityFullScreen"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.twostep.TwoStepVerificationManagementActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.security.SecurityCheckUpActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1304c6"
+            android:name="com.ss.android.ugc.aweme.account.verify.TransparentCodeVerificationActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.twostep.TwoStep2046AuthActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.unbind.UnbindPhoneOrEmailActivity"
+            android:screenOrientation="3"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.bytedance.sdk.account.OneTapLoginActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="app-va.tiktokv.com"
+                    android:path="/lite_redirect" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.topics.AdTopicsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.personalization.AdPersonalizationActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.advertiser.AdvertiserSettingsActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.subscription.SubscriptionAdPageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.thirdparty.InteractedAdvertisersActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.compliance.thirdparty.DisconnectAdvertisersActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.tiktok.pns.ui.ScheduleDowntimeActivity"
+            android:exported="false" />
+
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libGLES_mali.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libmali.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libPVROCL.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libpocl.so"
+            android:required="false" />
+
+        <uses-native-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+
+        <receiver
+            android:label="@ref/0x7f129c14"
+            android:name="com.ss.android.ugc.aweme.appwidget.CameraWidgetProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160002" />
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.utils.AppWidgetLinkProxyActivity" />
+
+        <receiver
+            android:label="@ref/0x7f12867e"
+            android:name="com.ss.android.ugc.aweme.story.widget.LargeStoryWidget"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160005" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f12867e"
+            android:name="com.ss.android.ugc.aweme.story.widget.SmallStoryWidget"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160006" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f128e4f"
+            android:name="com.ss.android.ugc.aweme.core.SmallAppWidgetProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160003" />
+        </receiver>
+
+        <receiver
+            android:name="com.bytedance.touchpoint.core.appwidget.ReferralWidget"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f16001b" />
+        </receiver>
+
+        <service
+            android:name="com.ss.android.ugc.aweme.core.AppWidgetSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:label="@ref/0x7f127cf4"
+            android:name="com.ss.android.ugc.aweme.search.core.ui.SearchMiddleWidget"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f160004" />
+        </receiver>
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.compliance.privacy.paprompt.ui.PaPromptContainerActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1302a6"
+            android:name="com.bytedance.ies.ugc.aweme.commercialize.splash.show.NormalSplashAdActivity"
+            android:screenOrientation="1"
+            android:resizeableActivity="true">
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape" />
+        </activity>
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.cubes.engage.EngageBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.engage.action.PUBLISH_RECOMMENDATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f130114"
+            android:name="com.ss.android.ugc.aweme.aabplugin.core.base.view.DFInstallBlankActivity" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.trill.setting.VideoLanguageActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f1304f2"
+            android:name="com.ss.android.ugc.aweme.ecommerce.compliance.utils.ComplianceDialogActivity"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13011b"
+            android:name="com.ss.android.ugc.aweme.compliance.consent.termsconditions.existing.KRExistingUserTermsConsentDialog"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.compliance.consent.countrylist.MusCountryListActivity"
+            android:screenOrientation="3" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.homepage.ui.KidsMainActivity"
+            android:launchMode="3"
+            android:screenOrientation="1"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.landpage.popup.AdLandingPageFullScreenActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f13031e"
+            android:name="com.ss.android.ugc.aweme.history.AdWebHistoryActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <provider
+            android:name="com.ss.android.ugc.aweme.push.downgrade.PushRunningStatusProvider"
+            android:authorities="com.zhiliaoapp.musically.push.status" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.push.downgrade.notice.MainProcessWsChannelService" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.discovery.detail.DiscoveryFeedActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.discovery.gallery.GalleryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.liked.detail.FavoriteFeedActivity"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.ss.android.ugc.aweme.video.InitPlayerProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.aweme_player" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.push.downgrade.ListenMainProcessService"
+            android:process=":push" />
+
+        <receiver
+            android:name="com.ss.android.ugc.aweme.push.am.CrossProcReceiver" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.profile.HeaderDetailActivity"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="ELEMENT_com.ss.ugc.android.editortrack.MAIN"
+            android:value="com.ss.ugc.android.editortrack.TrackElement" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.paidseries.broadcaster.before.activity.PaidSeriesAddActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.activity.AnalyticsDetailActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="com.ss.android.ugc.tiktok.samsungfinder.SamsungSearchTikTokBrowserService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.ss.android.ugc.tiktok.pns.ui.ManageByParentIntermediateActivity"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.setting.KidsSettingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.setting.items.language.KidsLanguageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.setting.items.clearcache.KidsDiskClearActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130327"
+            android:name="com.ss.android.ugc.aweme.kids.choosemusic.activity.ChooseMusicActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.kids.choosemusic.activity.MusicDetailListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.CQRCodeFailActivity" />
+
+        <service
+            android:name="com.aweme.storage.JobService"
+            android:exported="false" />
+
+        <service
+            android:name="com.aweme.storage.CompatJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.oplus.ocs.media.AUTH_CODE"
+            android:value="ATBFAiEAq0BfpvctBmkJkKHxjsyhxc/wLIon61bijnrSokjIZ0ICIH3TOysGbMcSFsE/S1YnIOS2ZiseRzrSDwdo1FxLMES0br/GKIAAAAA=" />
+
+        <service
+            android:name="com.bytedance.android.livesdk.broadcast.record.service.LiveBroadcastRecordLiveService"
+            android:enabled="true"
+            android:foregroundServiceType="0x20" />
+
+        <service
+            android:name="com.bytedance.android.livesdk.broadcast.notification.BgVideoBroadcastService"
+            android:enabled="true"
+            android:foregroundServiceType="0x2" />
+
+        <activity
+            android:name="com.bytedance.android.live.kyc.KYCCameraActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.bytedance.android.livesdk.game.broadcast.service.ForegroundMirrorCastService"
+            android:enabled="true"
+            android:foregroundServiceType="0xa0" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f1216ba"
+            android:name="com.bytedance.android.livesdk.game.broadcast.mirror.activity.UsbSourceProxyActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@ref/0x7f16001d" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:label="@ref/0x7f1216ba"
+            android:name="com.byted.cast.usbsource.usbdisplaysource.UsbSourceActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <provider
+            android:name="com.bytedance.android.livesdk.TTLiveFileProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.ttlive_provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f16001c" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.ss.android.ugc.aweme.download.component_api.activity.DownloadDelegateActivity"
+            android:launchMode="2"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.zhiliaoapp.musically.openauthorize.AwemeAuthorizedActivity"
+            android:exported="true"
+            android:taskAffinity="com.zhiliaoapp.musically.authorize"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1">
+
+            <meta-data
+                android:name="BD_PLATFORM_SDK_VERSION"
+                android:value="6" />
+        </activity>
+
+        <activity
+            android:name="com.aweme.account.login.OTLIntentHandlerActivity"
+            android:exported="true"
+            android:taskAffinity="com.zhiliaoapp.musically.otl"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.ss.android.common.util.MultiProcessSharedProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.ss.android.common.multiprocess.SHARE_PROVIDER_AUTHORITY1233" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"
+            android:authorities="com.facebook.app.FacebookContentProvider597615686992125" />
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.deeplink.DeepLinkActivityV2"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.sdk.snssdk1180" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="snssdk1180" />
+
+                <data
+                    android:scheme="musically" />
+
+                <data
+                    android:scheme="snssdk1233" />
+
+                <data
+                    android:scheme="tiktok" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130322"
+            android:name="com.ss.android.ugc.aweme.deeplink.AppLinkHandlerV2"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="app-va.tiktokv.com" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.tiktokv.com" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/i18n/share/music/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/video/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/user/" />
+
+                <data
+                    android:pathPrefix="/share/stickers/detail/" />
+
+                <data
+                    android:pathPrefix="/share/live/" />
+
+                <data
+                    android:pathPrefix="/live/monetization/square/" />
+
+                <data
+                    android:pathPrefix="/share/game/" />
+
+                <data
+                    android:pathPrefix="/chatting/message" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="m.tiktok.com" />
+
+                <data
+                    android:host="t.tiktok.com" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/v/" />
+
+                <data
+                    android:pathPrefix="/V/" />
+
+                <data
+                    android:pathPrefix="/live/" />
+
+                <data
+                    android:pathPrefix="/h5/share/usr/" />
+
+                <data
+                    android:pathPrefix="/h5/share/tag/" />
+
+                <data
+                    android:pathPrefix="/h5/share/music/" />
+
+                <data
+                    android:pathPrefix="/H5/share/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/music/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/video/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/user/" />
+
+                <data
+                    android:pathPrefix="/share/stickers/detail/" />
+
+                <data
+                    android:pathPrefix="/share/live/" />
+
+                <data
+                    android:pathPrefix="/live/monetization/square/" />
+
+                <data
+                    android:pathPrefix="/share/game/" />
+
+                <data
+                    android:pathPrefix="/playlist-music/" />
+
+                <data
+                    android:pathPrefix="/ucenter_web/deeplink" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.tiktok.com" />
+
+                <data
+                    android:host="us.tiktok.com" />
+
+                <data
+                    android:path="@string/0x43" />
+
+                <data
+                    android:pathPattern="/" />
+
+                <data
+                    android:pathPattern="/@.*" />
+
+                <data
+                    android:pathPattern="/share/@.*" />
+
+                <data
+                    android:pathPrefix="/redirect" />
+
+                <data
+                    android:pathPrefix="/tag/" />
+
+                <data
+                    android:pathPrefix="/music/" />
+
+                <data
+                    android:pathPrefix="/playlist-music/" />
+
+                <data
+                    android:pathPrefix="/sticker/" />
+
+                <data
+                    android:pathPrefix="/v/" />
+
+                <data
+                    android:pathPrefix="/V/" />
+
+                <data
+                    android:pathPrefix="/share/live/" />
+
+                <data
+                    android:pathPrefix="/live/monetization/square/" />
+
+                <data
+                    android:pathPrefix="/share/stickers/detail/" />
+
+                <data
+                    android:pathPrefix="/share/game/" />
+
+                <data
+                    android:pathPrefix="/share/tag/" />
+
+                <data
+                    android:pathPrefix="/share/music/" />
+
+                <data
+                    android:pathPrefix="/share/sticker/" />
+
+                <data
+                    android:pathPrefix="/share/video/" />
+
+                <data
+                    android:pathPrefix="/share/user/" />
+
+                <data
+                    android:pathPrefix="/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/h5/share/usr/" />
+
+                <data
+                    android:pathPrefix="/h5/share/tag/" />
+
+                <data
+                    android:pathPrefix="/h5/share/music/" />
+
+                <data
+                    android:pathPrefix="/H5/share/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/music/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/video/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/challenge/" />
+
+                <data
+                    android:pathPrefix="/i18n/share/user/" />
+
+                <data
+                    android:pathPrefix="/messages/" />
+
+                <data
+                    android:pathPrefix="/t/" />
+
+                <data
+                    android:pathPrefix="/search/campaign/" />
+
+                <data
+                    android:pathPrefix="/question/" />
+
+                <data
+                    android:pathPrefix="/discover/" />
+
+                <data
+                    android:pathPrefix="/find/" />
+
+                <data
+                    android:pathPrefix="/channel/" />
+
+                <data
+                    android:pathPrefix="/revenue/subscription/invitation" />
+
+                <data
+                    android:pathPrefix="/ug/ads/landing/" />
+
+                <data
+                    android:pathPrefix="/now" />
+
+                <data
+                    android:pathPrefix="/place/" />
+
+                <data
+                    android:pathPrefix="/v2/h5/auth/authorize" />
+
+                <data
+                    android:pathPrefix="/third-party-oauth-redirect/" />
+
+                <data
+                    android:pathPrefix="/ucenter_web/passkey_wizard" />
+
+                <data
+                    android:pathPrefix="/ucenter_web/deeplink" />
+
+                <data
+                    android:pathPrefix="/shop/pdp/" />
+
+                <data
+                    android:pathPattern="/product/.*" />
+
+                <data
+                    android:pathPattern="/view/product/.*" />
+
+                <data
+                    android:pathPrefix="/minis/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="shop-uk.tiktokw.eu" />
+
+                <data
+                    android:host="shop-id.tokopedia.com" />
+
+                <data
+                    android:host="shop-th.tiktok.com" />
+
+                <data
+                    android:host="shop-my.tiktok.com" />
+
+                <data
+                    android:host="shop-ph.tiktok.com" />
+
+                <data
+                    android:host="shop-sg.tiktok.com" />
+
+                <data
+                    android:host="shop-vn.tiktok.com" />
+
+                <data
+                    android:pathPrefix="/pdp/" />
+
+                <data
+                    android:pathPrefix="/product/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="vm.tiktok.com" />
+
+                <data
+                    android:host="vt.tiktok.com" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.tt.site" />
+
+                <data
+                    android:host="www.tt.inc" />
+
+                <data
+                    android:host="www.tt.fun" />
+
+                <data
+                    android:host="vt.tokopedia.com" />
+
+                <data
+                    android:pathPrefix="/t/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="link.e.tiktok.com" />
+
+                <data
+                    android:pathPrefix="/uni/" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="oec-api.tiktokv.com" />
+
+                <data
+                    android:pathPattern="/view/product/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="shop.tiktok.com" />
+
+                <data
+                    android:pathPattern="/view/product/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="tiktok.me" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130263"
+            android:name="com.bytedance.android.ecommerce.ocr.view.OcrActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130112"
+            android:label="new cutsame"
+            android:name="com.ss.android.ugc.cut_ui_impl.newplayer.NewCutPlayerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.ss.android.ugc.cut_ui.PLAY" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130112"
+            android:name="com.ss.android.ugc.cut_ui_impl.process.NLECutCompressActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.ss.android.ugc.cut_ui.NLE_COMPRESS" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ss.android.ugc.cut_ui_impl.core.TemplateService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.ss.android.ugc.cut_ui.CUT_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f1302af"
+            android:name="com.bytedance.ies.xbridge.system.activity.GetPermissionActivity" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ss.android.ShowDialogActivity" />
+
+        <service
+            android:name="com.bytedance.common.wschannel.server.WsChannelService"
+            android:exported="false"
+            android:process=":push"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.bytedance.common.wschannel.client.WsClientService"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <activity
+            android:theme="@ref/0x7f1302af"
+            android:name="com.bytedance.ies.xbridge.base.activity.GetPermissionActivity" />
+
+        <service
+            android:name="com.fcm.service.SSGcmListenerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.fcm.service.FcmRegistrationJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f13026d"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="0x5a0"
+            android:fitsSystemWindows="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <service
+            android:name="com.ss.android.message.log.LogService"
+            android:exported="false"
+            android:process=":push" />
+
+        <provider
+            android:name="com.ss.android.pushmanager.setting.PushMultiProcessSharedProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.push.SHARE_PROVIDER_AUTHORITY" />
+
+        <activity
+            android:theme="@ref/0x7f1302ae"
+            android:name="com.bytedance.globalpayment.googlepayapi.PIPOPayActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.2.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.pns.agegate.ui.view.PNSAgeGateActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130570"
+            android:name="com.ss.android.ugc.aweme.pns.agegate.ui.view.PNSAgeGateTranslucentActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f13032a"
+            android:name="com.ss.android.ugc.aweme.pns.universalpopup.core.ui.UniversalPopupActivity2"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f130263"
+            android:name="com.bytedance.pumbaa.governance.tool.ui.GovernanceMainActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f130263"
+            android:name="com.bytedance.pumbaa.governance.tool.ui.GovernanceDetailActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f130263"
+            android:name="com.bytedance.pumbaa.governance.tool.ui.GovernanceRecordActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f130345"
+            android:name="com.bytedance.pumbaa.governance.tool.ui.TransparentAlertActivity"
+            android:configChanges="0x480" />
+
+        <provider
+            android:name="com.bytedance.apm.battery.dao.MonitorContentProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.apm" />
+
+        <provider
+            android:name="com.bytedance.ies.powerpermissions.PermissionsProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.permissions-provider" />
+
+        <activity
+            android:theme="@ref/0x7f130185"
+            android:name="com.bytedance.ies.powerpermissions.FakeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f13013c"
+            android:name="com.bytedance.lobby.internal.LobbyInvisibleActivity" />
+
+        <activity
+            android:name="com.bytedance.lobby.instagram.InstagramAuthActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.hybrid.spark.third.container.SparkThirdActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.bytedance.ies.safemode.SafeModeActivity"
+            android:process=":safemode"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.ies.safemode.SafeModeBlankActivity"
+            android:process=":safemode"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.ies.safemode.SmartProtected.fastboot.FastBootBlankActivity"
+            android:process=":safemode"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.ies.safemode.SmartProtected.fastboot.FastBootRedirectActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.ies.safemode.SmartProtected.fastboot.DownloadApkActivity"
+            android:process=":safemode"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.bytedance.ies.xelement.defaultimpl.player.impl.plugin.mediasession.MediaSessionReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.bytedance.ies.xelement.defaultimpl.player.impl.plugin.mediasession.session.MediaSessionService" />
+
+        <activity
+            android:name="com.ss.n_project.opensdk_tt.ui.Lemon8AuthActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f13035c"
+            android:name="com.ss.n_project.opensdk_tt.ui.WebAuthActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f130160"
+            android:name="com.bytedance.pipo.kyc.singpass.PipoMiddleActivity" />
+
+        <activity
+            android:name="com.tokopedia.loginkit.view.LoginLauncherActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f130264"
+            android:name="com.bytedance.scene.ui.SceneContainerActivity" />
+
+        <activity
+            android:name="com.bytedance.pipo.ocr.view.CardOcrActivity"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.bytedance.preinstall.attribution.provider.PreinstallAttributionProvider"
+            android:permission="com.zhiliaoapp.musically.permission.ATTRIBUTION_INFO"
+            android:exported="true"
+            android:authorities="com.zhiliaoapp.musically.preinstall.attribution" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoNGConfigActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoExpireCleanActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoSwitchOperationActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.CustomOccasionActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoGlobalSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoNetDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoNetRequestListActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoXUpdateTargetChannelActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoFilePreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoLocalFileActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.ChannelUpdateInfoActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.ChannelUpdateDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:label="@ref/0x7f1216ba"
+            android:name="com.bytedance.geckox.debugtool.ui.GeckoDebugMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x7f130125"
+            android:name="com.bytedance.geckox.debugtool.ui.LazyUpdateActivity" />
+
+        <service
+            android:name="com.bytedance.memdump.upload.HprofUploadJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.zhihu.matisse.ui.MatisseActivity" />
+
+        <activity
+            android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+
+        <activity
+            android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+
+        <service
+            android:name="com.bytedance.apm6.traffic.TrafficTransportService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.ss.android.deviceregister.AActivity" />
+
+        <receiver
+            android:name="com.bytedance.applog.collector.Collector"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130568"
+            android:name="com.tts.oecverify.twiceverify.TwiceVerifyWebActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f130632"
+            android:name="com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity"
+            android:multiprocess="true"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.zhiliaoapp.musically" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ss.android.ugc.cut_imageloader_fresco_dmt.DmtToolsFrescoImageService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="com.ss.android.ugc.cut_ui.image.LOADER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.ss.android.ugc.cut_ui_base.PermissionActivity" />
+
+        <service
+            android:name="com.ss.android.newmedia.redbadge.RedbadgeHandler"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.redbadge.message" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.newmedia.redbadge.RedBadgePushProcessService"
+            android:process=":push" />
+
+        <activity
+            android:name="com.bytedance.bdinstall.migrate.MigrateDetectorActivity" />
+
+        <provider
+            android:name="com.bytedance.bdinstall.BDInstallProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.bdinstall.provider" />
+
+        <receiver
+            android:name="com.ss.android.push.window.oppo.ScreenReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.bytedance.push.settings.storage.PushProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.push.settings" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f160011" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f060005"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f060007"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f060006"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f060005"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="net.openid.appauth.AuthorizationManagementActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.zhiliaoapp.musically.lifecycle-process" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService"
+            android:exported="false"
+            android:process=":downloader">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.ss.android.socialbase.downloader.remote" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"
+            android:stopWithTask="true" />
+
+        <service
+            android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"
+            android:stopWithTask="true" />
+
+        <activity
+            android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="0x480" />
+
+        <provider
+            android:name="com.ss.android.token.AuthTokenMultiProcessSharedProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.auth_token.SHARE_PROVIDER_AUTHORITY" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ss.android.account.share.data.write.activity.ShareDataActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.ss.android.account.share.data.read.ReadTempActivity" />
+
+        <provider
+            android:name="com.ss.android.account.share.data.write.provider.SecShareDataProvider"
+            android:exported="true"
+            android:authorities="com.zhiliaoapp.musically.SecShareProviderAuthority" />
+
+        <provider
+            android:name="com.bytedance.android.sdk.ticketguard.TicketGuardProvider"
+            android:exported="false"
+            android:authorities="com.zhiliaoapp.musically.TicketGuardProvider" />
+
+        <enable-feature
+            android:name="com.amazon.device.messaging"
+            android:required="false" />
+
+        <service
+            android:name="com.adm.push.ADMMessageHandler"
+            android:exported="false" />
+
+        <service
+            android:name="com.adm.push.ADMMessageHandlerJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.adm.push.ADMMessageHandler$Receiver"
+            android:permission="com.amazon.device.messaging.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.amazon.device.messaging.intent.RECEIVE" />
+
+                <category
+                    android:name="com.zhiliaoapp.musically" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1302a7"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <uses-library
+            android:name="com.oppo.hyberboost.unit.sdk"
+            android:required="false" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.SANDBOXED_SERVICES_NAME"
+            android:value="org.chromium.content.app.SandboxedProcessService" />
+
+        <meta-data
+            android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES"
+            android:value="10" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService0"
+            android:exported="false"
+            android:process=":sandboxed_process1" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService1"
+            android:exported="false"
+            android:process=":sandboxed_process2" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService2"
+            android:exported="false"
+            android:process=":sandboxed_process3" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService3"
+            android:exported="false"
+            android:process=":sandboxed_process4" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService4"
+            android:exported="false"
+            android:process=":sandboxed_process5" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService5"
+            android:exported="false"
+            android:process=":sandboxed_process6" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService6"
+            android:exported="false"
+            android:process=":sandboxed_process7" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService7"
+            android:exported="false"
+            android:process=":sandboxed_process8" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService8"
+            android:exported="false"
+            android:process=":sandboxed_process9" />
+
+        <service
+            android:name="org.chromium.content.app.SandboxedProcessService9"
+            android:exported="false"
+            android:process=":sandboxed_process10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.dsp.main.MusicDspActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.dsp.main.MusicDspPlayerActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.dsp.main.MusicDspLibraryActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.dsp.journey.MusicDspJourneyActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.mymusic.main.MyMusicActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.mymusic.detail.MyMusicDetailActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xfb0" />
+
+        <service
+            android:name="com.ss.android.ugc.aweme.dsp.playerservice.plugin.mediasession.common.MediaSessionService"
+            android:exported="false"
+            android:foregroundServiceType="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MEDIA_BUTTON" />
+
+                <action
+                    android:name="android.media.browse.MediaBrowserService" />
+
+                <action
+                    android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="sdkVersion"
+            android:value="3000" />
+
+        <meta-data
+            android:name="com.google.ar.core.min_apk_version"
+            android:value="240920000" />
+
+        <activity
+            android:theme="@ref/0x0103023a"
+            android:name="com.google.ar.core.InstallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.music.fanspotlight.FanSpotlightActivity"
+            android:screenOrientation="1"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130326"
+            android:name="com.ss.android.ugc.aweme.effectcreator.text.TextEditActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.aime.navigation.AimeActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.aime.hub.view.AIMEHubActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:theme="@ref/0x7f130266"
+            android:label="MainActivity"
+            android:name="com.bytedance.effectcreatormobile.creatortiktok.preview.CKENewEffectEditorActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x50000f80"
+            android:windowSoftInputMode="0x30">
+
+            <meta-data
+                android:name="description"
+                android:value="MainActivity" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130266"
+            android:name="com.bytedance.effectcreatormobile.creatortiktok.preview.video.AMEVideoCutoutActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.bytedance.effectcreatormobile.effectimgcreator.EffectImgCreatorActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <activity
+            android:name="com.bytedance.effectcreatormobile.effectimgcreator.publish.EffectImgCreatorV2Activity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0" />
+
+        <service
+            android:name="com.benchmark.collection.service.ByteBenchService"
+            android:process=":bm" />
+
+        <activity
+            android:theme="@ref/0x7f13001a"
+            android:name="com.apple.android.sdk.authentication.StartAuthenticationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13001a"
+            android:name="com.apple.android.sdk.authentication.SDKUriHandlerActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="musicsdk"
+                    android:host="com.zhiliaoapp.musically"
+                    android:pathPattern="/authenticateresult.*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.spotify.sdk.android.auth.LoginActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f1304d0"
+            android:name="com.ss.android.ugc.aweme.biz.bnpl.biz.entry.BNPLTransparentEntryActivity"
+            android:screenOrientation="3"
+            android:configChanges="0xdb0" />
+
+        <activity
+            android:theme="@ref/0x7f130109"
+            android:name="com.bytedance.pipo.checkout.sdk.internal.CheckoutActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="snssdk1180"
+                    android:host="pipopay"
+                    android:path="/payin_checkout" />
+
+                <data
+                    android:scheme="snssdk1180"
+                    android:host="pipopay"
+                    android:path="/payin_checkout_bind" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f13015f"
+            android:name="com.bytedance.pipo.checkout.sdk.internal.PIManagementActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="snssdk1180"
+                    android:host="pipopay"
+                    android:path="/payin_pi_management" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="pipo_sdk_schema"
+            android:value="snssdk1180" />
+
+        <uses-library
+            android:name="android.test.runner"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.ss.chromecast.source.impl.CastOptionsProvider" />
+
+        <receiver
+            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"
+            android:exported="false"
+            android:foregroundServiceType="0x2" />
+
+        <service
+            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.byted.cast.capture.PermissionBridgeActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <service
+            android:name="com.byted.cast.capture.NotifyServer.ProjectionService"
+            android:exported="false"
+            android:foregroundServiceType="0x20" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.login.auth.ui.login.QRCodeLoginVerifyFragment$$Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.fp.FacebookFriendsPage$$Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.fp.InviteFriendsPage$$Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.auth.SuggestAuthPage$$Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.account.loginapproval.ConfirmLoginPageFragment$$Activity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.ss.android.ugc.profile.business.ur.aigc.ProfileAigcIntroFragmentV2$$Activity"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.ss.android.ugc.aweme.relation.fp.ContactFriendsPage$$Activity"
+            android:launchMode="1" />
+
+        <meta-data
+            android:name="com.coloros.ocs.hyper.AUTH_CODE"
+            android:value="ATBFAiEAmL2atUUnjjf0UdhBW8Nz6PcKv/5gPxoSUF95BIXMVlwCIE0zaKkOs3nanhw7EoLpScaHwIZgr47CtKPU5+dNa2pqbz9QMWAAAAA=" />
+
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base,df_bytebench,df_c2pa_fake,df_live_byte_link,df_live_cast,df_live_cmaf,df_live_p2p,df_live_quic,df_live_rtmglobal,df_location,df_music_dsp,df_oppo_hyperboost,df_oppo_push,df_pipo_bnpl,df_pitaya,df_player,df_pns_sg,df_pns_us,df_search_adblock,df_ship,df_tiktok_font,df_tiktok_font_fallback,df_ttkmedia,df_ttwebview,df_ve_codec,df_ve_enc8,df_vmsdk" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_STANDALONE_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x580f0000" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

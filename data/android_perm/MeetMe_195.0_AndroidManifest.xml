@@ -1,0 +1,2740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="19500"
+    android:versionName="195.0"
+    android:installLocation="0"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x41"
+    package="com.myyearbook.m"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.INSERT" />
+
+            <data
+                android:mimeType="vnd.android.cursor.item/event" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.CREATE_DOCUMENT" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.INSERT" />
+
+            <data
+                android:mimeType="vnd.android.cursor.dir/event" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="sms" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.DIAL" />
+
+            <data
+                android:path="tel:" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.tv.launcherx" />
+
+        <package
+            android:name="com.google.android.tvlauncher" />
+
+        <package
+            android:name="com.google.android.tvrecommendations" />
+
+        <intent>
+
+            <action
+                android:name="com.applovin.am.intent.action.APPHUB_SERVICE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.browser.customtabs.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="market" />
+        </intent>
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.digitalturbine.ignite.cl.IgniteRemoteService" />
+        </intent>
+
+        <package
+            android:name="com.instagram.android" />
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:maxSdkVersion="25" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+
+    <uses-permission
+        android:name="android.permission.AD_SERVICES_CONFIG" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.myyearbook.m.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.myyearbook.m.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:theme="@ref/0x7f160d3f"
+        android:label="@ref/0x7f1500eb"
+        android:icon="@ref/0x7f110002"
+        android:name="com.lovoo.app.AndroidApplication"
+        android:backupAgent="com.lovoo.app.helper.LovooBackupAgent"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="false"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="false"
+        android:networkSecurityConfig="@ref/0x7f19000a"
+        android:roundIcon="@ref/0x7f110002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@ref/0x7f190004">
+
+        <activity
+            android:theme="@ref/0x7f160d4c"
+            android:name="com.lovoo.base.ui.activities.DeeplinkOpenActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="7">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="myb" />
+
+                <data
+                    android:scheme="mtmeiphone" />
+
+                <data
+                    android:scheme="fb124068097668875mtmefbiphone" />
+
+                <data
+                    android:scheme="fb296510988912mtmefbiphone" />
+
+                <data
+                    android:scheme="fb109674171476mtmefbiphone" />
+
+                <data
+                    android:scheme="fb109674171476" />
+
+                <data
+                    android:scheme="fb124068097668875" />
+
+                <data
+                    android:scheme="fb296510988912" />
+
+                <data
+                    android:scheme="adx1781" />
+
+                <data
+                    android:scheme="amp66b5db7f9ebef8ea03d4b4c-d778b6fe-313d-11e5-e12e-0011f98033c1" />
+
+                <data
+                    android:scheme="ampc2b5a1f1cc0db569153e04a-4adff2c0-0d2b-11e4-48a4-00a426b17dd8" />
+
+                <data
+                    android:scheme="awyifgcgexioh0wk" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="@ref/0x7f15094c" />
+
+                <data
+                    android:host="*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="@ref/0x7f1502d4" />
+
+                <data
+                    android:host="@ref/0x7f1502d5" />
+
+                <data
+                    android:host="@ref/0x7f1502d6" />
+
+                <data
+                    android:pathPattern="/profile/.*" />
+
+                <data
+                    android:pathPattern="/icebreaker/.*" />
+
+                <data
+                    android:pathPattern="/live/broadcast/view/.*" />
+
+                <data
+                    android:path="/discover/people" />
+
+                <data
+                    android:path="/match" />
+
+                <data
+                    android:path="/match-votes" />
+
+                <data
+                    android:path="/radar" />
+
+                <data
+                    android:path="/vip" />
+
+                <data
+                    android:path="/list/contacts" />
+
+                <data
+                    android:path="/list/visits" />
+
+                <data
+                    android:path="/list/liked-you" />
+
+                <data
+                    android:path="/list/likes" />
+
+                <data
+                    android:path="/credits" />
+
+                <data
+                    android:path="/self" />
+
+                <data
+                    android:path="/dashboard" />
+
+                <data
+                    android:path="/premium" />
+
+                <data
+                    android:path="/settings/premium" />
+
+                <data
+                    android:path="/likelist" />
+
+                <data
+                    android:path="/live" />
+
+                <data
+                    android:path="/nearby/place" />
+            </intent-filter>
+        </activity>
+
+        <profileable
+            android:shell="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBEw1gWsEPNXunAPkW3-IXpvsR3mqhEdA0" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0c0016" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9533755366011562~3651104175" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f160d4c"
+            android:name="com.lovoo.ui.activities.LovooStartActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:screenOrientation="7">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f160d4c"
+            android:name="com.lovoo.base.ui.activities.PushOpenActivity"
+            android:launchMode="2"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f15134e"
+            android:name="com.lovoo.main.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:label="@ref/0x7f151355"
+            android:name="com.lovoo.settings.ui.activities.SettingsActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f15134a"
+            android:name="com.lovoo.credits.ui.CreditsTransactionsActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151351"
+            android:name="com.lovoo.chat.ui.pictureviewer.MediaViewerActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.account.phonenumber.RemovePhoneNumberActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151353"
+            android:name="com.lovoo.signin.ui.SignInActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.lovoo.auth.phone.PhoneAuthActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.lovoo.auth.multifactor.MFAActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="@ref/0x7f151353"
+            android:name="com.lovoo.register.rollercoaster.ui.RollerCoasterRegisterActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.lovoo.register.rollercoaster.ui.facts.prompts.RollerCoasterFactsListPromptsActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.register.rollercoaster.ui.RollerCoasterRegisterActivity" />
+
+        <activity
+            android:name="com.lovoo.register.rollercoaster.ui.facts.edit.RollerCoasterFactsEditActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.register.rollercoaster.ui.RollerCoasterRegisterActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.facts.ui.activity.GenderLearnMoreActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.register.rollercoaster.ui.RollerCoasterRegisterActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.account.activity.DeleteAccountActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.account.activity.DeleteFarewellActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151342"
+            android:name="com.lovoo.settings.block.BlockedUserActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:label="@ref/0x7f150ada"
+            android:name="io.wondrous.sns.blockedusers.BlockedUsersActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.dialog.ui.activities.DialogActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.ads.vendors.fyber.FyberOfferwallActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.ads.menu.RewardMenuActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.icebreaker.ui.IceBreakerDeeplinkActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f151356"
+            android:name="com.lovoo.verification.activity.VerificationActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f151356"
+            android:name="com.lovoo.verification.activity.WebVerificationActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f151347"
+            android:name="com.lovoo.location.activity.MapPickerActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x2"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f151347"
+            android:name="com.lovoo.location.activity.PlacePickerActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x2"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.promocode.activity.PromoCodeActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.web.ui.WebviewActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4a"
+            android:name="com.lovoo.ui.activities.OnboardingUploadProfilePictureActivity"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.facts.ui.activity.ProfileFactsEditActivity"
+            android:launchMode="0"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.facts.ui.activity.ProfileFactsMissingActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.other.activity.PublicProfileActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.success.ProfileSuccessMomentActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.prompts.ui.PromptsListActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.prompts.ui.PromptsEditActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.profile.self.activity.SelfProfileActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.profile.self.activity.SelfProfileGalleryActivity"
+            android:parentActivityName="com.lovoo.profile.self.activity.SelfProfileActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.billing.pos.dialog.DialogPurchaseActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.pos.activity.PosActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.pos.activity.TmgPosActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.paypal.PayPalActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.billing.pos.activity.PosActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.pos.benefits.PosBenefitsActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.pos.success.PosSuccessActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.pictureupload.UploadActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.user.likes.ui.LikeListActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.billing.settings.SettingsPremiumActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.dashboard.presentation.DashboardActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.pictureupload.MultiUploadActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.permission.LocationPermissionActivity"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f160d4b"
+            android:name="com.lovoo.live.ui.broadcast.LiveBroadcastActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.live.ui.search.StreamerSearchActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d44"
+            android:name="com.lovoo.live.ui.OpenBroadcastActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d47"
+            android:name="com.lovoo.live.economy.ui.OpenCashOutActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.lovoo.privacy.toc.LovooTermsActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d45"
+            android:name="com.lovoo.user.account.UserUnderAgeActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d45"
+            android:name="com.lovoo.permission.PushPermissionActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.activity.NotificationSettingsActivity"
+            android:screenOrientation="7"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151346"
+            android:name="com.lovoo.chat.messenger.MessengerActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d45"
+            android:name="com.lovoo.live.ui.broadcast.LiveSendMessageActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.privacy.ui.activity.SettingsPrivacyActivity"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.license.ui.activity.LicensesListActivity"
+            android:configChanges="0x4a0"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.account.ui.activity.SettingsAccountActivity"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:name="com.lovoo.register.SafetyTipsActivity"
+            android:screenOrientation="7"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.amazon.device.ads.DTBActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.lovoo.dailysurprise.ui.activity.DailySurpriseActivity"
+            android:screenOrientation="1"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.match.list.activity.MatchListActivity"
+            android:screenOrientation="1"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.secondchance.activity.SecondChanceActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d49"
+            android:name="com.lovoo.match.ui.activities.MatchCelebrationHeartActivity"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.admin.presentation.SettingsAdminActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.settings.ui.activities.SettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d45"
+            android:name="com.lovoo.blocking.activity.BlockingDialogActivity"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d45"
+            android:name="com.lovoo.chat.unmatch.nooptions.UnMatchNoOptionsDialogActivity"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.bestpicks.activity.BestPicksActivity"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.bestpicks.activity.CompatibilityActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.bestpicks.activity.QuestionerActivity"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.bestpicks.activity.EditAnswerActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.bestpicks.activity.BestPicksActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d41"
+            android:name="com.lovoo.boost.ui.BoostActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d42"
+            android:name="com.lovoo.boost.ui.introduction.BoostIntroductionActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.live.ui.broadcast.LiveVideoCallActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.email.confirmation.EmailConfirmationActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.billing.pos.manage.ManageSubscriptionActivity"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.billing.settings.SettingsPremiumActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.reporting.activity.ReportingActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.reporting.activity.DsaReportingActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.settings.search.SearchFilterActivity"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.nearby.places.ui.PlacesDetailsActivity"
+            android:launchMode="2"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.nearby.ui.NearbyHeatmapUserListActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:name="com.lovoo.nearby.ui.AddPlaceActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.ftx.activity.FTXOnboardingActivity"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.ftx.activity.FTXOnboardingInterstitialActivity"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d4e"
+            android:name="com.lovoo.ftx.activity.FTXOnboardingTooltipActivity"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:name="com.lovoo.icebreaker.list.ui.IcebreakerListActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.lovoo.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:label="@ref/0x7f150e13"
+            android:name="io.wondrous.sns.bouncers.BouncersActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:label="@ref/0x7f151142"
+            android:name="io.wondrous.sns.scheduledshows.create.CreateScheduledShowActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f160d3f"
+            android:label="@ref/0x7f150a76"
+            android:name="io.wondrous.sns.scheduledshows.list.ScheduledShowsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f1505dd"
+            android:name="io.wondrous.sns.followers.FavoritesActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160daa"
+            android:label="@ref/0x7f15118f"
+            android:name="io.wondrous.sns.streamhistory.StreamHistoryActivity" />
+
+        <activity
+            android:name="com.lovoo.missingdata.presentation.activity.MissingDataActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f190005" />
+        </provider>
+
+        <receiver
+            android:name="com.lovoo.receivers.NotificationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.lovoo.broadcast.CLEAR_NOTIFICATION" />
+
+                <action
+                    android:name="com.lovoo.broadcast.REPLY_NOTIFICATION_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.lovoo.receivers.LovooAlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.lovoo.receivers.AppUpdateReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.lovoo.fcm.services.LovooFCMListenerService"
+            android:exported="false"
+            android:priority="100">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.androidx-startup">
+
+            <meta-data
+                android:name="com.lovoo.billing.init.TmgGoogleRechargeInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="com.tmg.ads.amazon.bidding.AmazonBidderInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.live.subs.SnsStreamerSubscriptionInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="sns.vip.SnsVipInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="sns.currency.host.HostCurrencyInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.payments.google.recharge.GooglePurchaseFlowInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.payments.offers.PaymentOfferComponentInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="io.wondrous.sns.startup.SnsLiveLocatorInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="app.rive.runtime.kotlin.RiveInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.bingo.init.BingoInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.currency.ruby.RubyCurrencyInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.payments.offers.PaymentOfferInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="io.wondrous.sns.recharge.startup.PaymentsRechargeInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.data.db.SnsDatabaseInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="sns.currency.host.info.HostCurrencyInfoInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.currency.ruby.info.RubyCurrencyInfoInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.challenges.init.ChallengesInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="sns.anim.init.AnimationInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="com.themeetgroup.verification.feature.VerificationFeatureInitializer"
+                android:value="@ref/0x7f1500ea" />
+
+            <meta-data
+                android:name="sns.plugins.SnsPluginRegistryInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="io.wondrous.sns.overlays.OverlayServiceCoordinatorLocatorInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.amazon.AmazonVendorSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.hybid.HybidVendorSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.inmobi.InmobiVendorSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.smaato.SmaatoVendorSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.feedad.FeedAdPluginInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.tmg.ads.mobilefuse.MobilefuseVendorSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.unity3d.services.core.configuration.AdsSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.compose.runtime.tracing.ComposeTracingInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.tracing.perfetto.StartupTracingInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="com.google.android.gms.metadata.ModuleDependencies"
+            android:enabled="false"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+            </intent-filter>
+
+            <meta-data
+                android:name="photopicker_activity:0:required"
+                android:value="@string/0x41" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f160d40"
+            android:name="com.lovoo.billing.adyen.ui.activity.AdyenActivity"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="adyencheckout"
+                    android:host="com.myyearbook.m" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.lovoo.auth.accountmanager.AuthenticatorService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@ref/0x7f190001" />
+        </service>
+
+        <activity
+            android:name="com.lovoo.ui.TrackingViewActivity" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f190006" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:label="@ref/0x7f1510b4"
+            android:name="sns.payments.google.recharge.GooglePurchaseCurrencyActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160d34"
+            android:name="io.wondrous.sns.StartLiveBroadcastForUserActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f160b01"
+            android:name="io.wondrous.sns.nav.SnsCoreNavActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sns"
+                    android:host="com.myyearbook.m" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f160827"
+            android:label="@ref/0x7f150dc5"
+            android:name="io.wondrous.sns.live.filters.LiveFiltersActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160754"
+            android:label="@ref/0x7f150de8"
+            android:name="io.wondrous.sns.live.filters.LanguagesActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1604d5"
+            android:label="@ref/0x7f150ade"
+            android:name="io.wondrous.sns.blockedusers.bybouncer.BlockedUsersByBouncerActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f160819"
+            android:label="@ref/0x7f150c71"
+            android:name="io.wondrous.sns.feed2.LiveFeedFavoritesActivity" />
+
+        <activity
+            android:label="@ref/0x7f15117f"
+            android:name="io.wondrous.sns.levels.info.LevelsInfoActivity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f150dae"
+            android:name="io.wondrous.sns.levels.progress.streamer.LevelStreamerProgressActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f150db0"
+            android:name="io.wondrous.sns.levels.progress.viewer.LevelViewerProgressActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f160985"
+            android:label="@ref/0x7f1510e0"
+            android:name="io.wondrous.sns.payments.RechargeAccountActivity" />
+
+        <activity
+            android:label="@ref/0x7f150e86"
+            android:name="io.wondrous.sns.nextdate.dateshistory.DatesActivity" />
+
+        <activity
+            android:name="io.wondrous.sns.contentguidelines.ContentGuidelinesActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1605e6"
+            android:label="@ref/0x7f150bb3"
+            android:name="io.wondrous.sns.claimcode.ClaimCodeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="io.wondrous.sns.socialmedia.SocialMediaInputActivity" />
+
+        <activity
+            android:label="@ref/0x7f15116c"
+            android:name="io.wondrous.sns.socialmedia.SocialMediaActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160505"
+            android:name="io.wondrous.sns.broadcast.end.extended.BroadcastEndExtendedActivity" />
+
+        <activity
+            android:label="@ref/0x7f150f60"
+            android:name="io.wondrous.sns.livetools.details.ProfileEditMyDetailsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f150b8c"
+            android:name="io.wondrous.sns.cashreward.CashRewardActivity"
+            android:configChanges="0xfb3" />
+
+        <activity
+            android:name="io.wondrous.sns.feed2.discover.LiveFeedDiscoverActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="io.wondrous.sns.favorites.notifications.takeover.FavoriteNotificationsTakeoverActivity"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="io.wondrous.sns.LiveNotificationReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.meetme.broadcast.BroadcastVideoReceiver.ACTION_BROADCAST_INTERACTION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@ref/0x7f03001c" />
+
+        <provider
+            android:name="io.wondrous.sns.SnsFileProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f19000b" />
+        </provider>
+
+        <activity
+            android:name="com.themeetgroup.verification.web.ui.VerificationWebActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="io.wondrous.sns.push.fcm.SnsFirebaseMessagingService"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="-400">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f160b01"
+            android:name="sns.payments.offers.push.PaymentOfferPushActivity" />
+
+        <activity
+            android:label="@ref/0x7f151214"
+            android:name="sns.live.subs.tools.StreamerSubToolsActivity" />
+
+        <activity
+            android:label="@ref/0x7f15120e"
+            android:name="sns.live.subs.subscriptions.MyStreamerSubscriptionsActivity" />
+
+        <activity
+            android:label="VerificationTermsActivity"
+            android:name="io.wondrous.sns.verification.terms.VerificationTermsActivity" />
+
+        <activity
+            android:label="@ref/0x7f15116e"
+            android:name="io.wondrous.sns.verification.liveness.LivenessFlowActivity" />
+
+        <activity
+            android:label="@ref/0x7f15116e"
+            android:name="io.wondrous.sns.verification.SolicitVerificationActivity" />
+
+        <activity
+            android:name="io.wondrous.sns.push.tracking.SnsPushForwardingActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x41"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:autoRemoveFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f150eea"
+            android:name="sns.places.geocoder.GeocoderSearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1603c5"
+            android:name="com.mopub.common.MoPubBrowser"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f1603c5"
+            android:name="com.mopub.common.privacy.ConsentDialogActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.amazon.device.ads.DTBAdActivity"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="amazonmobile"
+                    android:host="intent" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x7f160d34"
+            android:name="tv.teads.sdk.utils.browser.BrowserActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f160d34"
+            android:name="tv.teads.sdk.TeadsFullScreenActivity"
+            android:exported="false"
+            android:configChanges="0x480" />
+
+        <service
+            android:name="com.meetme.broadcast.BroadcastService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <activity
+            android:theme="@ref/0x7f16026d"
+            android:label="@ref/0x7f150242"
+            android:name="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:taskAffinity="com.chuckerteam.chucker.task"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f16026d"
+            android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity"
+            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" />
+
+        <service
+            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseJobIntentServiceReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.com.chuckerteam.chucker.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f190002" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f160d35"
+            android:name="io.adjoe.sdk.AdjoeActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="io.adjoe.sdk.AppTrackingService"
+            android:exported="false" />
+
+        <service
+            android:name="io.adjoe.sdk.AppTrackingJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="io.adjoe.sdk.AppTrackingAlarmReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="io.adjoe.sdk.DeviceStatusService"
+            android:exported="false" />
+
+        <receiver
+            android:name="io.adjoe.sdk.DeviceStatusTracker"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="io.adjoe.sdk.AdjoePackageInstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="io.adjoe.sdk.SharedPreferencesProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.myyearbook.m.io.adjoe.sdk.contentprovider.sharedpreferences.AUTHORITY" />
+
+        <provider
+            android:name="io.adjoe.sdk.DatabaseContentProvider"
+            android:exported="false"
+            android:multiprocess="false"
+            android:authorities="com.myyearbook.m.io.adjoe.sdk.contentprovider.database.AUTHORITY" />
+
+        <receiver
+            android:name="io.adjoe.sdk.NotificationBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="io.adjoe.sdk.AdjoeActionReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="io.adjoe.sdk.ADJOE_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <service
+            android:name="androidx.work.multiprocess.RemoteWorkManagerService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.mobileadsinitprovider"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x41"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f190007" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050008"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f05000a"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050009"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050008"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
+
+        <service
+            android:name="com.adyen.checkout.components.analytics.AnalyticsDispatcher"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.appboy.ui.AppboyWebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.braze.ui.BrazeWebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.appboy.ui.activities.AppboyFeedActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.appboy.ui.activities.AppboyContentCardsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.braze.ui.activities.ContentCardsActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f160249"
+            android:name="com.braze.push.NotificationTrampolineActivity"
+            android:exported="false"
+            android:launchMode="3" />
+
+        <receiver
+            android:name="com.braze.push.BrazePushReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1603c5"
+            android:name="com.mopub.mobileads.MoPubFullscreenActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f16105d"
+            android:label="HyprMX SDK"
+            android:name="com.hyprmx.android.sdk.activity.HyprMXOfferViewerActivity"
+            android:launchMode="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f16105e"
+            android:name="com.hyprmx.android.sdk.activity.HyprMXRequiredInformationActivity"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f16105d"
+            android:name="com.hyprmx.android.sdk.activity.HyprMXNoOffersActivity"
+            android:configChanges="0xfa0" />
+
+        <activity
+            android:theme="@ref/0x7f16105d"
+            android:name="com.hyprmx.android.sdk.overlay.HyprMXBrowserActivity"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f160d36"
+            android:name="com.google.android.tv.ads.controls.FallbackImageActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f160e33"
+            android:name="com.adyen.threeds2.internal.ui.activity.ChallengeActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="adyen3ds2"
+                    android:host="com.myyearbook.m" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.adyen.threeds2.internal.AppUpgradeBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="io.adjoe.protection.PhoneVerificationBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f16027e"
+            android:name="com.fyber.fairbid.sdk.testsuite.views.TestSuiteActivity" />
+
+        <activity
+            android:name="com.fyber.ads.ofw.OfferWallActivity"
+            android:configChanges="0x480" />
+
+        <provider
+            android:name="com.fyber.fairbid.internal.UncaughtExceptionHandlerContentProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m"
+            android:initOrder="101"
+            android:grantUriPermissions="false" />
+
+        <provider
+            android:name="com.applovin.sdk.AppLovinInitProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.applovininitprovider"
+            android:initOrder="101" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.adview.AppLovinFullscreenActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000fb4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.applovin.sdk.AppLovinWebViewActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerDetailActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161049"
+            android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161044"
+            android:name="com.applovin.creative.MaxCreativeDebuggerActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f161044"
+            android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <service
+            android:name="com.applovin.impl.adview.activity.FullscreenAdService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.inmobi.ads.rendering.InMobiAdActivity"
+            android:configChanges="0x40000fb4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.tapjoy.TJAdUnitActivity"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.tapjoy.TJContentActivity"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.tapjoy.TJWebViewActivity"
+            android:configChanges="0x4a0"
+            android:hardwareAccelerated="true" />
+
+        <meta-data
+            android:name="com.mobilefuse.sdk.disable_auto_init"
+            android:value="true" />
+
+        <provider
+            android:name="com.mobilefuse.sdk.MobileFuseSdkInitProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.mobilefusesdkinitprovider" />
+
+        <activity
+            android:theme="@ref/0x7f1603c6"
+            android:name="com.mobilefuse.sdk.MobileFuseFullscreenActivity"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1603c7"
+            android:name="com.mobilefuse.sdk.MobileFuseFullscreenTransparentActivity"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f1603c6"
+            android:name="com.mobilefuse.sdk.experimental.NativeInterstitialActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.AudienceNetworkContentProvider" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.1.0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.mlkitinitprovider"
+            android:initOrder="99" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <provider
+            android:name="com.snap.corekit.SnapKitInitProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.SnapKitInitProvider" />
+
+        <activity
+            android:name="com.vungle.ads.internal.ui.VungleActivity"
+            android:launchMode="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <receiver
+            android:name="com.braze.receivers.BrazeActionReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.tracing.perfetto.TracingReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.tracing.perfetto.action.ENABLE_TRACING" />
+
+                <action
+                    android:name="androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START" />
+
+                <action
+                    android:name="androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.tracing.perfetto.StartupTracingConfigStoreIsEnabledGate"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="android.webkit.WebView.EnableSafeBrowsing"
+                android:value="true" />
+        </activity>
+
+        <provider
+            android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.IronsourceLifecycleProvider" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.consent.UserConsentActivity" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.interstitial.activity.MraidInterstitialActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.interstitial.activity.VastInterstitialActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.rewarded.activity.MraidRewardedActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.rewarded.activity.VastRewardedActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <receiver
+            android:name="net.pubnative.lite.sdk.receiver.VolumeChangedActionReceiver" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.contentinfo.AdFeedbackActivity"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:theme="@ref/0x7f1603c7"
+            android:name="com.mobilefuse.sdk.ad.rendering.splashad.MobileFuseSplashAdActivity"
+            android:configChanges="0x4b0"
+            android:hardwareAccelerated="true" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.com.squareup.picasso" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.smaato.sdk.rewarded.view.RewardedInterstitialAdActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x40003fb7" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.smaato.sdk.interstitial.view.InterstitialAdActivity"
+            android:exported="false"
+            android:configChanges="0x40003fb7" />
+
+        <activity
+            android:name="com.smaato.sdk.core.browser.SmaatoSdkBrowserActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.smaato.sdk.core.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.smaato-lifecycle-process" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.feedad.android.core.FeedAdService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f160292"
+            android:name="com.feedad.android.core.InterstitialAdActivity"
+            android:configChanges="0x4b0" />
+
+        <provider
+            android:name="com.feedad.android.core.FeedAdInitContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.myyearbook.m.FeedAdInitContentProvider" />
+
+        <activity
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity"
+            android:screenOrientation="13"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="4"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity"
+            android:screenOrientation="13"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.amazon.device.ads.DTBInterstitialActivity"
+            android:exported="true"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f1603ca"
+            android:name="com.amazon.aps.ads.activity.ApsInterstitialActivity"
+            android:exported="true"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f160da7"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f19000c" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

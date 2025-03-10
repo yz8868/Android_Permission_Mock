@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="130"
+    android:versionName="1.8.4"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x2e"
+    package="app.duomevideochat.duome"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission
+        android:name="app.duomevideochat.duome.permission.RECEIVE_MSG"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="app.duomevideochat.duome.permission.RECEIVE_MSG" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+
+    <queries>
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.singular.preinstall.READ_PERMISSION_SINGULAR" />
+        </intent>
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.facebook.lite" />
+    </queries>
+
+    <queries
+        package="app.duomevideochat.duome">
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+    </queries>
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="app.duomevideochat.duome.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="app.duomevideochat.duome.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:theme="@ref/0x7f130118"
+        android:label="OVO"
+        android:icon="@ref/0x7f0f018b"
+        android:name="com.duome.app.mvp.application.MyApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@ref/0x7f150002"
+        android:roundIcon="@ref/0x7f0f018c"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.LoginUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.SignInUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.VideoPreviewUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.ai.AIDetailUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.ai.AIChatUI"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.ai.AIConversationUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.DeleteAccountUI"
+            android:exported="false" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatRoomUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CreateChatRoomUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatRoomWebUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.FollowUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.FakeVideoActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.LanguageActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.AccountSafeActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.WalletUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.VipUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.AvatarActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.SetRemarksActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.MatchGuideResultUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.ImDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.CallDialPreActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.VideoCallActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.MatchActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.MatchStartActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.WebActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.PersonalInfoUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.WalletRecordUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.AnonReportActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.MyDynamicUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.PrivacySettingUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.PrivatePictureUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.MessageSettingUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.UserFeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.BlackListUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.VisitListUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.sahooz.library.countrypicker.PickActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1301b2"
+            android:name="app.duomevideochat.duome.ui.SplashUI"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.SelectSexActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.RelDynActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130141"
+            android:name="com.duome.app.mvp.view.dialog.RechargeDialogUI"
+            android:exported="false" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.LiveStreamUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.VideoStreamDetailsUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.InputPhoneActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.LoginForPhoneActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.SettingUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.EditInfoActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.InteractiveMessageActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.IMActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.IMPushArrayActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.ui.RechargeFeedbackUI"
+            android:exported="false" />
+
+        <activity
+            android:name="com.duome.app.mvp.ui.activity.MainActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomInviteCodeUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomVerifyEditInfoUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomWaitForReviewUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CoinSellerListUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CoinSellerChatActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CoinSellerTransferUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CoinSellerTransferSuccessUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.FamilyListUI"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.CreateFamilyUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.FamilyDetailsUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.FamilyMemberListUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.FamilyMemberRequestListUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.FamilySettingUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ActivityIncomeExchangeWithdrawal"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ExchangeHistoryActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.WithdrawalHistoryActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomIncomeUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomSearchActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomMusicRequestPermissionUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomLocalMusicUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatroomPlayMusicUI"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="app.duomevideochat.duome.chatroom.ChatRoomGiftWallUI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="CHANNEL_NAME"
+            android:value="android_google" />
+
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core" />
+
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core" />
+
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":core" />
+
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.netease.nimlib.service.ResponseReceiver" />
+
+        <service
+            android:name="com.netease.nimlib.service.ResponseService" />
+
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:exported="false"
+            android:process=":core"
+            android:authorities="app.duomevideochat.duome.ipc.provider" />
+
+        <provider
+            android:name="com.netease.nimlib.ipc.cp.provider.PreferenceContentProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.ipc.provider.preference" />
+
+        <service
+            android:name="com.netease.nimlib.mixpush.fcm.FCMTokenService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@string/0x2e" />
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="@string/0x2e" />
+
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f150001" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.0.0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.netease.nimlib.push.net.HeartbeatService"
+            android:process=":core" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:theme="@ref/0x7f13023f"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f13023f"
+            android:name="com.yalantis.ucrop.UCropMultipleActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <provider
+            android:name="com.luck.picture.lib.basic.PictureFileProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.luckProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150004" />
+        </provider>
+
+        <service
+            android:name="com.luck.picture.lib.service.ForegroundService"
+            android:enabled="true"
+            android:foregroundServiceType="0x8" />
+
+        <activity
+            android:theme="@ref/0x7f130078"
+            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130168"
+            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130451"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.app.duomevideochat.duome" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130003"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f130003"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f15000a" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="app.duomevideochat.duome.messenger" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f130078"
+            android:name="com.luck.lib.camerax.PictureCameraActivity"
+            android:configChanges="0x4a0" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="app.duomevideochat.duome.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.webp.WebpGlideModule"
+            android:value="GlideModule" />
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b0010" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="im.zego.internal.screencapture.ZegoScreenCaptureManager$ZegoScreenCaptureAssistantActivity"
+            android:exported="false"
+            android:screenOrientation="13"
+            android:configChanges="0x480" />
+
+        <service
+            android:name="im.zego.internal.screencapture.ZegoScreenCaptureService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x20" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f130290"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Mwsvia0Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Lddlyb1Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Xhicac2Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Xtmubd3Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Hvxume4Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Wfusbf5Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Pvyexg6Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Smnvbh7Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Plrjbi8Activity" />
+
+        <activity
+            android:name="com.duome.app.kiupza0.Cytvhj9Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Gugtha0Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Cmxdob1Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Pvplhc2Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Yyofkd3Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Rqvoge4Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Fgmixf5Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Yjjgjg6Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Ekusqh7Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Rdlpki8Activity" />
+
+        <activity
+            android:name="com.duome.app.lotagb1.Shdczj9Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Hrohta0Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Mklpkb1Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Dovodc2Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Vnjfud3Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Wdghte4Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Szzobf5Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Yvyaag6Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Pfzwgh7Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Jcomei8Activity" />
+
+        <activity
+            android:name="com.duome.app.aeritc2.Mamcpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Tlvbma0Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Stwwib1Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Lxtvec2Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Ufryfd3Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Jqiyue4Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Kdecdf5Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Ckfhjg6Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Teyyth7Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Xfdcpi8Activity" />
+
+        <activity
+            android:name="com.duome.app.zupgld3.Noccpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Pfpnha0Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Lpcprb1Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Ebqfvc2Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Dcsapd3Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Wwctqe4Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Qdjoif5Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Injcyg6Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Mabmhh7Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Iggnzi8Activity" />
+
+        <activity
+            android:name="com.duome.app.wqggfe4.Ykxoqj9Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Omynua0Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Pngmvb1Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Hicanc2Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Ywlkqd3Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Xiddqe4Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Keqsdf5Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Ogbpcg6Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Lpereh7Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Zsgxzi8Activity" />
+
+        <activity
+            android:name="com.duome.app.xdldyf5.Trozbj9Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Wlcfga0Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Cmzwwb1Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Ndwvdc2Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Exqvbd3Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Oucele4Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Edkqyf5Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Nstbrg6Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Uejzwh7Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Hfqmki8Activity" />
+
+        <activity
+            android:name="com.duome.app.rtatmg6.Dziozj9Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Hxekoa0Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Moeswb1Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Sktmac2Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Oktljd3Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Euqtoe4Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Oeoskf5Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Cnqimg6Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Ytrcrh7Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Dntzai8Activity" />
+
+        <activity
+            android:name="com.duome.app.kgjyjh7.Frihfj9Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Madtja0Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Wvilmb1Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Dxstfc2Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Xamdqd3Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Bzumze4Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Afrcuf5Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Afwzdg6Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Gpojdh7Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Rhjnhi8Activity" />
+
+        <activity
+            android:name="com.duome.app.ksndci8.Enhroj9Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Nixjca0Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Eoibmb1Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Tglzsc2Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Tmvjcd3Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Iwyrqe4Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Xslmrf5Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Tadkkg6Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Thxexh7Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Cafdki8Activity" />
+
+        <activity
+            android:name="com.duome.app.vqajzj9.Icybrj9Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Ywmvpa0Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Wteseb1Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Prpmmc2Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Ihvwpd3Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Wnwjne4Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Krazof5Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Anlwqg6Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Rbblih7Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Zchyhi8Activity" />
+
+        <activity
+            android:name="com.duome.app.hhnvgk10.Makvnj9Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Numtca0Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Gtzcgb1Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Raabvc2Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Wstiud3Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Mbqxse4Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Idznff5Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Rsuukg6Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Xfbxth7Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Smbuni8Activity" />
+
+        <activity
+            android:name="com.duome.app.upitul11.Lcqnfj9Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Ysgkla0Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Pivhob1Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Fufeic2Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Lckycd3Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Ersdde4Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Ictjvf5Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Uzpbfg6Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Cotteh7Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Utehji8Activity" />
+
+        <activity
+            android:name="com.duome.app.khutgm12.Ybzdsj9Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Jbgxaa0Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Gptnfb1Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Qloupc2Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Sdlpyd3Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Tyffse4Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Hkvvrf5Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Fcvoog6Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Ptgdgh7Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Yhirwi8Activity" />
+
+        <activity
+            android:name="com.duome.app.bjigvn13.Uodmpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Qdueha0Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Pmgdtb1Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Qohxfc2Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Ekfgjd3Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Siwwse4Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Ilsaqf5Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Nnknzg6Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Kquoch7Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Wsecmi8Activity" />
+
+        <activity
+            android:name="com.duome.app.owcrto14.Xpokaj9Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Vynrja0Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Hnanwb1Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Ddcxoc2Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Oyldgd3Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Crxtfe4Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Ifpgnf5Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Nsfgsg6Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Slieoh7Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Vpttdi8Activity" />
+
+        <activity
+            android:name="com.duome.app.fzbwep15.Fzdtmj9Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Kqqnba0Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Fncipb1Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Opzrrc2Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Gjfaqd3Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Wjkzce4Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Qcflrf5Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Ydyhcg6Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Oxykch7Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Eugvci8Activity" />
+
+        <activity
+            android:name="com.duome.app.lslndq16.Ugbkyj9Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Fdvbza0Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Iucxwb1Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Adqpoc2Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Aathsd3Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Qtntke4Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Huhmvf5Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Zirdyg6Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Mfpeoh7Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Ijytwi8Activity" />
+
+        <activity
+            android:name="com.duome.app.dctwcr17.Ubiqpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Pzldza0Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Qkkggb1Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Jrjvfc2Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Viweud3Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Lhrwve4Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Sabilf5Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Cbcwlg6Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Frygvh7Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Ecnlui8Activity" />
+
+        <activity
+            android:name="com.duome.app.xyfyis18.Twclvj9Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Hrkwka0Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Uboxrb1Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Byfzec2Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Oycawd3Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Ldcmje4Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Pcdqhf5Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Qljxfg6Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Rjuahh7Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Rrcohi8Activity" />
+
+        <activity
+            android:name="com.duome.app.iuamyt19.Iesklj9Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Yheipa0Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Xkmudb1Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Ptekzc2Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Xkxrnd3Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Swurne4Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Dsbgmf5Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Cueimg6Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Bkvjqh7Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Wvxifi8Activity" />
+
+        <activity
+            android:name="com.duome.app.jklvuu20.Ewaloj9Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Wbfkya0Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Ysuxyb1Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Mtqfmc2Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Gpbmud3Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Pegcge4Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Xvocef5Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Xmseyg6Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Wbjqkh7Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Dkrnji8Activity" />
+
+        <activity
+            android:name="com.duome.app.sienqv21.Mlgnzj9Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Ohixba0Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Hioqdb1Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Atrqwc2Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Xdhfmd3Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Bkmdle4Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Xrtnff5Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Tlmmqg6Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Apexih7Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Akhzai8Activity" />
+
+        <activity
+            android:name="com.duome.app.mmrlvw22.Tjxnoj9Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Vlceha0Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Nbnawb1Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Txdfkc2Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Dlvsad3Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Hyxjhe4Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Igbxsf5Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Oqixhg6Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Szudyh7Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Vgltmi8Activity" />
+
+        <activity
+            android:name="com.duome.app.iiiiyx23.Wwghyj9Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Rvlnma0Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Aqzmeb1Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Emochc2Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Ordqhd3Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Nwalxe4Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Nziycf5Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Bqpobg6Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Bjmjmh7Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Kgpjdi8Activity" />
+
+        <activity
+            android:name="com.duome.app.clhrpy24.Hmoozj9Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Xgjsqa0Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Jpemyb1Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Kdwuqc2Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Ytrkqd3Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Uolihe4Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Snapzf5Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Gvwmcg6Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Uunpdh7Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Owrdxi8Activity" />
+
+        <activity
+            android:name="com.duome.app.kthtkz25.Fnanxj9Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Wjtepa0Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Skygyb1Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Cuukcc2Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Grfezd3Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Rwzime4Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Dzhukf5Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Kcnzvg6Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Rdjych7Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Iucuti8Activity" />
+
+        <activity
+            android:name="com.duome.app.tuvlkab26.Dugfqj9Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Xqknaa0Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Jszwzb1Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Zfdlec2Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Qwzzud3Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Xhlbve4Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Bgkcvf5Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Khedsg6Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Ijoaeh7Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Cepvoi8Activity" />
+
+        <activity
+            android:name="com.duome.app.uwdarbb27.Cbujvj9Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Wqrqta0Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Ckrosb1Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Hhpihc2Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Wxgxpd3Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Yjekpe4Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Xsncsf5Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Rltmcg6Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Sjegth7Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Fqjhji8Activity" />
+
+        <activity
+            android:name="com.duome.app.ytnercb28.Vktesj9Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Cfvlia0Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Ccojpb1Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Lvgdwc2Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Mcvbjd3Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Jpayge4Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Rdfbxf5Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Fafppg6Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Fbdlxh7Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Uxvsdi8Activity" />
+
+        <activity
+            android:name="com.duome.app.bzqpfdb29.Nfqsnj9Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Icemia0Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Ddexwb1Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Pcgbwc2Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Tsriwd3Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Ohdkhe4Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Gwottf5Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Eorbug6Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Aklkwh7Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Knqfei8Activity" />
+
+        <activity
+            android:name="com.duome.app.qjrnheb30.Kuqeuj9Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Sfsafa0Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Exttgb1Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Nijiac2Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Kqwfqd3Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Tegmse4Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Rodxlf5Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Ckpvog6Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Bpsloh7Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Lsbasi8Activity" />
+
+        <activity
+            android:name="com.duome.app.ppsidfb31.Wynuhj9Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Ladrpa0Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Bihblb1Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Tpsquc2Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Idrztd3Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Fatmre4Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Pvygdf5Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Dslrjg6Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Oaiiuh7Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Indhti8Activity" />
+
+        <activity
+            android:name="com.duome.app.xmxevgb32.Inopbj9Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Jpgela0Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Qryfzb1Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Eifoic2Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Fmuqjd3Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Hhbgfe4Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Gvhluf5Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Xittbg6Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Neyath7Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Gnzgdi8Activity" />
+
+        <activity
+            android:name="com.duome.app.lntinhb33.Uvfxkj9Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Ziaypa0Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Xciqob1Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Zcxwmc2Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Koktpd3Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Updtoe4Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Iqubef5Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Ywxtdg6Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Eigodh7Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Djblqi8Activity" />
+
+        <activity
+            android:name="com.duome.app.twdvpib34.Jcnrwj9Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Zwxhta0Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Onplhb1Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Zjdgfc2Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Ksmagd3Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Xoqxne4Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Tdbpmf5Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Iuxqtg6Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Qsamfh7Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Smefyi8Activity" />
+
+        <activity
+            android:name="com.duome.app.moanqjb35.Ghzsgj9Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Lnrtja0Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Jagavb1Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Ewusec2Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Gbdoxd3Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Zfptne4Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Eflfif5Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Wdegdg6Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Uzabah7Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Svazmi8Activity" />
+
+        <activity
+            android:name="com.duome.app.braxgkb36.Vlfooj9Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Jgnsxa0Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Ozhvub1Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Xocppc2Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Suuupd3Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Wwadde4Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Qeutlf5Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Nbdkog6Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Kjuyuh7Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Nykmki8Activity" />
+
+        <activity
+            android:name="com.duome.app.agfdglb37.Nrpnpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Vfrhfa0Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Incrlb1Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Fdodkc2Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Bnxmrd3Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Hdlkhe4Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Sdsixf5Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Bepvjg6Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Vdqpeh7Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Gwgxci8Activity" />
+
+        <activity
+            android:name="com.duome.app.rwjtsmb38.Uhcawj9Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Ukghia0Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Dziygb1Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Iwxsqc2Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Heesid3Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Srdoee4Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Ylvqgf5Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Eecmkg6Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Dzpgth7Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Jywpdi8Activity" />
+
+        <activity
+            android:name="com.duome.app.jwkitnb39.Oeuljj9Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Ovamua0Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Rhoibb1Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Kqypbc2Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Yzdzbd3Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Ssubpe4Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Rwunkf5Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Lmhjfg6Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Xeurdh7Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Vriaci8Activity" />
+
+        <activity
+            android:name="com.duome.app.iujukob40.Uffbzj9Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Kplzba0Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Bdikgb1Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Mxdzuc2Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Hniord3Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Pebuwe4Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Ptdmdf5Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Iqgpwg6Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Unnhmh7Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Lrkzji8Activity" />
+
+        <activity
+            android:name="com.duome.app.zsmvipb41.Wpdsqj9Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Mfkjja0Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Ffyxrb1Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Qawrdc2Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Tghskd3Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Iaoaje4Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Ufkjcf5Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Yunfag6Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Vsejjh7Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Hrkppi8Activity" />
+
+        <activity
+            android:name="com.duome.app.xmjkbqb42.Jsueej9Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Xsjgxa0Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Dbxzjb1Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Qaonuc2Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Cxwvnd3Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Oykqge4Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Jjqyof5Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Njilpg6Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Cesdth7Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Lwkzwi8Activity" />
+
+        <activity
+            android:name="com.duome.app.ytpqhrb43.Lfodjj9Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Ajqzca0Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Wplfsb1Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Zzjocc2Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Badhgd3Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Vurkze4Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Zalmhf5Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Vsldxg6Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Ydtqsh7Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Ntpfmi8Activity" />
+
+        <activity
+            android:name="com.duome.app.gfsnnsb44.Zlrgzj9Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Tcayoa0Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Ajjoqb1Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Llyowc2Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Meestd3Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Lplaae4Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Xetkof5Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Levmqg6Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Bynfah7Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Culhki8Activity" />
+
+        <activity
+            android:name="com.duome.app.xabdhtb45.Cdsxpj9Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Fnykha0Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Eboqdb1Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Gnortc2Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Kxleyd3Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Lhhxue4Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Ffgqaf5Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Gkjqqg6Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Wseoih7Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Iwjczi8Activity" />
+
+        <activity
+            android:name="com.duome.app.nxkzzub46.Suztej9Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Zaoepa0Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Bcxbub1Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Cpzwcc2Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Vupgnd3Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Vdrvre4Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Wzzamf5Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Kxhsbg6Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Ffqjfh7Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Jlurmi8Activity" />
+
+        <activity
+            android:name="com.duome.app.qzfrvvb47.Odmpuj9Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Thvqaa0Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Izgfgb1Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Svifgc2Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Geahod3Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Yoanue4Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Yzqyvf5Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Uknjag6Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Ihuhah7Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Nmdmci8Activity" />
+
+        <activity
+            android:name="com.duome.app.ezryzwb48.Tqhctj9Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Qnveda0Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Tpsjwb1Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Xmcufc2Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Bfevyd3Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Vkwrge4Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Zvyyvf5Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Lztzxg6Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Sjmzah7Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Kuyumi8Activity" />
+
+        <activity
+            android:name="com.duome.app.bdvpcxb49.Nswhwj9Activity" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f15000b" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3" />
+    </application>
+</manifest>

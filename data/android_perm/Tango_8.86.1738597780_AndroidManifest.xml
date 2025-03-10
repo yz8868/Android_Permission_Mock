@@ -1,0 +1,2062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1738598086"
+    android:versionName="8.86.1738597780"
+    android:installLocation="0"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:allowNativeHeapPointerTagging="false"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x40"
+    package="com.sgiggle.production"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <queries>
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="net.one97.paytm" />
+
+        <package
+            android:name="com.phonepe.app" />
+
+        <package
+            android:name="com.binance.dev" />
+
+        <package
+            android:name="com.freecharge.android" />
+
+        <package
+            android:name="com.google.android.apps.nbu.paisa.user" />
+
+        <package
+            android:name="org.telegram.messenger" />
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.VIDEO_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="upi" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="bnc" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="binance" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="mailto" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+
+        <package
+            android:name="com.android.vending" />
+
+        <intent>
+
+            <action
+                android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.facebook.lite" />
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="android.permission.READ_LOGS" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_OWN_CALLS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <permission
+        android:name="com.sgiggle.production.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.sgiggle.production.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-feature
+        android:glEsVersion="0x20000" />
+
+    <application
+        android:theme="@ref/0x7f150780"
+        android:label="@ref/0x7f140129"
+        android:icon="@ref/0x7f110002"
+        android:name="com.sgiggle.app.TangoApplication"
+        android:backupAgent="me.tango.backup.TangoBackupAgent"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="@ref/0x7f170000"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="false"
+        android:networkSecurityConfig="@ref/0x7f170008"
+        android:roundIcon="@ref/0x7f110003"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:localeConfig="@ref/0x7f170007">
+
+        <meta-data
+            android:name="placed_app_key"
+            android:value="17a97ddc2391" />
+
+        <property
+            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES"
+            android:value="false" />
+
+        <uses-library
+            android:name="com.sprint.hardware.twinCamDevice"
+            android:required="false" />
+
+        <uses-library
+            android:name="com.motorola.hardware.frontcamera"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="unused" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0c0019" />
+
+        <meta-data
+            android:name="AF_STORE"
+            android:value="Google Play" />
+
+        <activity
+            android:theme="@ref/0x7f1504f3"
+            android:name="com.sgiggle.app.payment.view.RefillActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1507a3"
+            android:name="com.sgiggle.app.main_screen.MainScreenActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:screenOrientation="7"
+            android:windowSoftInputMode="0x13">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="tango" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.tango.me"
+                    android:pathPrefix="/deeplink" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.tango.me"
+                    android:pathPrefix="/deeplink" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="tango.me" />
+
+                <data
+                    android:scheme="https"
+                    android:host="tango.me" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="www.tango.me" />
+
+                <data
+                    android:scheme="https"
+                    android:host="www.tango.me" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="josh.tango.me" />
+
+                <data
+                    android:scheme="https"
+                    android:host="josh.tango.me" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="tangome.page.link" />
+
+                <data
+                    android:scheme="https"
+                    android:host="tangome.page.link" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="tango.me" />
+
+                <data
+                    android:scheme="https"
+                    android:host="tango.me" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="tango.onelink.me" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+
+                <data
+                    android:mimeType="image/jpeg" />
+
+                <data
+                    android:mimeType="image/png" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150794"
+            android:name="com.sgiggle.app.live.broadcast.LiveBroadcastRecorderActivity"
+            android:exported="false"
+            android:taskAffinity=".broadcast"
+            android:screenOrientation="1"
+            android:configChanges="0xfa0"
+            android:windowSoftInputMode="0x13"
+            android:autoRemoveFromRecents="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f15079b"
+            android:name="com.sgiggle.app.live.MyTopGiftersActivity"
+            android:exported="false"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x7f150786"
+            android:name="com.sgiggle.app.new_calls.CallV3Activity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true" />
+
+        <activity
+            android:theme="@ref/0x7f1505bf"
+            android:label="@string/0x40"
+            android:name="me.tango.android.chat.drawer.controller.photo.DrawerPhotoFullscreenMediaActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150792"
+            android:name="com.sgiggle.app.live.new_ui.LiveViewerActivity"
+            android:exported="false"
+            android:taskAffinity=".stream"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x13"
+            android:autoRemoveFromRecents="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150791"
+            android:name="com.sgiggle.app.profile.ProfileSubscriptionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.passcode.presentation.PasscodeSetActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.passcode.presentation.PasscodeCheckActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.sgiggle.call_base.receiver.SystemDaemon"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.sgiggle.app.live.broadcast.DeleteNotificationReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.sgiggle.app.notification.DismissNotificationsReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.sgiggle.app.receiver.ProcessNotificationActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.sgiggle.app.new_calls.CallRingingForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="0x4" />
+
+        <service
+            android:name="com.sgiggle.app.new_calls.CallForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="0x80" />
+
+        <activity
+            android:theme="@ref/0x7f150788"
+            android:label="@string/0x40"
+            android:name="com.sgiggle.call_base.social.galleryx.TangoGalleryPreviewActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="google_analytics_automatic_screen_reporting_enabled"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f15079b"
+            android:name="com.sgiggle.call_base.social.galleryx.TangoNewGalleryActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="com.sgiggle.app.live.countrypicker.LiveCountryChooserActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <provider
+            android:name="com.sgiggle.call_base.io.ExternalFileProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.external_files"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170009" />
+        </provider>
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f15079a"
+            android:name="com.sgiggle.app.live.multistream.MultiStreamStartProxyActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="Clean Cache"
+            android:name="com.sgiggle.app.CleanCacheActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feature.category_streams.presentation.streams.StreamsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150219"
+            android:name="me.tango.offline_chats.presentation.chat.ChatActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150219"
+            android:name="me.tango.offline_chats.presentation.chat.media_library.MediaLibraryActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150407"
+            android:name="me.tango.offline_chats.presentation.chat.media_preview.MediaPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.presentation.ui.ProfileMenuActivityV2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.core.ui.general.ProfileSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.search.presentation.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feature.edit_profile.presentation.EditProfileActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.families.presentation.FamilyActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f140daf"
+            android:name="me.tango.qr.code.presentation.QrCodeActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15040f"
+            android:name="me.tango.feature.profile.presentation.ui.mini_profile.MiniProfileContainerActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1504db"
+            android:name="me.tango.feature.profile.presentation.ui.view.ViewProfileActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feature.profile.presentation.ui.profile_menu.ProfileMenuActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="me.tango.live.multistream.incomming.invitation.presentation.service.MultiStreamInviteActionService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150219"
+            android:name="me.tango.offline_chats.presentation.chat_requests.ChatRequestInboxActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150232"
+            android:name="me.tango.offline_chats.presentation.compose.view.ComposeActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1504f1"
+            android:label="@ref/0x7f141444"
+            android:name="me.tango.referral.referral.ReferralActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1504f1"
+            android:label="@ref/0x7f141444"
+            android:name="me.tango.referral.referral.ReferralActivityV3"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f1415b2"
+            android:name="me.tango.statistics.presentation.preview.StatisticsPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feed.presentation.fragment.timeline.TimelineActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feed.presentation.fragment.users_list.likers.PostLikersActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150791"
+            android:name="com.sgiggle.story.presentation.StoriesActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.dating.matching_host.presentation.activity.MatchingHostActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.dating.matching.presentation.activity.MatchingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505fa"
+            android:name="me.tango.dating.matching.presentation.activity.ItsAMatchActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.social.games.presentation.SocialGamesActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.social.games.presentation.game.SocialGamesSingleGameActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f141811"
+            android:name="me.tango.leaderboard.presentation.leaderboard.container.LeaderboardContainerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <service
+            android:name="me.tango.offline_chats.data.common.notification.ReadAllMessagesService"
+            android:exported="false" />
+
+        <service
+            android:name="me.tango.offline_chats.data.common.notification.MessageReplyService"
+            android:exported="false" />
+
+        <service
+            android:name="me.tango.offline_chats.data.common.notification.NotificationHandlingKeepAliveService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.multiplayer.games.streams.presentation.MultiplayerGameStreamsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.diamond_exchange.presentation.view.DiamondExchangeActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.custom_gifts.presentation.CustomGiftsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f1400b2"
+            android:name="me.tango.admins.presentation.manage.admins.ManageAdminsActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.tango_cards.view.AuctionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.tango_cards.view.TangoCardEditorActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15024d"
+            android:name="me.tango.image_crop.ImageCropActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15024c"
+            android:name="me.tango.image_crop.ImageCropAIActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505fb"
+            android:name="me.tango.cashier.v4.cashier.presentation.activity.LandingPageContainerActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1501dd"
+            android:name="me.tango.cashier.view.CashierContainerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1501dd"
+            android:name="me.tango.cashier.view.DddsWebViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f140812"
+            android:name="me.tango.happy_moments.presentation.ui.ArchivedMomentsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15077f"
+            android:name="me.tango.audio.room.incoming.invitation.presentation.proxy.AudioRoomInviteProxyActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="me.tango.audio.room.incoming.invitation.presentation.notifier.offline.AudioRoomInvitesBroadcastReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150785"
+            android:name="me.tango.big.battle.incoming.invitation.presentation.proxy.BigBattleInviteProxyActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.registration.presentation.RegistrationActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1501a7"
+            android:name="me.tango.registration.presentation.RegistrationProxyActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.registration.presentation.ofac.OfacPermanentActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.registration.presentation.ofac.OfacTempActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="me.tango.registration.presentation.phone.autoinsert.whatsapp.WhatsappOtpBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.whatsapp.otp.OTP_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1501a9"
+            android:name="me.tango.broadcast_ended.presentation.view.BroadcastEndedActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.followings.presentation.FollowingsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f1401fa"
+            android:name="me.tango.block.presentation.BlockListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="me.tango.onboarding.live_viewer.notification.ReturnNotificationReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="me.tango.onboarding.live_viewer.notification.ReturnNotificationActionReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="me.tango.android.mediauploader.uploader.MediaUploadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <activity
+            android:theme="@ref/0x7f150780"
+            android:name="me.tango.android.browser.BrowserActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.account.edit.mail.EditAccountEmailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.account.edit.phone.EditAccountPhoneActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.general.SettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.profile_menu_settings.general.UiModeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.redeem.presentation.view.RedeemActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.account.suspended.presentation.view.AccountSuspendedActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150797"
+            android:label="@ref/0x7f14164f"
+            android:name="me.tango.subscriptions.presentation.list.subscriptions.SubscriptionsListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150797"
+            android:label="@ref/0x7f141631"
+            android:name="me.tango.subscriptions.presentation.list.subscribers.SubscribersListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150797"
+            android:label="@ref/0x7f141651"
+            android:name="me.tango.subscriptions.presentation.view.MyFansActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f14083c"
+            android:name="me.tango.bellnotifications.presentation.BellNotificationsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f140129"
+            android:name="me.tango.verify_account.presentation.VerifyAccountActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150723"
+            android:name="me.tango.lounge.presentation.VipLoungeActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.lounge.presentation.v2.VipLoyaltyRewardsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.vip.ui.presentation.avatar.dev.AvatarDevCheckActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f1401cf"
+            android:name="me.tango.notificationlist.presentation.NotificationListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f140539"
+            android:name="me.tango.followers.presentation.FollowersActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f1407e1"
+            android:name="me.tango.giftsinposts.presentation.GiftsInPostsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15079c"
+            android:name="me.tango.multi_environment.ui.MultiEnvironmentActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150835"
+            android:name="me.tango.reseller.transfer.presentation.view.transfer_coins.TransferCoinsContainerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.email.optin.presentation.EmailOptInActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150232"
+            android:name="me.tango.lucky_store.presentation.LuckyStoreActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:label="@ref/0x7f140b3c"
+            android:name="me.tango.live_notifications.presentation.ui.LiveNotificationsActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1505be"
+            android:name="me.tango.presentation.view.CaptchaActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.dating.profile.presentation.DatingProfileActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="me.tango.anr.watcher.usertouch.TouchListenerService"
+            android:exported="false"
+            android:process=":touch_listener" />
+
+        <activity
+            android:theme="@ref/0x7f150409"
+            android:name="me.tango.simple_media_viewer.presentation.ui.SimpleMediaViewerActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.custom.offer.presentation.CustomOfferContainerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150251"
+            android:name="com.banuba.sdk.ve.flow.VideoCreationActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="false" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.feature.select_country.presentation.view.SelectCountryActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1505c1"
+            android:name="me.tango.invoices.presentation.InvoiceActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_analytics_storage"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_storage"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_user_data"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_personalization_signals"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f1501a7"
+            android:name="me.tango.presentation.BottomSheetProxyActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <service
+            android:name="me.tango.mobile_services.push.push_gms.MsFirebaseMessagingService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="io.intercom.android.sdk.fcm.IntercomFcmMessengerService"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="-400">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f150386"
+            android:name="io.intercom.android.sdk.lightbox.LightBoxActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x11" />
+
+        <activity
+            android:theme="@ref/0x7f15038e"
+            android:name="io.intercom.android.sdk.activities.IntercomPostActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f15038e"
+            android:name="io.intercom.android.sdk.post.PostActivityV2"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f15038c"
+            android:name="io.intercom.android.sdk.activities.IntercomNoteActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x11" />
+
+        <activity
+            android:theme="@ref/0x7f15038b"
+            android:name="io.intercom.android.sdk.activities.IntercomSheetActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="io.intercom.android.sdk.activities.IntercomCarouselActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="io.intercom.android.sdk.helpcenter.articles.ArticleActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f150381"
+            android:name="io.intercom.android.sdk.survey.ui.IntercomSurveyActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150382"
+            android:name="io.intercom.android.sdk.push.IntercomPushTrampolineActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150397"
+            android:name="io.intercom.android.sdk.m5.IntercomRootActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f15038d"
+            android:name="io.intercom.android.sdk.m5.conversation.GalleryPreviewActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150397"
+            android:name="io.intercom.android.sdk.m5.bubble.IntercomBubbleActivity"
+            android:exported="false"
+            android:allowEmbedded="true"
+            android:documentLaunchMode="2"
+            android:resizeableActivity="true" />
+
+        <receiver
+            android:name="io.intercom.android.sdk.push.IntercomPushBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="io.intercom.android.sdk.m5.push.ConversationReplyReceiver" />
+
+        <provider
+            android:name="io.intercom.android.sdk.IntercomInitializeContentProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.IntercomInitializeContentProvider" />
+
+        <provider
+            android:name="io.intercom.android.sdk.m5.push.IntercomPushBitmapFileProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.IntercomPushBitmapFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170005" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050005"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050007"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050005"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f170003" />
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@ref/0x7f03001a" />
+
+        <activity
+            android:name="com.sumsub.sns.presentation.screen.SNSAppActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <provider
+            android:name="com.sumsub.sns.core.common.FileProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170009" />
+        </provider>
+
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f15072b"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="0x5a0"
+            android:fitsSystemWindows="true" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030241"
+            android:name="io.intercom.android.sdk.ui.preview.ui.IntercomPreviewActivity" />
+
+        <uses-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+
+        <uses-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="me.tango.android.file_provider.ExternalFilesProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.external_files"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170001" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.0.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="com.sgiggle.production.com.squareup.picasso" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150778"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.facebook.soloader.enabled"
+            android:value="false" />
+
+        <receiver
+            android:name="com.instacart.library.truetime.BootCompletedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f17000d" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

@@ -1,0 +1,2204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="135048"
+    android:versionName="25.2.0"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x39"
+    package="com.grindrapp.android"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <permission
+        android:name="com.grindrapp.android"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.grindrapp.android" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.location.network" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="geo" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+
+            <category
+                android:name="android.intent.category.OPENABLE" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.OPEN_DOCUMENT" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <intent>
+
+            <action
+                android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.facebook.lite" />
+
+        <package
+            android:name="com.samsung.android.mapsagent" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.browser.customtabs.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="market" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.applovin.am.intent.action.APPHUB_SERVICE" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <intent>
+
+            <action
+                android:name="com.digitalturbine.ignite.cl.IgniteRemoteService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature
+        android:name="android.software.webview" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.grindrapp.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.grindrapp.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:theme="@ref/0x7f150590"
+        android:label="@ref/0x7f140101"
+        android:icon="@ref/0x7f100003"
+        android:name="com.grindrapp.android.RealApplication"
+        android:allowBackup="false"
+        android:vmSafeMode="@ref/0x7f05000b"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="false"
+        android:usesCleartextTraffic="false"
+        android:resizeableActivity="false"
+        android:networkSecurityConfig="@ref/0x7f170007"
+        android:roundIcon="@ref/0x7f100016"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@ref/0x7f170002">
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.androidx-startup">
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.unity3d.services.core.configuration.AdsSdkInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <meta-data
+            android:name="com.bugsnag.android.API_KEY"
+            android:value="2ac2ecb860680c835639a7286afaf583" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f170003" />
+
+        <activity
+            android:name="com.grindrapp.android.debug.DebugToolsActivity"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5159203815434572~6728321268" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:label="@ref/0x7f140b0c"
+            android:name="com.grindrapp.android.ui.settings.ShowMeSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:label="@ref/0x7f140af5"
+            android:name="com.grindrapp.android.ui.settings.PrivacySettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:label="@ref/0x7f140aaa"
+            android:name="com.grindrapp.android.ui.settings.distance.SettingDistanceVisibilityActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b0010" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f140466" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@ref/0x7f140467" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_performance_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBaKOPTkY2DsuSvnPC3ZzA4yFIVV1WQTxM" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face, ocr, barcode" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_analytics_storage"
+            android:value="true" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_storage"
+            android:value="true" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_user_data"
+            android:value="true" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_personalization_signals"
+            android:value="true" />
+
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1504d8"
+            android:name="com.grindrapp.android.ui.home.HomeActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:label="@ref/0x7f140101"
+            android:name="com.grindrapp.android.HomeActivityOriginal"
+            android:enabled="true"
+            android:exported="true"
+            android:description="@ref/0x7f140101"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f140ac4"
+            android:icon="@ref/0x7f100006"
+            android:name="com.grindrapp.android.HomeActivityCamera"
+            android:enabled="false"
+            android:exported="true"
+            android:description="@ref/0x7f140ac4"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity"
+            android:roundIcon="@ref/0x7f100008">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f140ac8"
+            android:icon="@ref/0x7f10000c"
+            android:name="com.grindrapp.android.HomeActivityMusic"
+            android:enabled="false"
+            android:exported="true"
+            android:description="@ref/0x7f140ac8"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity"
+            android:roundIcon="@ref/0x7f10000d">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f140ac9"
+            android:icon="@ref/0x7f10000e"
+            android:name="com.grindrapp.android.HomeActivityNotes"
+            android:enabled="false"
+            android:exported="true"
+            android:description="@ref/0x7f140ac9"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity"
+            android:roundIcon="@ref/0x7f10000f">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f140acc"
+            android:icon="@ref/0x7f100014"
+            android:name="com.grindrapp.android.HomeActivityToDo"
+            android:enabled="false"
+            android:exported="true"
+            android:description="@ref/0x7f140acc"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity"
+            android:roundIcon="@ref/0x7f100015">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f140ac3"
+            android:icon="@ref/0x7f100004"
+            android:name="com.grindrapp.android.HomeActivityCalculator"
+            android:enabled="false"
+            android:exported="true"
+            android:description="@ref/0x7f140ac3"
+            android:targetActivity="com.grindrapp.android.ui.home.HomeActivity"
+            android:roundIcon="@ref/0x7f100005">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.login.LoginActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.onboard.LandingPhoneActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.onboard.LandingEmailActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.onboard.LandingForgotPwdActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.onboard.LandingSMSVerifyActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.login.CredentialsChangedActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.UpdateEmailActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.signup.CreateAccountEmailActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.sms.SMSVerifyActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1502b7"
+            android:name="com.grindrapp.android.ui.account.onboard.SmsCountryPickerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.password.ForgotPasswordActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.password.ResetPasswordPhoneActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150000"
+            android:name="com.grindrapp.android.ui.account.verify.AccountVerifyActivity"
+            android:screenOrientation="3"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.login.ThirdPartyLoginProfileActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150464"
+            android:name="com.grindrapp.android.ui.profileV2.ProfilesActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.photos.FullScreenExpiringImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.photos.FullScreenImageActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.photos.ChatRoomPhotosActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.photos.cropImage.CropImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15046c"
+            android:name="com.grindrapp.android.rightnow.presentation.ui.activity.NewPostActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.editprofile.EditProfileActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.grindr.com" />
+
+                <data
+                    android:pathPrefix="/auth" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.genderfilter.GenderFilterOnboardingActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.RegisterProfileActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.SettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.SettingsDeleteProfileActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.SettingsDeleteProfileReasonActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.SettingsDeleteProfileOtherReasonActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.SettingsDeactivateActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.NotificationSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.DoNotDisturbSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.report.ReportProfileActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.settings.DiscreteAppSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.web.WebViewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.subscription.SubscriptionManagementActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x2004" />
+
+        <activity
+            android:theme="@ref/0x7f1502bc"
+            android:name="com.grindrapp.android.ui.home.IntentEntryActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="grindr" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="hub.grindr.com" />
+
+                <data
+                    android:pathPrefix="/blog" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.changepwd.ChangePasswordActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.banned.BannedActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.banned.DeprecationActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.cert.CertFailActivity"
+            android:launchMode="3"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.legal.ui.LegalFailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.subscription.UpgradeConfirmationActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.legal.TermsOfServiceActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.legal.PrivacyPolicyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:label="@ref/0x7f140d01"
+            android:name="com.grindrapp.android.ui.legal.SKUserConsentFormActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.pin.PinSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15058f"
+            android:name="com.grindrapp.android.ui.pin.SetPinActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15058f"
+            android:name="com.grindrapp.android.ui.pin.PinLockActivity"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170008" />
+        </provider>
+
+        <receiver
+            android:name="com.grindrapp.android.receiver.TimeChangedReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.grindrapp.android.notification.PushDeleteReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.grindrapp.android.service.push.DELETE_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.grindrapp.android.receiver.BrazeReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.braze.push.intent.NOTIFICATION_RECEIVED" />
+
+                <action
+                    android:name="com.braze.push.intent.NOTIFICATION_OPENED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.grindrapp.android.pushmessaging.PushMessageService"
+            android:exported="false"
+            android:foregroundServiceType="0x200">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category
+                    android:name="com.grindrapp.android" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <receiver
+            android:name="com.grindrapp.android.chat.domain.QuickReplyReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.photos.EditPhotosActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f1502bc"
+            android:name="com.grindrapp.android.ui.subscription.PurchaseDirectlyActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.chat.presentation.ui.ChatActivityV2"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.albums.AlbumLandingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.albums.MyAlbumsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.albums.EditAlbumActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.albums.AlbumCruiseActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.albums.MultiAlbumSelectionActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.block.IndividualUnblockActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.block.HiddenProfilesActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.restore.RestoreActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.store.ui.StoreV2Activity"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15083d"
+            android:label="@ref/0x7f140101"
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fb1273378622718674" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.grindrapp.android" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1502ce"
+            android:label="@ref/0x7f140c04"
+            android:name="zendesk.support.guide.HelpCenterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1502ce"
+            android:label="@ref/0x7f140dda"
+            android:name="zendesk.support.guide.ViewArticleActivity"
+            android:exported="false"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f1502ce"
+            android:name="zendesk.support.request.RequestActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1502ce"
+            android:label="@ref/0x7f140953"
+            android:name="zendesk.support.requestlist.RequestListActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.videocall.VideoCallActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.eventcalendar.EventCalendarActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15066b"
+            android:name="com.grindrapp.android.ui.videocall.VideoCallDialogActivity"
+            android:windowSoftInputMode="0x2" />
+
+        <service
+            android:name="com.grindrapp.android.ui.videocall.VideoCallForegroundService" />
+
+        <service
+            android:name="com.grindrapp.android.chat.service.ChatMessageSenderService"
+            android:foregroundServiceType="0x1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.viewedme.ViewedMeActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.spotify.sdk.android.authentication.LoginActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.spotify.SpotifyActivity"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.grindrapp.android.receiver.LockScreenReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.inbox.search.SearchInboxActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@ref/0x7f170009" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.video.PrivateVideoCaptureActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.video.PrivateVideoPlayerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.browse.BrowseExploreMapActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.tagsearch.searchpage.TagSearchActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <receiver
+            android:name="com.grindrapp.android.ui.eventcalendar.EventCalendarBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.requestdata.RequestDataActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.report.chat.ReportRecentlyChatActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.albums.CreateAlbumActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1502be"
+            android:name="com.grindrapp.android.ui.account.birthday.BirthdayInputActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.NotificationHandlerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.warning.BannedWarningActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.editprofile.tags.EditProfileTagsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1502c2"
+            android:name="com.grindrapp.android.ui.albums.AlbumsVideoPlayerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.privacycenter.SafetyAndPrivacyCenterActivity"
+            android:screenOrientation="1" />
+
+        <service
+            android:name="com.google.android.gms.metadata.ModuleDependencies"
+            android:enabled="false"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+            </intent-filter>
+
+            <meta-data
+                android:name="photopicker_activity:0:required"
+                android:value="@string/0x39" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f150290"
+            android:name="com.grindrapp.android.ui.account.banned.timedbans.presentation.TimedBansActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.grindrapp.android.feature.notificationsettings.NotificationSettingsActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.braze.ui.BrazeWebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.braze.ui.activities.BrazeFeedActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.braze.ui.activities.ContentCardsActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150204"
+            android:name="com.braze.push.NotificationTrampolineActivity"
+            android:exported="false"
+            android:taskAffinity=".NotificationTrampolineActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="3"
+            android:autoRemoveFromRecents="true" />
+
+        <receiver
+            android:name="com.braze.push.BrazePushReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="com.canhub.cropper.CropFileProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.cropper.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f170006" />
+        </provider>
+
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true" />
+
+        <activity
+            android:label="@ref/0x7f140101"
+            android:name="ly.img.android.pesdk.ui.activity.EditorActivity"
+            android:exported="true"
+            android:configChanges="0x430"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:label="@ref/0x7f140101"
+            android:name="ly.img.android.pesdk.ui.activity.VideoEditorActivity"
+            android:exported="true"
+            android:configChanges="0x430"
+            android:windowSoftInputMode="0x20"
+            android:hardwareAccelerated="true" />
+
+        <provider
+            android:name="ly.img.android.IMGLYAutoInit"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.IMGLYAutoInit" />
+
+        <receiver
+            android:name="zendesk.support.DeepLinkingBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="zendesk.support" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="zendesk.support.SupportSdkStartupProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.zendesk.support.SupportSdkStartupProvider" />
+
+        <provider
+            android:name="zendesk.support.guide.GuideSdkStartupProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.zendesk.support.GuideSdkStartupProvider" />
+
+        <activity
+            android:name="zendesk.classic.messaging.MessagingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay"
+            android:exported="false"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.consent.UserConsentActivity" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.interstitial.activity.MraidInterstitialActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.interstitial.activity.VastInterstitialActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.rewarded.activity.MraidRewardedActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.rewarded.activity.VastRewardedActivity"
+            android:screenOrientation="3"
+            android:configChanges="0x420" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.mobileadsinitprovider"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x39"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050008"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050007"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="net.pubnative.lite.sdk.receiver.VolumeChangedActionReceiver" />
+
+        <activity
+            android:name="net.pubnative.lite.sdk.contentinfo.AdFeedbackActivity"
+            android:configChanges="0x5a0" />
+
+        <activity
+            android:name="com.vungle.ads.internal.ui.VungleActivity"
+            android:launchMode="1"
+            android:configChanges="0xfa0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.inmobi.ads.rendering.InMobiAdActivity"
+            android:configChanges="0x40000fb4"
+            android:hardwareAccelerated="true" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.com.squareup.picasso" />
+
+        <provider
+            android:name="zendesk.core.MediaFileProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.zendesk.sdk.user.attachments"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f17000a" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.0.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true" />
+
+        <provider
+            android:name="com.applovin.sdk.AppLovinInitProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.applovininitprovider"
+            android:initOrder="101" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.adview.AppLovinFullscreenActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="3"
+            android:configChanges="0x40000fb4"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.applovin.sdk.AppLovinWebViewActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerDetailActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150829"
+            android:name="com.applovin.mediation.MaxDebuggerWaterfallSegmentsActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150824"
+            android:name="com.applovin.creative.MaxCreativeDebuggerActivity"
+            android:configChanges="0x40000fb4" />
+
+        <activity
+            android:theme="@ref/0x7f150824"
+            android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity"
+            android:configChanges="0x40000fb4" />
+
+        <service
+            android:name="com.applovin.impl.adview.activity.FullscreenAdService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.AudienceNetworkContentProvider" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030006"
+            android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="android.webkit.WebView.EnableSafeBrowsing"
+                android:value="true" />
+        </activity>
+
+        <provider
+            android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
+            android:exported="false"
+            android:authorities="com.grindrapp.android.IronsourceLifecycleProvider" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.soloader.enabled"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.spotify.sdk.android.authentication.AuthCallbackActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f1402eb"
+                    android:host="@ref/0x7f1402ea" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity"
+            android:screenOrientation="13"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="4"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity"
+            android:screenOrientation="13"
+            android:configChanges="0xda0"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f150854"
+            android:name="com.mbridge.msdk.activity.MBCommonActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="0x90" />
+
+        <activity
+            android:name="com.mbridge.msdk.out.LoadingActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.mbridge.msdk.newreward.player.MBRewardVideoActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <receiver
+            android:name="com.mbridge.msdk.foundation.same.broadcast.NetWorkChangeReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f1505ee"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.bugsnag.android.BUILD_UUID"
+            android:value="3623111e-c760-410a-99f0-e5707a58e7c9" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f17000b" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

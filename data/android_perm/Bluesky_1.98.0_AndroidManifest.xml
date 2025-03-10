@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="615"
+    android:versionName="1.98.0"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x2d"
+    package="xyz.blueskyweb.app"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="35" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.GET_CONTENT" />
+
+            <category
+                android:name="android.intent.category.OPENABLE" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="xyz.blueskyweb.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="xyz.blueskyweb.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:theme="@ref/0x7f14000d"
+        android:label="@ref/0x7f130020"
+        android:icon="@ref/0x7f100016"
+        android:name="xyz.blueskyweb.app.MainApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:roundIcon="@ref/0x7f10001a"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@ref/0x7f060313" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@ref/0x7f0801eb" />
+
+        <meta-data
+            android:name="expo.modules.notifications.default_notification_color"
+            android:resource="@ref/0x7f060313" />
+
+        <meta-data
+            android:name="expo.modules.notifications.default_notification_icon"
+            android:resource="@ref/0x7f0801eb" />
+
+        <meta-data
+            android:name="expo.modules.updates.CODE_SIGNING_CERTIFICATE"
+            android:value="-----BEGIN CERTIFICATE-----
+MIIC0TCCAbmgAwIBAgIJcMN2yt5KNDqTMA0GCSqGSIb3DQEBCwUAMBIxEDAOBgNV
+BAMTB0JsdWVza3kwHhcNMjQwMzE0MDA1OTU4WhcNMzQwMzE0MDA1OTU4WjASMRAw
+DgYDVQQDEwdCbHVlc2t5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+izSAWEc3wRoa3eTBEh/kE9pH0d6jhEGw9GrYfei60MHT1pSq2cTdyUM1yUZchAeW
+gFFtqFxX0pfIZQyMlIZbjkaOxOqzWhB0aCsxngnhbSahFwRxkVwTAuonhqIpaLBL
+hrCCCQ2IfZUpy8QeasqlTlmvmijuCC34fXxJlxNcj8SqzIZi+civ7U5PMPfIMMnD
+tCDIBy1vxMk57m25X2ikcWUFW64qNVLkFAL36xEnmFTL4Ivqpz23gUcUIe1zbesY
+jAgDtlwnAE7mU3oagCUDcSuOveT4POhT35Xp3Y/07I68kmXtrPxwd5k0L0zbisEm
+poKZ87E2X29BitihicMpBwIDAQABoyowKDAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0l
+AQH/BAwwCgYIKwYBBQUHAwMwDQYJKoZIhvcNAQELBQADggEBAED1gdMF0yr8Gy87
+RgyaeVpPySwSsO0selmXXrcmOWgiPA05lubyhFEa4P5kdzBEByG2MT+pJkjGYpvK
+XRnqXM5VvdS2RhYYFH0cFOIUqBKwCnzViCMuGQeoGUx4oPcKFS0PQ1WjW2d4pS75
+51GBfB6LOepsCHUG0A9XEk7EAyUWc4M2ITCJsTtJh8CVn2pTks2q14ETDs86YQv4
+peDaJv8nhIe8oQkeGn2o/P/ctkwJg/uBydQUsWgjjGTQZTilVjGTW1mwDr9FucAE
+d5gKIk4rtR/3Zd/NDdqp8PrkoWeVM7Hwr789/mpUOeqa/j7YNkDYQh7x+M/odd1D
+KY0bQEQ=
+-----END CERTIFICATE-----" />
+
+        <meta-data
+            android:name="expo.modules.updates.CODE_SIGNING_METADATA"
+            android:value="{'keyid':'main','alg':'rsa-v1_5-sha256'}" />
+
+        <meta-data
+            android:name="expo.modules.updates.ENABLED"
+            android:value="true" />
+
+        <meta-data
+            android:name="expo.modules.updates.EXPO_RUNTIME_VERSION"
+            android:value="@ref/0x7f1300be" />
+
+        <meta-data
+            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+            android:value="NEVER" />
+
+        <meta-data
+            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+            android:value="30000" />
+
+        <meta-data
+            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+            android:value="https://updates.bsky.app/manifest" />
+
+        <activity
+            android:theme="@ref/0x7f140249"
+            android:name="xyz.blueskyweb.app.MainActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:configChanges="0x27b4"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:icon="@ref/0x7f100004"
+            android:name="xyz.blueskyweb.app.MainActivitycore_classic"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100005">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100006"
+            android:name="xyz.blueskyweb.app.MainActivitycore_flat_black"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100007">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f10000a"
+            android:name="xyz.blueskyweb.app.MainActivitycore_flat_white"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f10000b">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100008"
+            android:name="xyz.blueskyweb.app.MainActivitycore_flat_blue"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100009">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f10000c"
+            android:name="xyz.blueskyweb.app.MainActivitycore_midnight"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f10000d">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100010"
+            android:name="xyz.blueskyweb.app.MainActivitycore_sunset"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100011">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f10000e"
+            android:name="xyz.blueskyweb.app.MainActivitycore_sunrise"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f10000f">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100002"
+            android:name="xyz.blueskyweb.app.MainActivitycore_bonfire"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100003">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100000"
+            android:name="xyz.blueskyweb.app.MainActivitycore_aurora"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100001">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100012"
+            android:name="xyz.blueskyweb.app.MainActivitydefault_dark"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100013">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f100014"
+            android:name="xyz.blueskyweb.app.MainActivitydefault_light"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="xyz.blueskyweb.app.MainActivity"
+            android:roundIcon="@ref/0x7f100015">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="bluesky" />
+
+                <data
+                    android:scheme="xyz.blueskyweb.app" />
+
+                <data
+                    android:scheme="exp+bluesky" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true"
+                data-generated="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="https"
+                    android:host="bsky.app" />
+
+                <data
+                    android:scheme="http"
+                    android:host="localhost:19006" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <provider
+            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160001" />
+        </provider>
+
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+
+        <provider
+            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160005" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f1402c3"
+            android:name="com.yalantis.ucrop.UCropActivity" />
+
+        <provider
+            android:name="com.RNFetchBlob.Utils.FileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160007" />
+        </provider>
+
+        <activity
+            android:name="expo.modules.blueskyvideo.FullscreenActivity" />
+
+        <service
+            android:name="expo.modules.notifications.service.ExpoFirebaseMessagingService"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="-1">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="expo.modules.notifications.service.NotificationsService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="-1">
+
+                <action
+                    android:name="expo.modules.notifications.NOTIFICATION_EVENT" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.REBOOT" />
+
+                <action
+                    android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="expo.modules.notifications.service.NotificationForwarderActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x2d"
+            android:excludeFromRecents="true"
+            android:launchMode="0"
+            android:noHistory="true" />
+
+        <provider
+            android:name="expo.modules.clipboard.ClipboardFileProvider"
+            android:exported="true"
+            android:authorities="xyz.blueskyweb.app.ClipboardFileProvider">
+
+            <meta-data
+                android:name="expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160000" />
+        </provider>
+
+        <provider
+            android:name="expo.modules.filesystem.FileSystemFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.FileSystemFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160002" />
+        </provider>
+
+        <service
+            android:name="com.google.android.gms.metadata.ModuleDependencies"
+            android:enabled="false"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+            </intent-filter>
+
+            <meta-data
+                android:name="photopicker_activity:0:required"
+                android:value="@string/0x2d" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f14004e"
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="expo.modules.imagepicker.fileprovider.ImagePickerFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.ImagePickerFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160003" />
+        </provider>
+
+        <provider
+            android:name="expo.modules.sharing.SharingFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.SharingFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160009" />
+        </provider>
+
+        <receiver
+            android:name="expo.modules.taskManager.TaskBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="expo.modules.taskManager.TaskBroadcastReceiver.INTENT_ACTION" />
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="expo.modules.taskManager.TaskJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="expo.modules.taskManager.oneAppId"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f140155"
+            android:name="expo.modules.video.FullscreenPlayerActivity"
+            android:configChanges="0xd80"
+            android:supportsPictureInPicture="true" />
+
+        <service
+            android:name="expo.modules.video.playbackService.ExpoVideoPlaybackService"
+            android:exported="false"
+            android:foregroundServiceType="0x2">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="org.unimodules.core.AppLoader#react-native-headless"
+            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+
+        <meta-data
+            android:name="com.facebook.soloader.enabled"
+            android:value="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.androidx-startup">
+
+            <meta-data
+                android:name="io.bitdrift.capture.ContextHolder"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <provider
+            android:name="com.canhub.cropper.CropFileProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.cropper.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f160006" />
+        </provider>
+
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.SentryInitProvider" />
+
+        <provider
+            android:name="io.sentry.android.core.SentryPerformanceProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.SentryPerformanceProvider"
+            android:initOrder="200" />
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.mlkitinitprovider"
+            android:initOrder="99" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="xyz.blueskyweb.app.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b000b" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f16000a" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3" />
+    </application>
+</manifest>

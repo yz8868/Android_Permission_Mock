@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1130"
+    android:versionName="1.1.3"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__density"
+    android:splitTypes="@string/0x2e"
+    package="com.overseas.hapend"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="˙com.overseas.catcheye.permission.RECEIVE_MSG" />
+
+    <permission
+        android:name="com.overseas.hapend.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.overseas.hapend.permission.MIPUSH_RECEIVE" />
+
+    <uses-permission
+        android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+        android:name="com.overseas.hapend.push.permission.MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="com.overseas.catcheye.push.permission.MESSAGE" />
+
+    <uses-permission
+        android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.overseas.hapend.permission.C2D_MESSAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.overseas.catcheye.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.overseas.hapend.permission.RECEIVE_MSG"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.overseas.catcheye.permission.RECEIVE_MSG" />
+
+    <uses-permission
+        android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.instagram.android" />
+    </queries>
+
+    <uses-permission
+        android:name="com.android.providers.media.MediaProvider" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.overseas.hapend.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.overseas.hapend.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:theme="@ref/0x7f13000d"
+        android:label="@ref/0x7f12003d"
+        android:icon="@ref/0x7f0f007d"
+        android:name="t.CS"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:extractNativeLibs="false"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@ref/0x7f0f0080"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name="c.BG"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="user.wallet.html" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="k.BI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.overseas.hapend.nimkit.activity.NimP2PMessageActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="c.M"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="m.BK"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130140"
+            android:name="m.CU"
+            android:exported="false" />
+
+        <activity
+            android:name="h.BB"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="c.CW"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130129"
+            android:name="c.CY"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="c.Q"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="c.CZ"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="h.W"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="c.G"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="user.edit.html" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="c.V"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="c.X"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="v.DB"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="o" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130001"
+            android:name="v.DC"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.HAPEND_PAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="clubaction" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f130001"
+            android:name="v.DD"
+            android:exported="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.HAPEND_PAGE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="successaction" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="c.DE"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1301bc"
+            android:name="i.Z"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="chat.p2p.html" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="i.DF"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="w.DG"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="w.DH"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="w.DI"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="x.DJ"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="x.DK"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="y.DL"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x20">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="publish.html" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="y.DM"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="z.DO"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="z.DP"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150002" />
+        </provider>
+
+        <activity
+            android:name="w.DQ"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150003" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="hapend_google" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="768" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCp6S3vFCn-b8M370ilGiVfct885cie3ME" />
+
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":core" />
+
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":core" />
+
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":core" />
+
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.netease.nimlib.service.ResponseReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.netease.nimlib.service.ResponseService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:exported="false"
+            android:process=":core"
+            android:authorities="com.overseas.hapend.ipc.provider" />
+
+        <provider
+            android:name="com.netease.nimlib.ipc.cp.provider.PreferenceContentProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.ipc.provider.preference" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="ba.DR"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="sjapp"
+                    android:host="com.huawei.codelabpush"
+                    android:path="/deeplink" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.oppo.codelabpush.intent.action.test" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.netease.nimlib.mixpush.mz.MZPushReceiver"
+            android:exported="false">
+
+            <intent-filter
+                android:priority="0x7fffffff">
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.MESSAGE" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category
+                    android:name="com.overseas.catcheye" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.netease.nimlib.mixpush.oppo.OppoAppPushService"
+            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+
+                <action
+                    android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.netease.nimlib.mixpush.fcm.FCMTokenService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@ref/0x7f0f007f" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@ref/0x7f06005d" />
+
+        <activity
+            android:name="bb.DU"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x30" />
+
+        <activity
+            android:name="w.DV"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.overseas.hapend.ui.mvvm.page.UserHomeOtherMvvmActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.overseas.hapend.ui.mvvm.page.LikeYouActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.overseas.hapend.ui.mvvm.page.VipCenterActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="bc.DW"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.bga_photo_picker.file_provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150000" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f12015b" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@ref/0x7f12015c" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <activity
+            android:theme="@ref/0x7f13037b"
+            android:label="@ref/0x7f12003c"
+            android:name="com.facebook.FacebookActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f12015e" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.overseas.hapend" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="false"
+            android:exported="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.overseas.hapend.library.base.glide.DiskCacheModule"
+            android:value="DiskCacheModule" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="AartOAlnMQkRDUHBkydq7iMnM3ukBkru" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.1.0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="bn.EP"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="bo.EQ"
+            android:multiprocess="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="bp.ER"
+            android:multiprocess="true"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="bq.ES"
+            android:multiprocess="true"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="br.ET"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.picker.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150004" />
+        </provider>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150002" />
+        </provider>
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorWeChatStyleActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130144"
+            android:name="com.luck.picture.lib.PictureSelectorCameraEmptyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PictureCustomCameraActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PicturePreviewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PictureSelectorPreviewWeChatStyleActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+            android:screenOrientation="4" />
+
+        <activity
+            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130072"
+            android:name="bi.EF"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130072"
+            android:name="bi.EG"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <activity
+            android:theme="@ref/0x7f13014c"
+            android:label="@ref/0x7f12030f"
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13012e"
+            android:name="bz.FF"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f1302ab"
+            android:name="bu.FG"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f1302ab"
+            android:name="bu.FH"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f13012e"
+            android:name="bz.FI"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f13023a"
+            android:name="bt.FJ"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13012f"
+            android:name="bz.FK"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f13012e"
+            android:name="bz.FL"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f13012e"
+            android:name="bz.FM"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f13038f"
+            android:name="ca.FN"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f13000f"
+            android:name="ca.FO"
+            android:screenOrientation="1"
+            android:configChanges="0xa0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f130102"
+            android:label="@ref/0x7f120432"
+            android:name="ca.FP"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f130102"
+            android:name="ca.FQ"
+            android:configChanges="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f130102"
+            android:name="ca.FR"
+            android:configChanges="0x20" />
+
+        <provider
+            android:name="cb.FS"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.generic.file.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150005" />
+        </provider>
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <service
+            android:name="com.netease.nimlib.push.net.HeartbeatService"
+            android:process=":core" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b000d" />
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+
+        <service
+            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <provider
+            android:name="com.liulishuo.okdownload.OkDownloadProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.com.liulishuo.okdownload" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f130000"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f130000"
+            android:name="com.blankj.utilcode.util.UtilsTransActivity"
+            android:multiprocess="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.blankj.utilcode.util.UtilsFileProvider"
+            android:exported="false"
+            android:authorities="com.overseas.hapend.utilcode.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f15000b" />
+        </provider>
+
+        <service
+            android:name="com.blankj.utilcode.util.MessengerUtils$ServerService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.overseas.hapend.messenger" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <provider
+            android:name="me.jessyan.autosize.InitProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.overseas.hapend.autosize-init-provider" />
+
+        <provider
+            android:name="cc.FT"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.github.razerdp.com.overseas.hapend.BasePopupInitializer" />
+
+        <activity
+            android:theme="@ref/0x7f130273"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f15000c" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

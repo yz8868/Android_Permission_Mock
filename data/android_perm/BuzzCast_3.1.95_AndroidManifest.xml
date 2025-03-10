@@ -1,0 +1,2942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="3195"
+    android:versionName="3.1.95"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x3f"
+    package="com.guochao.faceshow"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_USER_PRESENT" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+
+    <uses-feature
+        android:name="android.hardware.Location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.Location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.Location.network"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" />
+
+    <queries
+        package="com.guochao.faceshow">
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.snapchat.android" />
+
+        <package
+            android:name="com.twitter.android" />
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="com.google.android.youtube" />
+
+        <package
+            android:name="com.tencent.mobileqq" />
+
+        <package
+            android:name="com.tencent.tim" />
+
+        <package
+            android:name="com.sina.weibo" />
+
+        <package
+            android:name="com.vkontakte.android" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.PICK" />
+
+            <data
+                android:mimeType="image/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+        </intent>
+
+        <package
+            android:name="com.android.vending" />
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.vkontakte.android.action.SDK_AUTH" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <package
+            android:name="com.huawei.multimedia.audioengine" />
+
+        <package
+            android:name="com.hihonor.android.magicx.media.audioengine" />
+
+        <intent>
+
+            <action
+                android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+
+        <package
+            android:name="com.facebook.lite" />
+
+        <package
+            android:name="jp.naver.line.android" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.huawei.hms.core" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:glEsVersion="0x30000"
+        android:required="false" />
+
+    <permission
+        android:name="com.guochao.user_info"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.guochao.faceshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.guochao.faceshow.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <permission
+        android:name="com.guochao.faceshow.permission.PROCESS_PUSH_MSG"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.guochao.faceshow.permission.PUSH_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="com.guochao.faceshow.permission.PUSH_WRITE_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.guochao.faceshow.permission.PROCESS_PUSH_MSG" />
+
+    <uses-permission
+        android:name="com.guochao.faceshow.permission.PUSH_PROVIDER" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:theme="@ref/0x7f13000e"
+        android:label="@ref/0x7f120042"
+        android:icon="@ref/0x7f0f01c9"
+        android:name="com.guochao.faceshow.BaseApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="false"
+        android:usesCleartextTraffic="@ref/0x7f050014"
+        android:networkSecurityConfig="@ref/0x7f150003"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:allowNativeHeapPointerTagging="false">
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.preference.PreferenceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.logo.LogoActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13000d"
+            android:name="com.guochao.faceshow.aaspring.modulars.image_beautify.ImageBeautifyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.TwitterLoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.wallet.activity.QuickRechargeProxyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.GameCenterActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawDiamondByCrystalActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.wallet.activity.TransferRecordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.activity.AppBannerListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.CameraActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.vip.activity.VipSubscribeSettingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.vip.activity.VipPrivilegeIntroActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.accompany.activity.AccompanyMineActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.IMGroupMemberListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.IMGroupMemberOperationActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.IMGroupInfoActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.CreateIMGroupActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.MvpChatActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x33" />
+
+        <provider
+            android:name="com.guochao.faceshow.aaspring.provider.UserInfoProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:authorities="com.guochao.get_user_info" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.live.activity.LiveKickOutActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x40003ff4" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="@ref/0x7f050003" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <service
+            android:name="com.guochao.faceshow.aaspring.modulars.push.huawei.HuaweiPushService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="100452291" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.cpid"
+            android:value="1564843648.000000" />
+
+        <service
+            android:name="com.guochao.faceshow.aaspring.modulars.push.fcm.FCMPushService"
+            android:enabled="true"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackHistoryDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackVideoPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackImagePreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackSuccessActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.customerservice.activity.FeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.live.share.InviteBridgeActivity"
+            android:exported="false"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.main.SystemNotificationListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.DeleteAccountInfoActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.dressmarket.DressUpRulesActivity"
+            android:exported="false"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.GreetingListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.QRCodeLoginActivity"
+            android:exported="true"
+            android:configChanges="0x40003ff0">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="@ref/0x7f120b1b"
+                    android:path="/x" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.date.activity.WaitVideoCoverCheckActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.date.activity.UploadVideoCoverMainActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.date.activity.VideoCoverRecordActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.ChooseRecommendTypeActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.vip.activity.BuyVipGuideActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.setting.NetworkAnalysisActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.guochao.faceshow.service.LiveForegroundServiceApi34"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x800" />
+
+        <service
+            android:name="com.guochao.faceshow.service.LiveForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0xc0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.activity.WatchLiveRoomActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0"
+            android:windowSoftInputMode="0x3"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.PersonalDynamicListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.AddressDynamicListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.main.ShortVideoTopFansActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.main.ChooseMyFollowsActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <meta-data
+            android:name="com.image.glide.FaceCastGlideModule"
+            android:value="FaceCastGlideModule" />
+
+        <meta-data
+            android:name="com.tencent.rdm.uuid"
+            android:value="a2af72ec-a731-46eb-8501-0477e34702f3" />
+
+        <meta-data
+            android:name="com.snap.kit.clientId"
+            android:value="515ce6db-ffb7-4a12-aa06-99003af0b191" />
+
+        <activity
+            android:theme="@ref/0x7f130010"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1301ee"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo2Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f1301ee"
+            android:icon="@ref/0x7f0f01cb"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon2"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo2Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301ef"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo3Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01cc"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon3"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo3Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301f0"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo5Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01cd"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon5"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo5Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301f1"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo6Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01ce"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon6"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo6Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301f2"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo7Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01cf"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon7"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo7Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301f3"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo8Activity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01d0"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.icon8"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogo8Activity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f1301f4"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogofActivity"
+            android:exported="true"
+            android:screenOrientation="1" />
+
+        <activity-alias
+            android:theme="@ref/0x7f130010"
+            android:icon="@ref/0x7f0f01d1"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.iconf"
+            android:enabled="false"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:targetActivity="com.guochao.faceshow.aaspring.modulars.welcome.RealSplashLogofActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120c27"
+                    android:host="com.guochao.faceshow" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f130010"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="pushscheme"
+                    android:host="com.huawei.codelabpush"
+                    android:path="/deeplink" />
+
+                <data
+                    android:scheme="myscheme"
+                    android:host="com.guochao.faceshow" />
+
+                <data
+                    android:scheme="buzzcast"
+                    android:host="com.guochao.faceshow"
+                    android:pathPattern="/..*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.CompletePersonalInfoActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.ChooseLoginTypeActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f130016"
+            android:name="com.guochao.faceshow.aaspring.modulars.welcome.PushChooseLoginTypeActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.rank.activity.RankListActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.guochao.faceshow.service.AppBackgroundService"
+            android:exported="false" />
+
+        <service
+            android:name="com.guochao.faceshow.service.MediaService"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130013"
+            android:name="com.guochao.faceshow.activity.MainActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.guochao.faceshow.paster.TCPasterActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.MusicActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.MusicResultActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.ImagePreviewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.SetInfoActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.SettingActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PrivateLiveInvitationSettingsActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.HobbyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.CustomLabelActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MyVideotActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MyFollowActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MyFansActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MyLiveVideoActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.userhomepage.act.UserHomePageAct"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.AreaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MultilingualActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PrivacySettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PIPSettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.user.bind.BindPhoneV2Activity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.ChangePasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PaymentPasswordSettingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PaymentPasswordResetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.PaymentPasswordRememberActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.DistancePrivacyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.BlackListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.BlackRoomActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130017"
+            android:name="com.guochao.faceshow.activity.VideoPlayActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.VideoTopicsActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.mine.view.ContributionListActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130000"
+            android:name="com.guochao.faceshow.aaspring.modulars.live.ranklist.LiveRankListActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.activity.LevelActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.InvaliteWebActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.InvalitedActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.TCVideoRecordActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.ImageBrowse.BigImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.ImageBrowse.EditBigImageAct"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.PhotoDialogAct"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.userhomepage.act.HeadEditBigImageAct"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.TCVideoChooseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.PushVideoV2Activity"
+            android:exported="false"
+            android:launchMode="2"
+            android:windowSoftInputMode="0x34" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.onevone.history.OneVOneHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.MusicVideoActivity"
+            android:exported="false"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.BankListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.CurrentLiveAreaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.ChooceOccupationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.OccupationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.PicSelectActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.mine.view.MyWalletActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.mine.view.WithdrawalDiamondActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.push.PushSettingActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130013"
+            android:name="com.guochao.faceshow.activity.PersonVideoActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.MineCenterSettingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.ZTCVideoEditerActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130013"
+            android:name="com.guochao.faceshow.activity.VideoPlayListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.ReportDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x12" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150001" />
+        </provider>
+
+        <meta-data
+            android:name="design_width"
+            android:value="375" />
+
+        <meta-data
+            android:name="design_height"
+            android:value="667" />
+
+        <meta-data
+            android:name="CHANNEL_VALUE"
+            android:value="CHANNEL_VALUE" />
+
+        <activity
+            android:name="com.guochao.faceshow.systemassistant.act.SystemAssistantAct"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.DynamicDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.guochao.faceshow.activity.MyGiftListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.ChatControllerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.web.WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.LoginOrRegisterActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x34" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.LoginActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.RegisteredActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.AreaSelectActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x33" />
+
+        <activity
+            android:theme="@ref/0x7f130012"
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.FindPasswordActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x24" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.ChatActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x33">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.guochao.faceshow.aaspring.debug.DebugService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.activity.ForcedUpdateActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.search.activity.SearchUserActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.search.activity.SearchNetUserActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.search.activity.MoreUserActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.search.activity.MoreImHistoryActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.AtMeListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.AuthorityNotifyListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.CollectionListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.CommentListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.FriendRequestListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.MyFriendListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.search.activity.SearchHistoryListActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.GiftNotificationActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.ChatDetailActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.notifycation.activity.PushMessageActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.SendImagePreviewActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.ScanActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.PeopleNearbyActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.FaceCastHostSearchActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.FindYouActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.FindYouListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.ChooseResidenceActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.ChooseLanguageActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.publish.activity.PublishUgcActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x15b0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.TopicHomePageActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120a58"
+                    android:host="ugctopic" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.publish.activity.SimpleMediaActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.publish.activity.SearchAttachTopicActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.publish.activity.VisibleUserActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.DynamicFullscreenImageActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.UgcSearchActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.publish.activity.SearchUgcLocationActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.RelatedUserMoreActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.DynamicLikeUserListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000f"
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.DynamicVideoListActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.AccountSecurityActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.SecurityVerificationActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.RetrievePasswordActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.ReplaceEmailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.activity.LiveBroadCastActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.relationship.RelationShipSearchActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.activity.LiveRoomSetActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.PhotoActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.ChooseFriendSettingActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.ScanResultNoUrlActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalRecordActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.dressup.MyDressUpActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalMoneyActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalDiamondActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.setting.LiveOpenPushSettingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.InterestsAndHobbiesActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.DoodleActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.DatingSquareActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.VideoDatingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.date.activity.DateSettingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.date.activity.LaunchPermissionsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalNewActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalBathActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.withdrawal.ChooseCityActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.WithdrawalNewGuildActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.FreezeCauseActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.vip.activity.WhoSawMeActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.vip.activity.ImageCropActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.SearchFriendsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.trtc.call.CallingActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x13" />
+
+        <service
+            android:name="com.guochao.faceshow.service.CallForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0xc0" />
+
+        <service
+            android:name="com.guochao.faceshow.service.CallForegroundServiceApi34"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x800" />
+
+        <service
+            android:name="com.guochao.faceshow.aaspring.modulars.trtc.ScreenShotService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x20" />
+
+        <service
+            android:name="com.guochao.faceshow.aaspring.utils.location.LocationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.guochao.faceshow.service.WatchingLiveForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x2" />
+
+        <service
+            android:name="com.guochao.faceshow.service.ThirdLoginForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.dressmarket.DressUpMarketActivity"
+            android:exported="false"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f120a58"
+                    android:host="appmall" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.dressmarket.send.DressUpSendActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.poweroff.PowOffActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@ref/0x7f120a25" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@ref/0x7f08051f" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.login.utils.ins.InstagramLoginActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.BindEmailV2Activity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.ChangeLoginOrPayPasswordPhoneActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.BindPhoneToSetPayPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.ChangeLoginOrPayPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.SetLoginPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f1204e8" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@ref/0x7f1204e9" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="vk_app_id"
+            android:value="@ref/0x7f0b0006" />
+
+        <activity
+            android:theme="@ref/0x7f1304de"
+            android:name="com.facebook.FacebookActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.PayoneerBindActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.record.NewRecordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.record.RecordTimeZoneTipActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"
+            android:authorities="com.facebook.app.{applicationId}.FacebookContentProvider{559753921074292}" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@ref/0x7f12051e" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.guochao.faceshow" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.user.invalite.InviteUserActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.googlepay.TestGoogleSignActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.area.LiveAreaActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.area.LiveAreaMoreActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.cancelaccount.CancelAccountActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.cancelaccount.CancelReasonActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.cancelaccount.CancelConditionActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.cancelaccount.CancelImportantTipActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.cancelaccount.CancelAccountSuccessActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.main.fragment.CommentsFragmentKt"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.video.collection.CollVideoListDialogFragment"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x32" />
+
+        <activity
+            android:theme="@ref/0x7f130011"
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.fragment.DynamicCommentListFragment"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.friend.SelectFriendActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.user.tag.UserEditHobbyTagActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.user.tag.UserEditLikedTagActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.friend.FriendGroupMangerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.friend.FriendGroupAddFriendActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.friend.FriendSetGroupActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.invite.H5WithdrawalMoneyWebActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.invite.InviteFriendMakeMoneyWebActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.invite.InviteFriendWithdrawalMoneyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.component.live.activity.FakeLiveChatActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4b0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.PlantActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.ugc.activity.VoiceRoomMoreActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.activitycenter.ActivityActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.chat.activity.EventNotifyActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.user.medal.UserMedalListActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.personal.paypal.PagSmilePayPayAuthActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.noble.UserNobleDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.noble.MyNobleInfoActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.fansclub.myfans.MyFansClubActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.live.fansclub.fansactivate.FansActivateActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.mine.view.MyVPActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.userhomepage.lovers.LoversActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.userhomepage.lovers.record.LoversRecordActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.userhomepage.lovers.history.LoversHistoryActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.em.VPMineActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.video.collection.CreateVideoCollectionActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.video.collection.VideoCollectionDetailActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.video.collection.VideoCollectionPlayActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.modulars.video.collection.VideoCollectionDetailViewOtherActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.component.f2fmatch.activity.F2fMatchActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4"
+            android:windowSoftInputMode="0x3" />
+
+        <service
+            android:name="com.guochao.faceshow.component.f2fmatch.service.F2fForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="0xc0" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.androidx-startup">
+
+            <meta-data
+                android:name="com.guochao.component.liveroom.VoiceRoomMessageDispatcher"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:name="com.guochao.faceshow.signin.activity.UserSigninCenterActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:name="com.guochao.faceshow.signin.activity.UserSigninCenterRulesActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x40003ff4" />
+
+        <activity
+            android:theme="@ref/0x7f13000b"
+            android:name="com.guochao.component.mvp.activity.MVPActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.guochao.faceshow.guild.activity.GuildImagePreviewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.MyLiveActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.ApplyContractActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.ContractActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.ContractResultActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.ApplyTerminationActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.InputGuildIdActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.ComplaintActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.TransferActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.TransferingActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.withhold.WithHoldDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.DailySalaryDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.activity.DailySalaryRecordActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.guochao.faceshow.guild.MyInvitationGuildActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f13000f"
+            android:name="com.guochao.component.thridgame.zego.activity.ThirdGameZegoActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f13036d"
+            android:name="com.guochao.appevent.nautical.fragment.AnimActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.guochao.component_third_game_baishun.activity.BSGameActivity"
+            android:exported="false"
+            android:configChanges="0x3fd0" />
+
+        <activity
+            android:name="com.guochao.faceshow.aaspring.base.test.TestActivity"
+            android:exported="false" />
+
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+
+        <provider
+            android:name="com.didi.drouter.store.LoadProvider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.guochao.faceshow.drouter.init.provider" />
+
+        <activity
+            android:theme="@ref/0x7f130370"
+            android:name="com.vk.api.sdk.ui.VKWebViewAuthActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vk.api.sdk.ui.VKCaptchaActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.vk.api.sdk.ui.VKConfirmationActivity" />
+
+        <provider
+            android:name="com.vk.api.sdk.internal.VKInitProvider"
+            android:enabled="@ref/0x7f050002"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.VKInitProvider" />
+
+        <meta-data
+            android:name="VKSdkVersion"
+            android:value="3.5.0" />
+
+        <meta-data
+            android:name="VKSdkVersionCode"
+            android:value="30" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.previewlibrary.GPreviewActivity" />
+
+        <activity
+            android:name="com.previewlibrary.GPVideoPlayerActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <activity
+            android:theme="@ref/0x7f1301a1"
+            android:name="com.twitter.sdk.android.tweetui.PlayerActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f1301a1"
+            android:name="com.twitter.sdk.android.tweetui.GalleryActivity" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <receiver
+            android:name="com.snap.creativekit.internal.SnapCreativeShareResultHandler"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.snap.corekit.SnapKitInitProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.SnapKitInitProvider" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b0010" />
+
+        <provider
+            android:name="com.tencent.rmonitor.launch.AppLaunchMonitorInstaller"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.rmonitor-installer" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.0.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <activity
+            android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x14" />
+
+        <service
+            android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity" />
+
+        <service
+            android:name="com.tencent.rtmp.video.ScreenCaptureService"
+            android:exported="false"
+            android:foregroundServiceType="0x20" />
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+            android:permission="com.guochao.faceshow.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+
+                <action
+                    android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.huawei.hms.support.api.push.PushReceiver"
+            android:permission="com.guochao.faceshow.permission.PROCESS_PUSH_MSG"
+            android:exported="true"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.android.push.intent.REGISTRATION" />
+
+                <action
+                    android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:directBootAware="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.huawei.push.msg.NOTIFY_MSG" />
+
+                <action
+                    android:name="com.huawei.push.msg.PASSBY_MSG" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.huawei.hms.support.api.push.PushProvider"
+            android:readPermission="com.guochao.faceshow.permission.PUSH_PROVIDER"
+            android:writePermission="com.guochao.faceshow.permission.PUSH_WRITE_PROVIDER"
+            android:exported="true"
+            android:authorities="com.guochao.faceshow.huawei.push.provider" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:push"
+            android:value="push:6.9.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:push:push"
+            android:value="1" />
+
+        <activity
+            android:name="com.huawei.hms.support.api.push.TransActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x01030011"
+            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x01030007"
+            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+            android:configChanges="0x40000fff"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f130014"
+            android:name="com.linecorp.linesdk.openchat.ui.CreateOpenChatActivity" />
+
+        <activity
+            android:theme="@ref/0x7f13018a"
+            android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity"
+            android:exported="true"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="lineauth" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.huawei.hms.aaid.InitProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.aaidinitprovider"
+            android:initOrder="500" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:opendevice"
+            android:value="opendevice:6.9.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:opendevice:push"
+            android:value="1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.service.name:base"
+            android:value="base:6.8.0.300" />
+
+        <meta-data
+            android:name="com.huawei.hms.min_api_level:base:hmscore"
+            android:value="1" />
+
+        <meta-data
+            android:name="availableLoaded"
+            android:value="yes" />
+
+        <provider
+            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+            android:exported="false"
+            android:authorities="com.guochao.faceshow.AGCInitializeProvider" />
+
+        <service
+            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f130307"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <activity
+            android:theme="@ref/0x7f130129"
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:screenOrientation="3"
+            android:configChanges="0x40002f84"
+            android:hardwareAccelerated="true">
+
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <activity
+            android:name="com.huawei.hms.activity.EnableServiceActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f15000a" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

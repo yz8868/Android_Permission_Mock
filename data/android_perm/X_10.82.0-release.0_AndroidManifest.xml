@@ -1,0 +1,4424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="310820000"
+    android:versionName="10.82.0-release.0"
+    android:installLocation="1"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x45"
+    package="com.twitter.android"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <permission
+        android:name="com.twitter.android.permission.RESTRICTED"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.twitter.android.permission.RESTRICTED" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PROFILE" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="otpauth" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+
+            <category
+                android:name="android.intent.category.HOME" />
+        </intent>
+
+        <package
+            android:name="com.whatsapp" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="sms" />
+        </intent>
+
+        <package
+            android:name="com.android.mms" />
+
+        <package
+            android:name="com.google.android.apps.messaging" />
+
+        <package
+            android:name="com.google.android.apps.dynamite" />
+
+        <package
+            android:name="com.android.email" />
+
+        <package
+            android:name="com.google.android.gm" />
+
+        <package
+            android:name="com.facebook.composer" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.linkedin.android" />
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="jp.naver.line" />
+
+        <package
+            android:name="jp.naver.line.android" />
+
+        <package
+            android:name="com.facebook.messenger" />
+
+        <package
+            android:name="com.facebook.orca" />
+
+        <package
+            android:name="com.google.android.apps.hangout" />
+
+        <package
+            android:name="com.google.android.apps.babel" />
+
+        <package
+            android:name="com.google.android.talk" />
+
+        <package
+            android:name="com.snapchat.android" />
+
+        <package
+            android:name="com.Slack" />
+
+        <package
+            android:name="com.kakao.talk" />
+
+        <package
+            android:name="com.discord" />
+
+        <package
+            android:name="com.reddit.frontpage" />
+
+        <package
+            android:name="org.telegram.messenger" />
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="net.daum.android.daum" />
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:scheme="http" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.tv.launcherx" />
+
+        <package
+            android:name="com.google.android.tvlauncher" />
+
+        <package
+            android:name="com.google.android.tvrecommendations" />
+    </queries>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_OWN_CALLS" />
+
+    <uses-permission
+        android:name="android.permission.SHOW_ON_LOCK_SCREEN" />
+
+    <uses-permission
+        android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission-sdk-23
+        android:name="android.permission.GET_PACKAGE_SIZE"
+        android:maxSdkVersion="25" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.AD_SERVICES_CONFIG" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+
+    <permission
+        android:name="com.twitter.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.twitter.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:theme="@ref/0x7f160529"
+        android:label="@ref/0x7f15013c"
+        android:icon="@ref/0x7f110034"
+        android:name="com.twitter.app.TwitterApplication"
+        android:hasCode="true"
+        android:allowBackup="@ref/0x7f050003"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:requiredAccountType="com.twitter.android.auth.login"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@ref/0x7f19000e"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@ref/0x7f110036"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:dataExtractionRules="@ref/0x7f19000e">
+
+        <profileable
+            android:shell="false" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.twitter.android.SearchActivity" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@ref/0x7f190005" />
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@ref/0x7f150162" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD7-F5Z2aAr0LPRWeFdSFE7avidzD_Eapw" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0c0020" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.androidx-startup">
+
+            <meta-data
+                android:name="com.apollographql.cache.normalized.sql.ApolloInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.apollographql.apollo.cache.normalized.sql.ApolloInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f16055a"
+            android:label="@ref/0x7f151ac5"
+            android:name="com.twitter.android.av.AVMediaPlayerActivity"
+            android:configChanges="0x6a0" />
+
+        <activity
+            android:theme="@ref/0x7f16055a"
+            android:label="@ref/0x7f151ac5"
+            android:name="com.twitter.android.broadcast.fullscreen.BroadcastFullscreenActivity"
+            android:configChanges="0xf80" />
+
+        <activity
+            android:theme="@ref/0x7f16055a"
+            android:name="com.twitter.android.broadcast.deeplink.BroadcastDeeplinkActivity"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:theme="@ref/0x7f160167"
+            android:name="com.twitter.camera.controller.root.CameraActivity"
+            android:launchMode="1"
+            android:screenOrientation="10"
+            android:configChanges="0x6a0" />
+
+        <activity
+            android:name="tv.periscope.android.ui.profile.ActionRequiredActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160560"
+            android:name="com.twitter.android.liveevent.landing.LiveEventLandingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605ab"
+            android:name="tv.periscope.android.ui.broadcast.KickSelfActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f160545"
+            android:name="com.twitter.channels.details.ChannelsDetailsActivity" />
+
+        <activity
+            android:name="com.twitter.channels.details.ChannelsMembersActivity" />
+
+        <activity
+            android:name="com.twitter.channels.discovery.ChannelsDiscoveryActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16054e"
+            android:name="com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity"
+            android:taskAffinity=".ImmersiveMediaPlayerActivity"
+            android:configChanges="0xd80"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f160258"
+            android:name="com.twitter.app.inlinereplies.ui.activity.InlineRepliesActivity" />
+
+        <activity
+            android:label="@ref/0x7f15158b"
+            android:name="com.twitter.settings.a11ydisplayroot.AccessibilityDisplayRootActivity" />
+
+        <activity
+            android:label="@ref/0x7f1518e3"
+            android:name="com.twitter.feature.subscriptions.settings.SubscriptionsSettingsFragmentActivity" />
+
+        <activity
+            android:label="@ref/0x7f151b2d"
+            android:name="com.twitter.feature.subscriptions.settings.undotweet.UndoTweetSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151c02"
+            android:name="com.twitter.feature.subscriptions.settings.verification.VerificationSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1507c5"
+            android:name="com.twitter.feature.subscriptions.settings.earlyaccess.EarlyAccessSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1518e0"
+            android:name="com.twitter.feature.subscriptions.settings.comingsoon.SubscriptionsComingSoonFragmentActivity" />
+
+        <activity
+            android:label="@ref/0x7f15011f"
+            android:name="com.twitter.feature.subscriptions.settings.appicon.AppIconSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f151698"
+            android:name="com.twitter.feature.subscriptions.settings.profile_customization.ProfileCustomizationActivity" />
+
+        <activity
+            android:label="@ref/0x7f150078"
+            android:name="com.twitter.feature.subscriptions.analytics.AccountAnalyticsActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f151336"
+            android:name="com.twitter.feature.subscriptions.radar.RadarActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.longform.threadreader.ReaderModeTimelineActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.twitter.longform.threadreader.settings.ReadersModeSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f150bd7"
+            android:name="com.twitter.app.settings.AboutActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f15169d"
+            android:name="com.twitter.app.settings.ProxySettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515ff"
+            android:name="com.twitter.app.settings.DisplayAndSoundSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f151690"
+            android:name="com.twitter.app.settings.LocationSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f151599"
+            android:name="com.twitter.app.settings.AccessibilityActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f1515df"
+            android:name="com.twitter.app.settings.DataSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f151580"
+            android:name="com.twitter.app.settings.SettingsRootCompatActivity"
+            android:exported="false"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.app.settings.RemoveContactsActivity"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f1516a7"
+            android:name="com.twitter.app.settings.SecurityRootCompatActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f1515cf"
+            android:name="com.twitter.app.settings.connectedaccounts.ConnectedAccountsSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f15159e"
+            android:name="com.twitter.app.settings.YourAccountRootCompatActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f151691"
+            android:name="com.twitter.app.settings.PrivacyAndSafetyRootCompatActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f151679"
+            android:name="com.twitter.app.settings.NotificationsRootCompatActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f15158b"
+            android:name="com.twitter.app.settings.AccessibilityDisplayRootCompatActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1601bb"
+            android:label="@ref/0x7f15149d"
+            android:name="com.twitter.app.settings.SafetyModeSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f151667"
+            android:name="com.twitter.app.settings.MuteAndBlockSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515b1"
+            android:name="com.twitter.app.settings.AudienceAndTaggingSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f151657"
+            android:name="com.twitter.app.settings.LocationInformationSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f15159c"
+            android:name="com.twitter.app.settings.AccountInformationActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f150198"
+            android:name="com.twitter.app.settings.accounttaxonomy.AccountAutomationActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515c1"
+            android:name="com.twitter.app.settings.DataSharingActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515a9"
+            android:name="com.twitter.app.settings.AdsPreferencesSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f15164b"
+            android:name="com.twitter.app.settings.InferredIdentitySettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1516ea"
+            android:name="com.twitter.app.settings.YourTweetsSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515d4"
+            android:name="com.twitter.app.settings.ContentYouSeeActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f15157b"
+            android:name="com.twitter.app.settings.SensitiveMediaSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.app.settings.SensitiveMediaSettingsLevelActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f151651"
+            android:name="com.twitter.app.settings.LanguagesSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515c6"
+            android:name="com.twitter.app.settings.DiscoverabilityAndContactsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515c4"
+            android:name="com.twitter.app.settings.AudioSpacesPrivacySettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1515ac"
+            android:name="com.twitter.app.settings.language.AppLanguageSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1605c1"
+            android:label="@ref/0x7f1516a9"
+            android:name="com.twitter.app.settings.TwoFactorAuthSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.app.settings.search.SettingsSearchResultsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1516a9"
+            android:name="com.twitter.app.settings.SecuritySettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f150555"
+            android:name="com.twitter.app.settings.softuser.DeactivateSoftUserAccountActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="@ref/0x7f150e82"
+            android:name="com.twitter.app.settings.parody.ParodyAccountActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1502e9"
+            android:name="com.twitter.android.ChangeScreenNameActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1605b1"
+            android:label="@ref/0x7f15023a"
+            android:name="com.twitter.app.users.BlockedUsersActivity" />
+
+        <activity
+            android:label="@ref/0x7f150d82"
+            android:name="com.twitter.app.users.MutedUsersActivity" />
+
+        <activity
+            android:name="com.twitter.android.TotpGeneratorActivity"
+            android:parentActivityName="com.twitter.app.main.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.twitter.android.BackupCodeActivity" />
+
+        <activity
+            android:name="com.twitter.android.TabbedVitFollowersActivity" />
+
+        <activity
+            android:name="com.twitter.android.revenue.brandsurvey.BrandSurveyQuestionActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.android.dialog.UpdatePhoneDialogActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.android.analytics.TweetAnalyticsWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.android.settings.UserTwitterDataWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f150555"
+            android:name="com.twitter.android.settings.DeactivateAccountActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="@ref/0x7f150555"
+            android:name="com.twitter.android.settings.ConfirmDeactivateAccountActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:label="@ref/0x7f15007a"
+            android:name="com.twitter.android.settings.AccountDeactivatedActivity"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.twitter.android.settings.country.CountryListActivity" />
+
+        <activity
+            android:label="@ref/0x7f1515c6"
+            android:name="com.twitter.android.settings.DiscoverabilityActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.android.client.web.AuthenticatedWebViewActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f160549"
+            android:name="com.twitter.android.media.imageeditor.EditImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f160549"
+            android:name="com.twitter.android.media.imageeditor.ProfilePhotoEditImageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f1515d2"
+            android:name="com.twitter.android.settings.ContentPreferencesSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f150534"
+            android:name="com.twitter.android.settings.theme.ThemeSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f150da0"
+            android:name="com.twitter.app.safety.mutedkeywords.list.MutedKeywordsListActivity" />
+
+        <activity
+            android:name="com.twitter.app.safety.mutedkeywords.composer.MutedKeywordComposerActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605b0"
+            android:name="com.twitter.android.revenue.BrowserWithDockedMediaActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.twitter.app.timeline.ReplyContextTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.app.timeline.moderation.ViewModeratedTweetsActivity" />
+
+        <service
+            android:name="com.twitter.android.platform.TwitterAuthenticationService"
+            android:permission="android.permission.ACCOUNT_MANAGER"
+            android:protectionLevel="0x2"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@ref/0x7f19000a" />
+        </service>
+
+        <activity
+            android:name="com.twitter.android.AuthorizeAppActivity"
+            android:exported="true"
+            android:excludeFromRecents="true">
+
+            <meta-data
+                android:name="exclude_from_shutdown"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:name="com.twitter.app.authorizeapp.AppAuthorizationActivity" />
+
+        <activity
+            android:name="com.twitter.android.SingleSignOnActivity"
+            android:exported="true"
+            android:excludeFromRecents="true">
+
+            <meta-data
+                android:name="exclude_from_shutdown"
+                android:value="true" />
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f1605ae"
+            android:label="@ref/0x7f150c9f"
+            android:name="com.twitter.composer.MediaTagActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1605c0"
+            android:label="@ref/0x7f151ac5"
+            android:name="com.twitter.composer.ComposerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.twitter.app.main.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.main.MainActivity" />
+        </activity>
+
+        <activity-alias
+            android:label="@ref/0x7f151ac5"
+            android:name="com.twitter.composer.ComposerActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.composer.ComposerActivity">
+
+            <intent-filter
+                android:label="@ref/0x7f151ac5">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151ac5">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151ac5">
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151ac5">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f160561"
+            android:name="com.twitter.android.login.LoginActivity" />
+
+        <activity
+            android:label="@ref/0x7f150bd8"
+            android:name="com.twitter.android.login.LoginChallengeActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f150bd8"
+            android:name="com.twitter.android.login.WebauthnChallengeActivity"
+            android:launchMode="2"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f151424"
+            android:name="com.twitter.android.login.PasswordResetActivity"
+            android:finishOnTaskLaunch="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.android.login.LoginVerificationActivity"
+            android:parentActivityName="com.twitter.app.main.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f150254"
+            android:name="com.twitter.app.bookmarks.legacy.BookmarkActivity"
+            android:parentActivityName="com.twitter.app.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f150254"
+            android:name="com.twitter.app.bookmarks.folders.BookmarkFolderActivity"
+            android:parentActivityName="com.twitter.app.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160562"
+            android:name="com.twitter.app.main.MainActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1605be"
+            android:name="com.twitter.app.account.RemoveAccountDialogActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f15159e"
+            android:name="com.twitter.settings.youraccountroot.YourAccountRootActivity" />
+
+        <activity
+            android:label="@ref/0x7f151b5d"
+            android:name="com.twitter.app.account.changepassword.ChangePasswordActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f16054c"
+            android:name="com.twitter.app.profiles.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName="com.twitter.app.main.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.main.MainActivity" />
+        </activity>
+
+        <activity-alias
+            android:name="com.twitter.app.profiles.ProfileActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.app.profiles.ProfileActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="vnd.android.cursor.item/vnd.twitter.profile" />
+
+                <data
+                    android:scheme="content"
+                    android:host="com.android.contacts" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:theme="@ref/0x7f160558"
+            android:name="com.twitter.app.profiles.ProfilePhotoImageActivity" />
+
+        <activity
+            android:name="com.twitter.app.profiles.mutualfollowing.MutualFollowingTimelineActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160549"
+            android:name="com.twitter.app.profiles.prompt.TweetPromptActivity"
+            android:windowSoftInputMode="0x20" />
+
+        <activity
+            android:name="com.twitter.app.profiles.edit.EditVerifiedPhoneStatusActivity" />
+
+        <activity
+            android:name="com.twitter.app.profiles.edit.editprofile.EditProfileActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f1605bf"
+            android:name="com.twitter.app.profiles.edit.editprofile.EditProfileAvatarActivity" />
+
+        <activity
+            android:name="com.twitter.app.profiles.edit.editbirthdate.EditBirthdateActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.android.ads.AdsCompanionWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f16054d"
+            android:name="com.twitter.app.alttext.AltTextActivity"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:name="com.twitter.longform.articles.TopArticleTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.longform.articles.tweets.ArticleTweetsTimelineActivity" />
+
+        <activity
+            android:label="@ref/0x7f150228"
+            android:name="com.twitter.android.birdwatch.BirdwatchHomePageActivity" />
+
+        <activity
+            android:name="com.twitter.birdwatch.BirdwatchWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.edithistory.implementation.EditHistoryActivity" />
+
+        <activity
+            android:name="com.twitter.app.dm.search.DMSearchActivity" />
+
+        <activity
+            android:name="com.twitter.app.dm.RootDMActivity"
+            android:launchMode="1"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.twitter.app.main.MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.main.MainActivity" />
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f150b18"
+            android:name="com.twitter.app.dm.DMActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x12"
+            android:parentActivityName="com.twitter.app.dm.RootDMActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.twitter.app.dm.RootDMActivity" />
+
+            <meta-data
+                android:name="android.service.chooser.chooser_target_service"
+                android:value="androidx.sharetarget.ChooserTargetServiceCompat" />
+        </activity>
+
+        <activity-alias
+            android:label="@ref/0x7f150b18"
+            android:name="com.twitter.app.dm.DMActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.app.dm.DMActivity">
+
+            <intent-filter
+                android:label="@ref/0x7f150b18">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f150b18">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f150b18">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:label="@ref/0x7f15062f"
+            android:name="com.twitter.app.dm.inbox.DMRequestsActivity" />
+
+        <activity
+            android:name="com.twitter.app.dm.cards.dmfeedbackcard.FeedbackEnterCommentActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.twitter.tweetdetail.TweetDetailActivity"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.twitter.app.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.tweetuploader.dialogs.ConversationControlReplyRestrictedDialogFragmentActivity"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.twitter.tweetuploader.TweetUploadService" />
+
+        <activity
+            android:name="com.twitter.bouncer.BouncerWebViewActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.brandedlikepreview.BrandedLikePreviewActivity"
+            android:exported="false" />
+
+        <receiver
+            android:label="@ref/0x7f15013c"
+            android:name="com.twitter.browser.CustomTabsActionReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1605b0"
+            android:name="com.twitter.browser.BrowserActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.android.dogfood.bugreporter.impl.BugReporterActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.overview.ModuleOverviewActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.overview.deeplink.ModuleOverviewRedirectActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605bf"
+            android:name="com.twitter.business.features.deeplink.SpotlightSheetLauncherActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.businessinfo.BusinessInfoActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.businessinfo.address.BusinessAddressActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.businessinfo.hours.BusinessHoursActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.businessinfo.phone.BusinessPhoneActivity" />
+
+        <activity
+            android:name="com.twitter.business.linkconfiguration.LinkModuleConfigurationActivity" />
+
+        <activity
+            android:name="com.twitter.commerce.merchantconfiguration.ShopSpotlightConfigActivity" />
+
+        <activity
+            android:name="com.twitter.commerce.merchantconfiguration.productpriceinputscreen.ProductPriceInputScreenActivity" />
+
+        <activity
+            android:name="com.twitter.commerce.merchantconfiguration.productimageinputscreen.ProductImageInputScreenActivity" />
+
+        <activity
+            android:name="com.twitter.commerce.merchantconfiguration.existingcatalogscreen.ExistingCatalogScreenActivity" />
+
+        <activity
+            android:name="com.twitter.business.listselection.BusinessListSelectionActivity" />
+
+        <activity
+            android:name="com.twitter.business.textinput.BusinessInputTextActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.mobileappmodule.MobileAppModuleConfigurationActivity" />
+
+        <activity
+            android:name="com.twitter.business.moduleconfiguration.mobileappmodule.url.MobileAppUrlInputActivity" />
+
+        <activity
+            android:label="@ref/0x7f150b13"
+            android:name="com.twitter.communities.joined.JoinedCommunitiesActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160546"
+            android:name="com.twitter.communities.detail.CommunitiesDetailActivity" />
+
+        <activity
+            android:label="@ref/0x7f150cc4"
+            android:name="com.twitter.communities.members.CommunitiesMembersActivity" />
+
+        <activity
+            android:label="@ref/0x7f150cc4"
+            android:name="com.twitter.communities.members.search.CommunitiesMemberSearchActivity" />
+
+        <activity
+            android:label="@ref/0x7f150ae5"
+            android:name="com.twitter.communities.invite.InviteMembersActivity" />
+
+        <activity
+            android:label="@ref/0x7f150393"
+            android:name="com.twitter.communities.join.JoinCommunityAgreementActivity" />
+
+        <activity
+            android:label="@ref/0x7f150404"
+            android:name="com.twitter.communities.settings.CommunitySettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f150417"
+            android:name="com.twitter.communities.settings.theme.CommunityThemeSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f150385"
+            android:name="com.twitter.communities.settings.rules.CommunityEditRulesActivity" />
+
+        <activity
+            android:name="com.twitter.communities.settings.rules.create.CommunityCreateRuleActivity" />
+
+        <activity
+            android:label="@ref/0x7f1500e1"
+            android:name="com.twitter.communities.admintools.AdminToolsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1504f6"
+            android:name="com.twitter.communities.create.CreateCommunityActivity" />
+
+        <activity
+            android:name="com.twitter.communities.settings.edittextinput.CommunityEditTextInputSettingsActivity" />
+
+        <activity
+            android:name="com.twitter.communities.rules.CommunityRulesActivity" />
+
+        <activity
+            android:label="@ref/0x7f1503bf"
+            android:name="com.twitter.communities.settings.membership.CommunityMembershipSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1500ca"
+            android:name="com.twitter.communities.admintools.moderationlog.ModerationLogWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@ref/0x7f1500cb"
+            android:name="com.twitter.communities.admintools.reportedtweets.ReportedTweetsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1500c8"
+            android:name="com.twitter.communities.requesttojoin.CommunitiesMemberRequestsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605b4"
+            android:name="com.twitter.communities.search.CommunitiesSearchActivity" />
+
+        <activity
+            android:name="com.twitter.communities.hashtags.CommunitiesHashtagSearchActivity" />
+
+        <activity
+            android:name="com.twitter.communities.settings.delete.CommunityDeleteActivity" />
+
+        <activity
+            android:label="@ref/0x7f1518ab"
+            android:name="com.twitter.communities.admintools.spotlight.SpotlightSelectCommunityActivity" />
+
+        <activity
+            android:label="@ref/0x7f1503d7"
+            android:name="com.twitter.communities.settings.pinnedhashtags.CommunityPinnedHashtagsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1503ea"
+            android:name="com.twitter.communities.settings.searchtags.CommunitySearchTagsActivity" />
+
+        <activity
+            android:label="@ref/0x7f150405"
+            android:name="com.twitter.communities.settings.topic.CommunityTopicActivity" />
+
+        <activity
+            android:name="com.twitter.business.professionalhome.ProfessionalHomeWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.business.settings.overview.ProfessionalSettingsActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.twitter.channels.management.manage.UrtListManagementActivity" />
+
+        <activity
+            android:name="com.twitter.channels.crud.ui.ListsCrudActivity" />
+
+        <activity
+            android:name="com.twitter.chat.ChatActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.chat.settings.ChatSettingsActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f160558"
+            android:name="com.twitter.chat.settings.ChatAvatarActivity" />
+
+        <activity
+            android:name="com.twitter.chat.settings.ChatGroupParticipantsActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.chat.settings.ChatAddParticipantsActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.chat.settings.ChatEditGroupInfoActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.chat.settings.InboxSettingsActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:name="com.twitter.chat.settings.EncryptionDeviceListActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:label="@ref/0x7f150150"
+            android:name="com.twitter.clientshutdown.update.AppUpdateActivity"
+            android:exported="false"
+            android:launchMode="2" />
+
+        <activity-alias
+            android:name="com.twitter.clientshutdown.update.AppUpdateActivityAlias"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.clientshutdown.update.AppUpdateActivity">
+
+            <meta-data
+                android:name="exclude_from_shutdown"
+                android:value="true" />
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="video/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter
+                android:label="@ref/0x7f151af1">
+
+                <action
+                    android:name="com.google.android.gms.actions.SEARCH_ACTION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <receiver
+            android:name="com.twitter.client.AppBroadcastReceiver"
+            android:permission="com.twitter.android.permission.RESTRICTED"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twitter.android.poll.data" />
+
+                <action
+                    android:name="com.twitter.android.action.AVATARS_CHANGED" />
+
+                <action
+                    android:name="com.twitter.android.push" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.client.FollowingExceededDialogFragmentActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.commerce.productdrop.details.CommerceProductDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16054c"
+            android:name="com.twitter.commerce.shops.shop.activity.ShopActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.tweetselectionurt.TweetSelectionUrtActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.urt.activity.OcfGenericUrtActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.userrecommendation.userrecommendationurt.OCFUserRecommendationsURTActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.userrecommendation.urp.activity.UserRecommendationsUrpActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.rux.RuxActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.common.OcfFlowWebActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f1605bd"
+            android:name="com.twitter.android.onboarding.core.common.OcfInvisibleSubtaskActivity"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.android.onboarding.core.dialog.OcfDialogFragmentActivity"
+            android:noHistory="true" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.location.LocationPermissionPromptActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.notifications.NotificationsPermissionPromptActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.media.SelectAvatarSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.media.SelectBannerSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.permissionstep.LiveSyncPermissionStepActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.permissionstep.OcfLiveSyncPermissionRequestActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605bf"
+            android:name="com.twitter.android.onboarding.core.permissionstep.LiveSyncPermissionRequestActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.username.EnterUsernameActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.choiceselection.ChoiceSelectionActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.common.CtaSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.email.EnterEmailSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.enterphone.EnterPhoneActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.entertext.EnterTextSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.password.PasswordEntryStepActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.settings.SettingsListSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.signup.PrivacyOptionsActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.signup.SignUpReviewStepActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.signup.SignUpStepFormActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.username.EditProfileUsernameSettingActivity"
+            android:windowSoftInputMode="0x2" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.userrecommendation.userrecommendationlist.UserRecommendationsListActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.verification.PhonePinVerificationStepActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.verification.EmailPinVerificationStepActivity"
+            android:launchMode="2" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.actionlist.ActionListActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.webmodal.WebModalSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.sso.SsoSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.enterdate.EnterDateSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.showcode.ShowQrCodeSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.showcode.ShowTextCodeSubtaskActivity" />
+
+        <activity
+            android:name="com.twitter.android.onboarding.core.web.WebSubtaskActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.rooms.ui.core.history.RoomHistoryManagementActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.twitter.rooms.ui.core.schedule.multi.settings.RoomSettingsMultiScheduledSpacesActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1605ba"
+            android:name="com.twitter.superfollows.SuperFollowsSubscriptionActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f1605bf"
+            android:name="com.twitter.superfollows.billingerror.BillingErrorActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.twitter.superfollows.timeline.SuperFollowersTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.superfollows.timeline.CreatorSubscriptionsTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.creator.impl.main.MonetizationActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.delegate.implementation.DelegateSettingsWebViewActivity"
+            android:launchMode="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f16055b"
+            android:name="com.twitter.app.gallery.GalleryActivity"
+            android:configChanges="0x6a0" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.errordialogs.SpammerActionBlockedActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.errordialogs.SuspendedActionBlockedActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.errordialogs.RateLimitDialogActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f160557"
+            android:name="com.twitter.dialogs.AgeGateDialogFragmentActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.drafts.DraftsActivity" />
+
+        <activity
+            android:name="com.twitter.app.educationprompts.SafetyEducationPromptActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:label="@ref/0x7f1509ff"
+            android:name="com.x.grok.activity.GrokWebActivity" />
+
+        <activity
+            android:label="@ref/0x7f1509e1"
+            android:name="com.x.grok.settings.GrokDataSharingSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1509fd"
+            android:name="com.x.grok.settings.personalization.GrokPersonalizationSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605be"
+            android:label="@string/0x45"
+            android:name="com.x.grok.modelselector.GrokModelSelectorActivity" />
+
+        <activity
+            android:label="@ref/0x7f150312"
+            android:name="com.x.grok.history.GrokHistoryActivity" />
+
+        <activity
+            android:name="com.twitter.android.explore.TrendsPrefActivity" />
+
+        <activity
+            android:name="com.twitter.android.explore.TrendsLocationsActivity" />
+
+        <activity
+            android:name="com.twitter.android.explore.TrendsActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:label="@ref/0x7f1508fb"
+            android:name="com.twitter.android.explore.settings.ExploreSettingsActivity" />
+
+        <activity
+            android:label="@ref/0x7f1508f8"
+            android:name="com.twitter.android.explore.locations.ExploreLocationsActivity" />
+
+        <activity
+            android:name="com.twitter.app.safetymode.implementation.FlaggedAccountsActivity" />
+
+        <activity
+            android:name="com.twitter.app.safetymode.implementation.FlaggedTweetsActivity" />
+
+        <activity
+            android:name="com.twitter.app.safetymode.implementation.SafetyModePreviewActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.app.gallerygrid.GalleryGridActivity" />
+
+        <activity
+            android:name="com.twitter.feature.graduatedaccess.GraduatedAccessPromptActivity" />
+
+        <activity
+            android:name="com.twitter.feature.graduatedaccess.GraduatedAccessLearnMoreWebViewActivity" />
+
+        <activity
+            android:name="com.twitter.users.IncomingFriendshipsActivity" />
+
+        <activity
+            android:name="com.twitter.users.following.FollowingTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.users.legacy.UsersActivity" />
+
+        <activity
+            android:name="com.twitter.identity.education.IdentityVerificationEducationActivity" />
+
+        <activity
+            android:name="com.twitter.identity.settings.IdentitySettingsActivity" />
+
+        <activity
+            android:name="com.twitter.identity.error.IdentityVerificationFinisherActivity" />
+
+        <activity
+            android:label="@ref/0x7f150a87"
+            android:name="com.twitter.identity.verification.IdentityVerificationActivity"
+            android:launchMode="3"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:label="@string/0x45"
+            android:name="com.twitter.jetfuel.JetfuelWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f16055f"
+            android:name="com.twitter.android.StartActivity"
+            android:exported="true"
+            android:launchMode="1">
+
+            <meta-data
+                android:name="exclude_from_shutdown"
+                android:value="true" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@ref/0x7f190030" />
+        </activity>
+
+        <activity-alias
+            android:icon="@ref/0x7f11001a"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon2"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110027">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110028"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon3"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110029">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11002a"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon4"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f11002b">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11002c"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon5"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f11002d">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11002e"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon6"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f11002f">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110030"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon7"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110031">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110032"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon8"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110033">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110034"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon9"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110036">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110010"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon10"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110011">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110012"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon11"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110013">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110014"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon12"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110015">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110016"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon13"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110017">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110018"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon14"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110019">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11001b"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon24"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f11001c">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11001d"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon25"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f11001e">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f11001f"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon26"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110020">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110021"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon27"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110022">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110023"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon28"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110024">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:icon="@ref/0x7f110025"
+            android:name="com.twitter.subscriptions.appicon.implementation.icon29"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.StartActivity"
+            android:roundIcon="@ref/0x7f110026">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:label="@ref/0x7f150c4c"
+            android:name="com.twitter.feature.subscriptions.management.ManageSubscriptionActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605c2"
+            android:name="com.twitter.videoeditor.VideoEditorActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.twitter.feature.subscriptions.signup.implementation.SubscriptionsSignUpActivity"
+            android:exported="false" />
+
+        <activity
+            android:label="@ref/0x7f150c8a"
+            android:name="com.twitter.android.av.monetization.MonetizationCategorySelectorActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605ad"
+            android:label="@ref/0x7f150c8f"
+            android:name="com.twitter.android.av.monetization.MediaMonetizationSettingsActivity" />
+
+        <activity
+            android:name="com.twitter.mentions.settings.MentionSettingsActivity" />
+
+        <activity
+            android:name="com.twitter.notifications.loggedout.LoggedOutNotificationLandingWebViewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16066c"
+            android:name="com.twitter.features.nudges.tweets.ToxicTweetNudgeActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.twitter.periscope.account.PeriscopeBanningActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x480" />
+
+        <activity
+            android:name="com.twitter.report.ReportFlowWebViewActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.revenue.playable.navigation.fullscreen.BrowserWithBottomBarActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.twitter.revenue.AdsInfoWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.twitter.rooms.ui.conference.ConferenceActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x22"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:name="com.twitter.rooms.ui.hostanalytics.RoomHostAnalyticsWebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.twitter.rooms.ui.topics.browsing.RoomTopicsBrowsingActivity" />
+
+        <activity
+            android:name="com.twitter.safetycenter.SafetyCenterWebviewActivity" />
+
+        <activity
+            android:name="com.twitter.safetycenter.reportdetail.ReportDetailActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605af"
+            android:name="com.twitter.android.search.implementation.filters.AdvancedSearchFiltersActivity"
+            android:exported="false"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10" />
+
+        <activity-alias
+            android:name="com.twitter.android.search.implementation.filters.AdvancedSearchFiltersActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:configChanges="0x480"
+            android:targetActivity="com.twitter.android.search.implementation.filters.AdvancedSearchFiltersActivity"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f1605b2"
+            android:name="com.twitter.android.search.implementation.results.SearchActivity"
+            android:exported="false">
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@ref/0x7f19002a" />
+        </activity>
+
+        <activity-alias
+            android:name="com.twitter.android.search.implementation.results.SearchActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.search.implementation.results.SearchActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.actions.SEARCH_ACTION" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="com.twitter.android.search.implementation.field.SearchFieldActivity"
+            android:noHistory="true" />
+
+        <activity
+            android:label="@ref/0x7f15152b"
+            android:name="com.twitter.android.search.implementation.settings.SearchSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160417"
+            android:name="com.twitter.app.sensitivemedia.SensitiveMediaActivity"
+            android:exported="false"
+            android:screenOrientation="7" />
+
+        <activity-alias
+            android:name="com.twitter.app.sensitivemedia.SensitiveMediaActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.app.sensitivemedia.SensitiveMediaActivity" />
+
+        <activity
+            android:label="@ref/0x7f1515e0"
+            android:name="com.twitter.settings.datadownload.DataDownloadActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.tipjar.main.TipJarActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605bc"
+            android:name="com.twitter.tipjar.terms.TipJarTermsActivity" />
+
+        <activity
+            android:name="com.twitter.tipjar.edit.TipJarEditActivity"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:name="com.twitter.tipjar.prompt.TipJarTermsPromptActivity" />
+
+        <activity
+            android:name="com.twitter.tracking.AttributionInterstitialActivity" />
+
+        <activity
+            android:name="com.twitter.feature.twitterblue.settings.tabcustomization.TabCustomizationActivity" />
+
+        <activity
+            android:name="com.twitter.android.unifiedlanding.implementation.UnifiedLandingActivity"
+            android:exported="false" />
+
+        <activity-alias
+            android:name="com.twitter.android.unifiedlanding.implementation.UnifiedLandingActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.twitter.android.unifiedlanding.implementation.UnifiedLandingActivity" />
+
+        <activity
+            android:name="com.twitter.android.webview.WebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:label="@ref/0x7f1502bf"
+            android:name="com.twitter.calling.xcall.XCallConnectionService"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
+            android:exported="true"
+            android:foregroundServiceType="0xc0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.twitter.calling.notifications.AvCallDispatchActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16054c"
+            android:name="com.twitter.calling.callscreen.AvCallActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="2"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x12"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:name="com.twitter.chat.composer.encryption.ChatEncryptionKeysActivity" />
+
+        <activity
+            android:name="com.twitter.app.legacy.graphql.GenericTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.app.legacy.graphql.GraphQLGenericTimelineActivity" />
+
+        <activity
+            android:name="com.twitter.media.legacy.foundmedia.GifCategoriesActivity" />
+
+        <activity
+            android:name="com.twitter.media.legacy.foundmedia.GifGalleryActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160549"
+            android:name="com.twitter.media.legacy.foundmedia.GifPreviewActivity" />
+
+        <activity
+            android:name="com.twitter.notifications.timeline.GenericActivityWebViewActivity" />
+
+        <service
+            android:name="com.twitter.rooms.service.RoomService"
+            android:enabled="true"
+            android:foregroundServiceType="0xc2" />
+
+        <activity
+            android:name="com.twitter.onboarding.connect.tab.PeopleDiscoveryActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.twitter.notifications.deeplinks.SettingsDispatchActivity" />
+
+        <activity
+            android:name="com.twitter.notifications.settings.NotificationFiltersSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1605b5"
+            android:name="com.twitter.notifications.settings.PushNotificationsSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1605b6"
+            android:name="com.twitter.notifications.settings.EmailNotificationsSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:theme="@ref/0x7f1605b6"
+            android:name="com.twitter.notifications.settings.SmsNotificationsSettingsActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.notifications.settings.NotificationsDeviceFollowActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:label="@ref/0x7f151678"
+            android:name="com.twitter.notifications.settings.compose.NotificationSettingsNewActivity"
+            android:exported="true"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.notifications.settings.implementation.TweetSettingsActivity" />
+
+        <activity
+            android:theme="@ref/0x7f160558"
+            android:name="com.twitter.profiles.ImageActivity" />
+
+        <activity
+            android:name="com.twitter.android.aitrend.ui.AiTrendLandingActivity" />
+
+        <provider
+            android:label="@ref/0x7f151aea"
+            android:name="com.twitter.autocomplete.suggestion.SuggestionsProvider"
+            android:permission="com.twitter.android.permission.RESTRICTED"
+            android:exported="false"
+            android:authorities="com.twitter.android.provider.SuggestionsProvider" />
+
+        <activity
+            android:theme="@ref/0x7f16055f"
+            android:name="com.twitter.deeplink.implementation.UrlInterpreterActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:noHistory="true"
+            android:documentLaunchMode="3">
+
+            <meta-data
+                android:name="exclude_from_shutdown"
+                android:value="true" />
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="twitter.com" />
+
+                <data
+                    android:host="www.twitter.com" />
+
+                <data
+                    android:host="mobile.twitter.com" />
+
+                <data
+                    android:host="x.com" />
+
+                <data
+                    android:host="www.x.com" />
+
+                <data
+                    android:host="mobile.x.com" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="ads.twitter.com" />
+
+                <data
+                    android:host="ads.x.com" />
+
+                <data
+                    android:pathPrefix="/mobile" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="analytics.twitter.com" />
+
+                <data
+                    android:host="analytics.x.com" />
+
+                <data
+                    android:pathPrefix="/user" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="twitter.app.link" />
+
+                <data
+                    android:host="twitter-alternate.app.link" />
+
+                <data
+                    android:host="twitter.test-app.link" />
+
+                <data
+                    android:host="twitter-alternate.test-app.link" />
+
+                <data
+                    android:host="x.app.link" />
+
+                <data
+                    android:host="x-alternate.app.link" />
+
+                <data
+                    android:host="x.test-app.link" />
+
+                <data
+                    android:host="x-alternate.test-app.link" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="account" />
+
+                <data
+                    android:host="articles" />
+
+                <data
+                    android:host="bouncer" />
+
+                <data
+                    android:host="broadcasts" />
+
+                <data
+                    android:host="call" />
+
+                <data
+                    android:host="camera" />
+
+                <data
+                    android:host="canon" />
+
+                <data
+                    android:host="change_conversation_control" />
+
+                <data
+                    android:host="chat" />
+
+                <data
+                    android:host="collection" />
+
+                <data
+                    android:host="communities" />
+
+                <data
+                    android:host="connect_people" />
+
+                <data
+                    android:host="custom-timelines" />
+
+                <data
+                    android:host="digest" />
+
+                <data
+                    android:host="explore" />
+
+                <data
+                    android:host="fleets" />
+
+                <data
+                    android:host="follow" />
+
+                <data
+                    android:host="followed_topics" />
+
+                <data
+                    android:host="follower_requests" />
+
+                <data
+                    android:host="front" />
+
+                <data
+                    android:host="golive" />
+
+                <data
+                    android:host="immersive_timeline" />
+
+                <data
+                    android:host="interest_picker" />
+
+                <data
+                    android:host="jf" />
+
+                <data
+                    android:host="landing" />
+
+                <data
+                    android:host="list" />
+
+                <data
+                    android:host="lists" />
+
+                <data
+                    android:host="login_challenge_redirect" />
+
+                <data
+                    android:host="login-token" />
+
+                <data
+                    android:host="login" />
+
+                <data
+                    android:host="mentions" />
+
+                <data
+                    android:host="messages" />
+
+                <data
+                    android:host="moment" />
+
+                <data
+                    android:host="moments" />
+
+                <data
+                    android:host="news" />
+
+                <data
+                    android:host="notes" />
+
+                <data
+                    android:host="notifications_system_prompt" />
+
+                <data
+                    android:host="notifications" />
+
+                <data
+                    android:host="onboarding" />
+
+                <data
+                    android:host="open" />
+
+                <data
+                    android:host="photo" />
+
+                <data
+                    android:host="post" />
+
+                <data
+                    android:host="professionals" />
+
+                <data
+                    android:host="profile_spotlight" />
+
+                <data
+                    android:host="quote" />
+
+                <data
+                    android:host="safety_education_prompt" />
+
+                <data
+                    android:host="safety_mode" />
+
+                <data
+                    android:host="search-home" />
+
+                <data
+                    android:host="search" />
+
+                <data
+                    android:host="settings" />
+
+                <data
+                    android:host="shopping" />
+
+                <data
+                    android:host="signup" />
+
+                <data
+                    android:host="spaces" />
+
+                <data
+                    android:host="spotlight_settings" />
+
+                <data
+                    android:host="status" />
+
+                <data
+                    android:host="switch_to_logged_in_account" />
+
+                <data
+                    android:host="teams_invitation" />
+
+                <data
+                    android:host="timeline" />
+
+                <data
+                    android:host="tipjar" />
+
+                <data
+                    android:host="topics" />
+
+                <data
+                    android:host="trends" />
+
+                <data
+                    android:host="tweet_notifications_timeline" />
+
+                <data
+                    android:host="tweet_previews" />
+
+                <data
+                    android:host="tweet" />
+
+                <data
+                    android:host="unfollow" />
+
+                <data
+                    android:host="user" />
+
+                <data
+                    android:host="wallet" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="twtr.sng.link" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="hashtag" />
+
+                <data
+                    android:host="internal" />
+
+                <data
+                    android:pathPattern="/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="intent" />
+
+                <data
+                    android:pathPrefix="/favorite" />
+
+                <data
+                    android:pathPrefix="/follow" />
+
+                <data
+                    android:pathPrefix="/like" />
+
+                <data
+                    android:pathPrefix="/retweet" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="session" />
+
+                <data
+                    android:pathPrefix="/new" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="thread" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="moments" />
+
+                <data
+                    android:pathPrefix="/guide" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="moments" />
+
+                <data
+                    android:pathPrefix="/list" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="moments" />
+
+                <data
+                    android:pathPrefix="/maker" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="events" />
+
+                <data
+                    android:pathPattern="/tv_show/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="alerts" />
+
+                <data
+                    android:pathPattern="/landing_page/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="live" />
+
+                <data
+                    android:pathPattern="/timeline/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="topics_timeline" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="fs" />
+
+                <data
+                    android:host="featureswitch" />
+
+                <data
+                    android:host="featureswitches" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="events" />
+
+                <data
+                    android:pathPattern="/timeline/.*" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="followers" />
+
+                <data
+                    android:pathPrefix="/verified" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="dm_conversation" />
+
+                <data
+                    android:host="share_via_dm" />
+
+                <data
+                    android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="profiles" />
+
+                <data
+                    android:pathPrefix="/edit" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="profiles" />
+
+                <data
+                    android:pathPrefix="/about" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="people_address_book" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="flow" />
+
+                <data
+                    android:pathPrefix="/setup_profile" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="badge_violations" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="subscriptions" />
+
+                <data
+                    android:pathPrefix="/join" />
+
+                <data
+                    android:pathPrefix="/labs" />
+
+                <data
+                    android:pathPrefix="/settings/app-icon" />
+
+                <data
+                    android:pathPrefix="/settings/custom-navigation" />
+
+                <data
+                    android:pathPrefix="/settings/early_access" />
+
+                <data
+                    android:pathPrefix="/settings/extras" />
+
+                <data
+                    android:pathPrefix="/settings/news" />
+
+                <data
+                    android:pathPrefix="/settings/undo-tweet" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="communities" />
+
+                <data
+                    android:pathPattern="/create" />
+
+                <data
+                    android:pathPattern="/suggested" />
+
+                <data
+                    android:pathPattern="/.*" />
+
+                <data
+                    android:pathPattern="/.*/about" />
+
+                <data
+                    android:pathPattern="/.*/latest" />
+
+                <data
+                    android:pathPattern="/.*/rules" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="settings" />
+
+                <data
+                    android:pathPrefix="/professional_profile" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="spotlight_settings" />
+
+                <data
+                    android:pathPrefix="/shop" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="professionals" />
+
+                <data
+                    android:pathPrefix="/contact_sheet" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="twitter" />
+
+                <data
+                    android:scheme="x" />
+
+                <data
+                    android:host="bookmarks" />
+
+                <data
+                    android:pathPrefix="/all" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f15015b"
+            android:name="com.twitter.articles.web.ArticleWebViewActivity"
+            android:configChanges="0x4a0" />
+
+        <service
+            android:name="com.twitter.voice.service.TwitterVoiceService" />
+
+        <activity
+            android:theme="@ref/0x7f1608c7"
+            android:name="tv.periscope.android.common.PeriscopeInterstitialActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f16031f"
+            android:name="com.twitter.dispatch.DispatchActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.twitter.onboarding.ocf.common.OcfModalPlaceholderActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.ocf.loading.OcfStartFlowActivity" />
+
+        <activity
+            android:name="com.twitter.onboarding.ocf.signup.SignUpSplashActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.twitter.onboarding.ocf.username.UsernameSettingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f1605bf"
+            android:name="com.twitter.permissions.PermissionRequestActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:name="com.twitter.x.lite.XLiteActivity"
+            android:windowSoftInputMode="0x12" />
+
+        <receiver
+            android:name="com.twitter.account.phone.SmsBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.twitter.account.api.RemoveAccountActivity"
+            android:excludeFromRecents="true" />
+
+        <activity
+            android:name="com.twitter.notification.push.dispatch.NotificationDispatchActivity" />
+
+        <service
+            android:name="com.twitter.notification.push.NotificationService" />
+
+        <service
+            android:name="com.twitter.notification.service.firebase.TwitterFirebaseMessagingService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.twitter.safety.leaveconversation.LeaveConversationPromptActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16055e"
+            android:name="com.twitter.accounttaxonomy.implementation.automated.AutomatedAccountLabelLandingPageActivity" />
+
+        <activity
+            android:theme="@ref/0x7f16055e"
+            android:name="com.twitter.accounttaxonomy.implementation.pcf.PcfAccountLabelLandingPageActivity" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050006"
+            android:exported="false"
+            android:directBootAware="false"
+            android:foregroundServiceType="0x1" />
+
+        <activity
+            android:name="com.twitter.notifications.anniversary.AnniversaryActivity" />
+
+        <activity
+            android:label="@ref/0x7f150fc3"
+            android:name="com.twitter.home.settings.reorder.ReorderPinnedTimelinesActivity" />
+
+        <receiver
+            android:name="com.twitter.share.scribe.ShareBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.twitter.media.av.player.mediaplayer.mediasession.AVPlaybackService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.twitter.ocf.contacts.upload.ContactsUploadService" />
+
+        <receiver
+            android:name="com.twitter.analytics.tracking.InstallationReferrer$OemIntentReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.twitter.intent.action.SEND_OEM" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9820889911543502~4092151694" />
+
+        <provider
+            android:name="com.twitter.database.legacy.provider.TwitterInternalFileProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.internalfileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f190034" />
+        </provider>
+
+        <provider
+            android:name="com.twitter.database.legacy.provider.TwitterExternalFileProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.externalfileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f190033" />
+        </provider>
+
+        <provider
+            android:name="com.twitter.database.legacy.gdbh.GlobalDatabaseProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.provider.GlobalDatabaseProvider" />
+
+        <provider
+            android:label="@ref/0x7f15013c"
+            android:name="com.twitter.database.legacy.provider.TwitterProvider"
+            android:permission="com.twitter.android.permission.RESTRICTED"
+            android:exported="false"
+            android:authorities="com.twitter.android.provider.TwitterProvider" />
+
+        <receiver
+            android:name="com.twitter.app.appupgrade.AppUpgradeReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.twitter.network.usage.service.OverlayService" />
+
+        <activity
+            android:name="com.twitter.android.navigation.NoOpActivity" />
+
+        <receiver
+            android:name="com.twitter.app.common.account.AppAccountManager$AccountsChangedReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_ssaid_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="google_analytics_default_allow_ad_personalization_signals"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_performance_collection_enabled"
+            android:value="false" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.plaid.link.internal.PlaidFileProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.com.plaid.link.internal.PlaidFileProvider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f190024" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f1605ab"
+            android:name="com.plaid.internal.LinkRedirectActivity"
+            android:exported="true"
+            android:autoRemoveFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="plaid" />
+
+                <data
+                    android:host="complete" />
+
+                <data
+                    android:host="redirect" />
+
+                <data
+                    android:host="resume" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f16036d"
+            android:name="com.plaid.internal.link.LinkActivity"
+            android:exported="false"
+            android:launchMode="3"
+            android:windowSoftInputMode="0x10" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="face,ocr,barcode" />
+
+        <activity
+            android:theme="@ref/0x7f1605bb"
+            android:name="com.socure.docv.capturesdk.feature.orchestrator.presentation.ui.OrchestratorActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x40002204"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="false" />
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f16055c"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="0x5a0"
+            android:fitsSystemWindows="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.1.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x7f160540"
+            android:name="com.google.android.tv.ads.controls.FallbackImageActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.mlkitinitprovider"
+            android:initOrder="99" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f190019" />
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="com.twitter.android.mobileadsinitprovider"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x45"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f19001a" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050005"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050007"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050005"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.sharetarget.ChooserTargetServiceCompat"
+            android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.service.chooser.ChooserTargetService" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.soloader.enabled"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f1605b3"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f19003a" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>

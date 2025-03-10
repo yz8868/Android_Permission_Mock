@@ -1,0 +1,4941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="26000256"
+    android:versionName="21.0.2"
+    android:installLocation="1"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x3f"
+    package="com.nhn.android.band"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_OWN_CALLS" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:compatibleWidthLimitDp="320" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/*"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="image/*"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="application/x-hwp"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.EDIT" />
+
+            <data
+                android:mimeType="vnd.android.cursor.item/event" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/mp4"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/3gp"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/3gpp2"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/webm"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/avi"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/mpeg4"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="video/mpeg4"
+                android:scheme="file" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+
+        <package
+            android:name="com.nhn.android.band" />
+
+        <package
+            android:name="com.nhn.android.bandkids" />
+
+        <package
+            android:name="com.nhn.android.bandkids.debug" />
+
+        <package
+            android:name="com.nhn.android.bandkids.dev" />
+
+        <package
+            android:name="com.nhn.android.bandkids.stage" />
+
+        <package
+            android:name="com.campmobile.android.band.configurator" />
+
+        <package
+            android:name="com.nhn.android.calendar" />
+
+        <package
+            android:name="com.nhn.android.addressbookbackup" />
+
+        <package
+            android:name="com.nhn.android.nmap" />
+
+        <package
+            android:name="com.nhn.android.navercafe" />
+
+        <package
+            android:name="com.nhn.android.ndrive" />
+
+        <package
+            android:name="jp.naver.line.android" />
+
+        <package
+            android:name="com.google.android.gms.maps" />
+
+        <package
+            android:name="com.google.android.apps.docs" />
+
+        <package
+            android:name="com.google.android.apps.chrome" />
+
+        <package
+            android:name="com.android.chrome" />
+
+        <package
+            android:name="com.chrome.beta" />
+
+        <package
+            android:name="com.chrome.dev" />
+
+        <package
+            android:name="net.daum.android.cafe" />
+
+        <package
+            android:name="com.kakao.talk" />
+
+        <package
+            android:name="com.groupme.android" />
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.tencent.mm" />
+
+        <package
+            android:name="com.bbm" />
+
+        <package
+            android:name="com.facebook.orca" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.twitter.android" />
+
+        <package
+            android:name="com.snapchat.android" />
+
+        <package
+            android:name="com.linkedin.android" />
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.chbreeze.jikbang4a" />
+
+        <package
+            android:name="com.neowiz.games.newmatgoB" />
+
+        <package
+            android:name="com.dddgame.sd3Band" />
+
+        <package
+            android:name="com.shcard.smartpay" />
+
+        <package
+            android:name="com.shinhancard.smartshinhan" />
+
+        <package
+            android:name="com.hyundaicard.appcard" />
+
+        <package
+            android:name="com.lumensoft.touchenappfree" />
+
+        <package
+            android:name="kr.co.samsungcard.mpocket" />
+
+        <package
+            android:name="com.samsung.android.spay" />
+
+        <package
+            android:name="com.samsung.android.spaylite" />
+
+        <package
+            android:name="com.hanaskcard.paycla" />
+
+        <package
+            android:name="com.hanaskcard.rocomo.potal" />
+
+        <package
+            android:name="kr.co.hanamembers.hmscustomer" />
+
+        <package
+            android:name="nh.smart.nhallonepay" />
+
+        <package
+            android:name="nh.smart.card" />
+
+        <package
+            android:name="com.kbcard.cxh.appcard" />
+
+        <package
+            android:name="com.kbstar.liivbank" />
+
+        <package
+            android:name="com.kbstar.reboot" />
+
+        <package
+            android:name="com.wooribank.smart.npib" />
+
+        <package
+            android:name="com.wooricard.smartapp" />
+
+        <package
+            android:name="com.wooricard.wpay" />
+
+        <package
+            android:name="com.wooribank.smart.wwms" />
+
+        <package
+            android:name="kvp.jjy.MispAndroid320" />
+
+        <package
+            android:name="kr.co.citibank.citimobile" />
+
+        <package
+            android:name="com.citibank.cardapp" />
+
+        <package
+            android:name="com.lcacApp" />
+
+        <package
+            android:name="com.inicis.kpay" />
+
+        <package
+            android:name="com.nhnent.payapp" />
+
+        <package
+            android:name="com.kakaopay.app" />
+
+        <package
+            android:name="com.kakao.talk" />
+
+        <package
+            android:name="com.lottemembers.android" />
+
+        <package
+            android:name="com.lotte.lpay" />
+
+        <package
+            android:name="com.ssg.serviceapp.android.egiftcertificate" />
+
+        <package
+            android:name="viva.republica.toss" />
+
+        <package
+            android:name="com.tmoney.tmpay" />
+
+        <package
+            android:name="finance.chai.app" />
+
+        <package
+            android:name="com.skt.skaf.OA00026910" />
+
+        <package
+            android:name="com.unionpay" />
+
+        <package
+            android:name="com.elevenst.skpay" />
+
+        <package
+            android:name="com.nhn.android.search" />
+
+        <package
+            android:name="com.mysmilepay.app" />
+
+        <package
+            android:name="com.lge.lgpay" />
+
+        <package
+            android:name="com.ahnlab.v3mobileplus" />
+
+        <package
+            android:name="kr.co.shiftworks.vguardweb" />
+
+        <package
+            android:name="kr.shiftworks.vguardweb" />
+
+        <package
+            android:name="com.TouchEn.mVaccine.webs" />
+
+        <package
+            android:name="com.TouchEn.mVaccine.apps" />
+
+        <package
+            android:name="net.nshc.droidx3" />
+
+        <package
+            android:name="net.nshc.droidx3web" />
+
+        <package
+            android:name="com.kftc.bankpay.android" />
+
+        <package
+            android:name="com.bankpay.android" />
+
+        <package
+            android:name="com.kbankwith.smartbank" />
+
+        <package
+            android:name="co.kr.kdb.android.smartkdb" />
+
+        <package
+            android:name="com.ibk.android.ionebank" />
+
+        <package
+            android:name="com.kbstar.kbbank" />
+
+        <package
+            android:name="com.kebhana.hanapush" />
+
+        <package
+            android:name="com.suhyup.pesmb" />
+
+        <package
+            android:name="nh.smart.banking" />
+
+        <package
+            android:name="com.nh.cashcardapp" />
+
+        <package
+            android:name="com.wooribank.smart.npib" />
+
+        <package
+            android:name="com.scbank.ma30" />
+
+        <package
+            android:name="com.shinhan.sbanking" />
+
+        <package
+            android:name="kr.co.citibank.citimobile" />
+
+        <package
+            android:name="kr.co.dgb.dgbm" />
+
+        <package
+            android:name="kr.co.busanbank.mbp" />
+
+        <package
+            android:name="com.kjbank.asb.pbanking" />
+
+        <package
+            android:name="com.jejubank.smart_a" />
+
+        <package
+            android:name="kr.co.jbbank.smartbank" />
+
+        <package
+            android:name="com.knb.psb" />
+
+        <package
+            android:name="com.epost.psf.sdsi" />
+
+        <package
+            android:name="kr.co.cu.onbank" />
+
+        <package
+            android:name="com.smg.spbs" />
+
+        <package
+            android:name="kr.co.kfcc.mobilebank" />
+
+        <package
+            android:name="com.kakaobank.channel" />
+
+        <package
+            android:name="uplus.membership" />
+
+        <package
+            android:name="kr.danal.app.damoum" />
+
+        <package
+            android:name="com.payprotocol.walletkr" />
+
+        <package
+            android:name="com.sktelecom.tauth" />
+
+        <package
+            android:name="com.kt.ktauth" />
+
+        <package
+            android:name="com.lguplus.smartotp" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <package
+            android:name="com.google.android.gms.policy_cast_dynamite" />
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <intent>
+
+            <action
+                android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <permission
+        android:name="com.nhn.android.band.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.nhn.android.band.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="false" />
+
+    <application
+        android:theme="@ref/0x7f1503ed"
+        android:label="@ref/0x7f140110"
+        android:icon="@ref/0x7f100004"
+        android:name="com.nhn.android.band.base.BandApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="false"
+        android:networkSecurityConfig="@ref/0x7f18000c"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:localeConfig="@ref/0x7f180000">
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f180008" />
+
+        <activity
+            android:theme="@ref/0x7f150680"
+            android:name="com.nhn.android.band.ActionViewActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="band.us" />
+
+                <data
+                    android:scheme="https"
+                    android:host="band.us" />
+
+                <data
+                    android:scheme="https"
+                    android:host="docs.band.us" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.sec.minimode.icon.portrait.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <meta-data
+                android:name="com.sec.minimode.icon.landscape.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="bandapp" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@ref/0x7f14015c" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f180006" />
+        </provider>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@ref/0x7f140c47" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@ref/0x7f140c48" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@ref/0x7f140d7d" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b0013" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.STYLE"
+            android:value="fixedRatio" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:resource="@ref/0x7f070058" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:resource="@ref/0x7f070057" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:resource="@ref/0x7f07005a" />
+
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:resource="@ref/0x7f070059" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@ref/0x7f080689" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@ref/0x7f06014b" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@ref/0x7f140a37" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@ref/0x7f140d79" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.nhn.android.band.feature.videoplay.cast.CastOptionsProvider" />
+
+        <meta-data
+            android:name="com.naver.gfpsdk.PUBLISHER_CD"
+            android:value="@ref/0x7f140d61" />
+
+        <meta-data
+            android:name="com.naver.gfpsdk.AUTO_INIT"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.naver.ads.ALLOW_TO_COLLECT_LOCATION"
+            android:value="false" />
+
+        <activity
+            android:theme="@ref/0x7f15067f"
+            android:name="com.nhn.android.band.SplashActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:configChanges="0x200">
+
+            <meta-data
+                android:name="com.sec.minimode.icon.portrait.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <meta-data
+                android:name="com.sec.minimode.icon.landscape.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@ref/0x7f18000d" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <category
+                    android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150678"
+            android:name="com.nhn.android.band.feature.ad.fullscreen.FullScreenAdActivity"
+            android:exported="false"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f150680"
+            android:name="com.nhn.android.band.ActionSendActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:noHistory="true">
+
+            <meta-data
+                android:name="com.sec.minimode.icon.portrait.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <meta-data
+                android:name="com.sec.minimode.icon.landscape.normal"
+                android:resource="@ref/0x7f100004" />
+
+            <meta-data
+                android:name="android.service.chooser.chooser_target_service"
+                android:value=".feature.share.BandChooserTargetService" />
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <action
+                    android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="text/plain" />
+
+                <data
+                    android:mimeType="image/*" />
+
+                <data
+                    android:mimeType="video/*" />
+
+                <data
+                    android:mimeType="application/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.bandlist.manage.BandListManagerActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.share.ContentShareActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.invitation.receive.InvitationCardActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.create.BandCreateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.create.BandCoverSelectActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.inappbrowser.MiniBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.search.BandSearchActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.BandDiscoverActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.specialband.DiscoverSpecialBandActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.specialband.list.SpecialBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.location.BandLocationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.main.discover.location.setting.BandLocationSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.feature.main.discover.more.DiscoverMoreBandsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.introduce.MyBandIntroduceActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.main.feed.OpenFeedActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.page.PageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.page.subscribe.PageSubscribeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.page.list.PageListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.create.PageCreateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.main.PageSettingMainActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.subscribe.PageSettingSubscribeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.page.setting.notification.PageSettingNotificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.stats.PageStatsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.home.intro.PageIntroActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.stats.detail.PageStatsDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.page.setting.link.PageSettingLinkActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.page.setting.link.PageSettingLinkBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.PageCommentSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.PageMediaDownloadSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.page.PageMessageSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.manager.list.PageManagerListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.manager.permission.PageManagerPermissionSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.member.PageBlockedMemberListActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.manager.delegate.PageAdminDelegateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.page.setting.closure.PageClosureReserveActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.page.ProfilePhotoViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.keyword.KeywordGroupListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.keyword.KeywordGroupBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.keyword.KeywordBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038e"
+            android:name="com.nhn.android.band.feature.intro.IntroActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.intro.login.LoginActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.intro.signup.SignUpActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x12" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.intro.identification.SelfIdentificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.GlobalSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.push.PushSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.push.PushBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.AddOnEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.AddOnDetailViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.SettingsWebViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.security.SecurityCheckActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.ReportContentWebViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.ReportChatWebViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150389"
+            android:name="com.nhn.android.band.feature.ReportChatWebViewDialogActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.ReportInvitationWebViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.ReportScheduleWebViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.settings.BandSettingsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.search.activity.bandsettings.SearchBandSettingsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.preferences.BandPreferencesActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.preference.BandPreferenceActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.setting.business.BusinessLicenseEntryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.setting.business.BusinessLicenseActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.setting.member.BandMemberManageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.storage.setting.BandStorageEnableActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.storage.setting.BandStorageSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.schedule.setting.BandScheduleSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.schedule.setting.BandSubscribeHolidayActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.activelog.BandActiveHistoryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.storage.BandStorageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.billing.presenter.ui.storage.BandStoragePurchaseActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.storage.setting.BandStorageApplyingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.contents.translation.result.TranslationTargetLanguageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.contents.translation.source.TranslationMyLanguageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.BandLeadersActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.setting.BandShortcutUrlActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x15" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.chat.notification.BandChatNotificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.push.PushSoundActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.push.verify.PushVerifyActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.email.EmailNotificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.setting.keyword.setting.BandKeywordSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.setting.stats.BandStatsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.setting.stats.detail.BandStatsDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.support.about.agreements.ServiceAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.support.about.agreements.LocationInfoAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.support.about.agreements.ProfileInfoAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.support.about.agreements.ContactsInfoAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.chat.BandChatRetainActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.setting.BandChatActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.setting.chat.BandSaveChatHistoryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.save.ParentalConsentEmailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.chat.export.ChatExportPopupActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.push.PushServiceNoticeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.push.PushDoNotDisturbActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.lock.LockScreenActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.PhotoUploadQualityActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.VideoAutoPlaySettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.PhotoAndVideoManageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.FirstDayOfWeekActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.KeyboardActionSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.online.ExposeOnlineSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.accessinfo.AccessInformationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.DeleteBandAccountActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.ConnectedClientActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.authentication.LoginAuthenticationSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.authentication.otp.LoginAuthenticationOtpSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.billing.presenter.ui.adfree.AdFreeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.settings.purchasehistory.PurchaseHistoryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.OpenSourceLicenseActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.profile.setting.ProfileEditActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.profile.make.MakeProfileActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.profile.make.edit.SimpleEditProfileActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.setting.manage.ProfileManageActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.setting.manage.NewProfileManageActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.setting.ProfileSetBandsActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.setting.ProfileSetBandsWithCreateActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.setting.manage.ProfileSetDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.account.AccountActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.account.phone.OccupiedPhoneNumberCheckActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.mypage.recruiting.JoinRecruitBandActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.guardianship.minor.MinorListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.guardianship.code.GuardianCodeGenerateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.guardianship.code.MinorCodeVerifyActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.guardianship.minor.MinorDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.setting.guardianship.guardian.GuardianListActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.setting.guardianship.GuardianshipHelpActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.mypage.MyPageMainActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.mypage.mycontent.MyContentsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.mypage.bookmark.BookmarkedPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.selector.member.MemberSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.selector.band.single.BandSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.selector.chat.ChannelSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.profile.regist.ProfileRegistrationActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f15038d"
+            android:name="com.nhn.android.band.feature.setting.push.PushPermissionGuideActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.profile.band.merge.BandProfileMergeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x17" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.profile.band.MemberProfileActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.home.HomeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.home.board.approval.list.ApprovablePostListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.home.board.approval.mylist.MyApprovablePostListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.etiquette.BandDoNotDisturbActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.invitation.send.contact.ContactActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.invitation.receive.BandIfInvitedActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.invitation.receive.BandIfInvitedLinkActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.invitation.receive.BandIfInvitedQrCodeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.join.BandJoinActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.join.phase.preview.BandJoinPreviewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.setting.adpost.AdPostSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.setting.adpost.AdPostUnregisterActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.member.list.MemberListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.member.group.list.MemberGroupsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.member.group.detail.MemberGroupDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.member.group.selector.MemberGroupSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f15038a"
+            android:name="com.nhn.android.band.feature.home.board.detail.recruit.RecruitMemberListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.schedule.SecretScheduleMemberActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.ScheduleActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.gallery.bandalbums.BandAlbumListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.gallery.bandalbum.BandAlbumActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.schedule.CreateCalendarUrlActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.DetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.announcement.AnnouncementDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.postdetail.activity.PostDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.approval.detail.ApprovalDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.comment.ReplyActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.detail.attendancemember.AttendanceMemberListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.detail.attendancemember.stateselector.AttendanceStateSelectActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.member.onlinelist.OnlineMemberListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.detail.attendancemember.ManagerListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.board.ShareListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.selector.band.multi.BandMultiSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.schedule.MyScheduleConfigActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:label="@ref/0x7f1421c4"
+            android:name="com.nhn.android.band.feature.home.board.edit.PostEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.CommentEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.schedule.CalendarCreateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.schedule.CalendarSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.edit.ScheduleEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.schedule.TimeZoneListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.detail.ScheduleDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.rsvp.RsvpDetailTabbedActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.history.ModifiedHistoryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.rsvp.state.RsvpCustomStateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.schedule.rsvp.RsvpDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.schedule.ScheduleEditMemberListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.member.join.JoinRequestListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.member.join.JoinRequestSwipeListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.member.invitee.InviteeListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.member.virtual.InviteVirtualMemberDialogActivity"
+            android:exported="false"
+            android:configChanges="0x420"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.member.activity.virtual.InviteVirtualMemberPopupActivity"
+            android:exported="false"
+            android:configChanges="0x420"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.LocationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.board.map.MapDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.emotion.EmotedMemberActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.notice.NoticeListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.reserved.ReservedPostListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.detail.readmember.ReadMemberActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.home.board.VoterListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.vote.VoteWriteActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.file.LocalFileSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.file.upload.FileSelectorDialogActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.todo.TodoWriteActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.recruit.RecruitActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.recruit.RecruitDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.history.AttachmentHistoryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.billsplit.BillSplitWriteActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.attendance.AttendanceCheckCreateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.attendance.AttendanceCheckManagerActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.attendance.AttendanceCheckMemberEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.attendance.AttendanceCheckRsvpMemberImportActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.supportedstate.SupportedStateTabbedActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.quiz.tab.QuizGraderTabActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.quiz.score.QuizViewActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.quiz.grade.QuizGradeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.schedule.ScheduleSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.board.edit.setting.post.PostEditSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.setting.PostNoticeSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.PostMediaDetailPageableActivity"
+            android:exported="false"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.ProfileMediaDetailPageableActivity"
+            android:exported="false"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.SimpleProfileMediaPageableActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.AlbumMediaDetailPageableActivity"
+            android:exported="false"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.AlbumMediaSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.MediaDetailActivity"
+            android:exported="false"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.MediaViewPageableActivity"
+            android:exported="false"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.ProfileStoryMediaViewListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.MediaViewActivity"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.viewer.ExternalMediaViewActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150391"
+            android:name="com.nhn.android.band.feature.home.gallery.chat.ChatMediaViewerActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038c"
+            android:name="com.nhn.android.band.feature.photoselector.photocapture.PhotoCapturedActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.search.local.BandHomeSearchActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.search.global.GlobalPostSearchActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.search.local.date.SearchedPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.hashtag.TaggedPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.hashtag.TaggedBoardPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.mission.MissionConfirmPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.posting.service.PostingDialogErrorActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.posting.service.PostingDialogOnGoingActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.upload.TaskDialogActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.posting.service.PostingDialogSuccessActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.link.BandLinkedPageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038c"
+            android:name="com.nhn.android.band.feature.live.broadcast.BroadcastActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x6b0"
+            android:windowSoftInputMode="0x33" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.live.viewer.LiveViewerActivity"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x33"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.live.vod.LiveVodActivity"
+            android:exported="false"
+            android:taskAffinity=".PipPlayableActivity"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.chat.local.LocalChannelListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.chat.local.setting.LocalChatSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.chat.ChatActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x11" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.chat.album.ChatAlbumActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.chat.ChatChannelSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.voice.VoiceChatActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.createOpenChat.CreateOpenChatActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.ChatBackgroundColorChangeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.chat.search.ChatSearchActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.uploader.ChatContactUploaderActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.groupcall.audio.GroupCallAudioActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.groupcall.video.GroupCallVideoActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.groupcall.video.sharescreen.GroupCallShareScreenActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.groupcall.video.participation.history.VideoCallParticipationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.ChatHiddenMessageDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150385"
+            android:name="com.nhn.android.band.feature.chat.member.ChatMemberListActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.invitation.ChatInvitationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.invitation.setting.ChatInvitationSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.emotion.ChatReceivedEmotionListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.member.ChatPageReadMemberListActivity"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.detail.StickerDetailActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.sticker.gift.StickerGiftPopupActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.sticker.setting.mysticker.MyStickerListActivity"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.sticker.setting.purchased.PurchasedStickerListActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.gift.StickerGiftBoxActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.sticker.setting.main.StickerSettingActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.event.StickerPromotionAppListActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.event.StickerEventListActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.StickerListOfCreatorActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.StickerShopMainActivity"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.list.StickerShopCustomListActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.search.StickerShopSearchActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.sticker.shop.category.detail.StickerShopCategoryDetailActivity"
+            android:exported="false"
+            android:taskAffinity=".sticker"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.helper.contacts.ContactsSaveCancelActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.helper.contacts.ContactsUpdateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.helper.contacts.ContactsSaveRetryActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.helper.download.DownloadAlertDialogActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.gallery.album.download.AlbumDownloadCancelActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.comment.upload.CommentUploadActionActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.main.NewVersionDialogActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.news.setting.NewsSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.thirdparty.ThirdPartyAuthBridgeActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.THIRDPARTY_AUTH" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.giftshop.GiftshopBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.hotdeal.HotdealBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.thirdparty.ThirdPartyInAppBillingBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.ad.AdMuteBrowserActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150680"
+            android:name="com.nhn.android.band.feature.push.redirect.PushRedirectActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150680"
+            android:name="com.nhn.android.band.feature.push.redirect.PushRedirectBridgeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1503f2"
+            android:name="com.nhn.android.band.feature.push.popup.PushNormalPopupActivity"
+            android:taskAffinity="con.nhn.android.band.popup"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f1503f2"
+            android:name="com.nhn.android.band.feature.push.popup.PushSimplePopupActivity"
+            android:exported="false"
+            android:taskAffinity="con.nhn.android.band.popup"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150386"
+            android:name="com.nhn.android.band.feature.main2.BandMainActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150386"
+            android:name="com.nhn.android.band.feature.main.userkeyword.UserKeywordSettingActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0xda0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.base.FinishActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:noHistory="true" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.giphy.GiphySearchActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038b"
+            android:name="com.facebook.FacebookActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.widget.configure.CalendarWidgetConfigureActivity"
+            android:exported="true"
+            android:taskAffinity=".widget.CalendarWidgetConfigureActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.widget.mission.config.MissionWidgetConfigWeeklyActivity"
+            android:exported="false"
+            android:taskAffinity=".widget.mission.config.MissionWidgetConfigActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.widget.mission.config.MissionWidgetConfigMonthlyActivity"
+            android:exported="false"
+            android:taskAffinity=".widget.mission.config.MissionWidgetConfigActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.widget.mission.config.selector.MissionSelectorActivity"
+            android:exported="false"
+            android:taskAffinity=".widget.mission.config.MissionWidgetConfigActivity"
+            android:excludeFromRecents="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.share.recommend.RecommendBandActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:label="읽은 멤버 보기"
+            android:name="com.nhn.android.band.feature.chat.ChatReadMemberListActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.page.setting.contents.UserContentsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.chat.ChatShowAllActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.join.application.list.ApplicantCommentListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.join.application.comment.ApplicationCommentActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.join.application.edit.ApplicantCommentEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:theme="@ref/0x7f150383"
+            android:name="com.nhn.android.band.feature.recruitingband.RecruitingBandHomeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.recruitingband.setting.RecruitingSettingActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.recruitingband.member.RecruitingMemberActivity"
+            android:exported="false"
+            android:launchMode="2"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.mission.detail.MissionDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.home.settings.feature.mission.creating.CreatingMissionActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.recruitingband.create.RecruitingBandCreateActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.semester.SemesterActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.schedule.posts.ScheduleLinkedPostsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.locationsharing.LocationSharingMapActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.locationsharing.profile.LocationSharingProfileSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.gallery.member.ViewVideoStatesMemberTabActivity"
+            android:exported="false"
+            android:configChanges="0x420"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.gallery.member.ViewLiveVideoStatesMemberActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.gallery.member.ViewMyVideoStatesMemberActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.live.notposted.NotPostedLiveListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.invitation.send.group.MyInvitationCardGroupActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.invitation.receive.group.InvitationCardGroupActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.join.phase.email.BandEmailVerificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.settings.test.design.card.BandCardGeneratorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.member.ChildMemberManageActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.quiz.take.TakeQuizActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.quiz.retake.ReTakeQuizActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.join.guest.BandGuestActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.detail.survey.respond.RespondSurveyActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.BandAlbumSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.mission.list.MissionListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.mission.setting.MissionSettingActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.photoselector.BandPixMediatorActivity"
+            android:exported="false"
+            android:configChanges="0x5a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1503e5"
+            android:name="com.nhn.android.band.feature.recruitingband.local.RegionBandListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.localgroup.recruit.LocalGroupRecruitActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.region.DiscoverRegionBandsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.localgroup.create.RegionCreateActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.localgroup.create.LocalGroupEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.main.discover.region.local.LocalizedRegionBandsActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.localgroup.setting.BandLocalGroupSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.home.mission.status.share.MissionConfirmStatusShareActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.memberselect.BandMemberGroupSelectActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150393"
+            android:name="com.nhn.android.band.feature.chat.groupcall.ringing.GroupCallRingingActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3"
+            android:showOnLockScreen="true" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.settings.information.payment.BandPaymentAccountSettingActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.editor.presenter.ui.payment.PaymentEditActivity"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.feature.main.bandlist.folder.BandFolderEditActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150384"
+            android:name="com.nhn.android.band.feature.selector.bandfolder.BandFolderSelectorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.invitation.InvitationCardsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.feature.main.discover.mission.DiscoverMissionBandActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.quiz.QuizActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150380"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.survey.create.SurveyActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150390"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.survey.surveyor.SurveyorActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.survey.result.response.SurveyResponseActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.survey.result.stats.SurveyStatsActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.home.board.edit.attach.survey.result.stats.detail.SurveyAnswerDetailActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.foldering.tabs.AttachmentsActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.foldering.folder.FolderSelectorActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150390"
+            android:name="com.nhn.android.band.feature.foldering.search.AttachmentSearchActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.foldering.search.AttachmentPeriodicSearchActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150390"
+            android:name="com.nhn.android.band.feature.foldering.search.AttachmentFileSearchActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f15038f"
+            android:name="com.nhn.android.band.feature.foldering.all.FileListActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.settings.feature.mission.reservation.MissionReservationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.remittance.RemittanceActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.remittance.result.RemittanceResultActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.remittance.list.RemittanceListActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.settings.support.about.agreements.ServiceInfoAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.remittance.agreement.RemittanceAgreementActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.editor.presenter.EditorActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.settings.menu.compaction.BandBoardCompactionManageActivity"
+            android:launchMode="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.bandintro.BandIntroActivity"
+            android:configChanges="0x6a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150388"
+            android:name="com.nhn.android.band.feature.story.write.WriteStoryActivity"
+            android:configChanges="0x6a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.story.StoryDetailActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.home.settings.promotion.BandPromotionBridgeActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x13" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.story.upload.notification.StoryDialogSuccessActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.story.upload.notification.StoryDialogErrorActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.story.upload.notification.StoryDialogOnGoingActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.profile.setting.manage.ProfileSelectableBandListActivity"
+            android:exported="true"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150392"
+            android:name="com.nhn.android.band.feature.profile.selector.ProfileSelectorActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.feature.search.activity.manage.SearchTargetManageActivity"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.create.activity.band.BandBriefingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.setting.activity.band.opentype.OpenTypeSettingActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150387"
+            android:name="com.nhn.android.band.verification.activity.SMSVerificationActivity"
+            android:exported="false"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <receiver
+            android:name="com.nhn.android.band.base.receiver.InstallReferrerReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.measurement.UPLOAD" />
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.nhn.android.band.feature.chat.groupcall.ringing.GroupCallRingingReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.campmobile.band.groupcall.CALL_ACCEPTED" />
+
+                <action
+                    android:name="com.campmobile.band.groupcall.CALL_DECLINED" />
+
+                <action
+                    android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.nhn.android.band.feature.home.board.edit.PostEditRecorderService"
+            android:exported="false"
+            android:foregroundServiceType="0x80" />
+
+        <service
+            android:name="com.nhn.android.band.feature.chat.groupcall.audio.GroupCallAudioControllerService"
+            android:exported="false"
+            android:foregroundServiceType="0x84" />
+
+        <service
+            android:name="com.nhn.android.band.feature.chat.groupcall.video.VideoGroupCallNotificationCommand"
+            android:exported="false"
+            android:foregroundServiceType="0xc4" />
+
+        <service
+            android:name="com.nhn.android.band.feature.push.BandFirebaseMessagingService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.base.service.StorageCleanUpIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.nhn.android.band.feature.posting.service.PostingService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.nhn.android.band.feature.story.upload.StoryUploadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.nhn.android.band.feature.home.gallery.album.download.AlbumDownloadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.feature.home.gallery.album.download.AlbumDownloadService.ACTION_MULTI_PHOTO_DOWNLOAD" />
+
+                <action
+                    android:name="com.nhn.android.band.feature.home.gallery.album.download.AlbumDownloadService.ACTION_MULTI_PHOTO_CANCEL" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.helper.download.DownloadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.helper.download.DownloadService.ACTION_DOWNLOAD_START" />
+
+                <action
+                    android:name="com.nhn.android.band.helper.download.DownloadService.ACTION_DOWNLOAD_CANCEL" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.feature.comment.upload.CommentUploadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.feature.comment.upload.ACTION_START" />
+
+                <action
+                    android:name="com.nhn.android.band.feature.comment.upload.ACTION_CANCEL" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.helper.contacts.ContactsSaveService"
+            android:exported="false"
+            android:foregroundServiceType="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.helper.save.MultiAddressSaveService.ACTION_MULTI_ADDRESS_SAVE" />
+
+                <action
+                    android:name="com.nhn.android.band.helper.save.MultiAddressSaveService.ACTION_MULTI_ADDRESS_UPDATE" />
+
+                <action
+                    android:name="com.nhn.android.band.helper.save.MultiAddressSaveService.ACTION_MULTI_ADDRESS_CANCEL" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.feature.chat.export.ChatMessageExportService"
+            android:exported="false"
+            android:foregroundServiceType="0x1">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.feature.chat.export.ChatMessageExportService.ACTION_CHAT_MESSAGE_EXPORT" />
+
+                <action
+                    android:name="com.nhn.android.band.feature.chat.export.ChatMessageExportService.ACTION_CHAT_MESSAGE_EXPORT_CANCEL" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nhn.android.band.feature.locationsharing.service.LocationSharingForegroundService"
+            android:exported="false"
+            android:process="com.nhn.android.band.process.location_sharing"
+            android:foregroundServiceType="0x8" />
+
+        <receiver
+            android:name="com.nhn.android.band.feature.locationsharing.service.LocationSharingReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.nhn.android.band.action.location_sharing.stopped_service" />
+
+                <action
+                    android:name="com.nhn.android.band.action.location_sharing.started_service" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.nhn.android.band.feature.chat.export.ChatExportCancelBroadastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.nhn.android.band.feature.ad.data.AdDataSyncIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.nhn.android.band.base.service.InstallReferrerIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.nhn.android.band.feature.chat.voice.VoiceChatService"
+            android:exported="false"
+            android:foregroundServiceType="0x2" />
+
+        <service
+            android:name="com.nhn.android.band.feature.home.schedule.upload.ScheduleUploadService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.nhn.android.band.feature.page.home.intro.upload.PageIntroPhotoUploader"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.nhn.android.band.feature.home.settings.feature.mission.creating.CreatingMissionService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <service
+            android:name="com.nhn.android.band.feature.upload.TaskService"
+            android:exported="false"
+            android:foregroundServiceType="0x1" />
+
+        <receiver
+            android:label="@ref/0x7f14216c"
+            android:name="com.nhn.android.band.widget.CalendarWidgetProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f180004" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f14216a"
+            android:name="com.nhn.android.band.widget.CalendarWidgetProviderTypeGrid"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f180002" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f14216b"
+            android:name="com.nhn.android.band.widget.CalendarWidgetProviderTypeList"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f180003" />
+        </receiver>
+
+        <service
+            android:name="com.nhn.android.band.widget.CalendarRemoteViewService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false" />
+
+        <receiver
+            android:label="@ref/0x7f14216d"
+            android:name="com.nhn.android.band.widget.mission.provider.MissionWidgetMonthlyProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="com.nhn.android.band.widget.mission.provider.action.REFRESH" />
+
+                <action
+                    android:name="com.nhn.android.band.widget.mission.provider.action.CREATE_POST" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f18000e" />
+        </receiver>
+
+        <receiver
+            android:label="@ref/0x7f14216e"
+            android:name="com.nhn.android.band.widget.mission.provider.MissionWidgetWeeklyProvider"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <action
+                    android:name="com.nhn.android.band.widget.mission.provider.action.REFRESH" />
+
+                <action
+                    android:name="com.nhn.android.band.widget.mission.provider.action.CREATE_POST" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@ref/0x7f18000f" />
+        </receiver>
+
+        <service
+            android:name="com.nhn.android.band.widget.mission.presenter.service.MissionWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false" />
+
+        <service
+            android:name="com.nhn.android.band.feature.chat.groupcall.ringing.GroupCallRingingService"
+            android:exported="false"
+            android:foregroundServiceType="0x4" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.nhn.android.band.invitation.preview.activity.InvitationPreviewActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.nhn.android.band.album.activity.reaction.ReactedPhotosActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.nhn.android.band.album.activity.uploaders.PhotoUploadersActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15037f"
+            android:name="com.nhn.android.band.mediapicker.MediaPickerActivity"
+            android:configChanges="0x6a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:theme="@ref/0x7f1503aa"
+            android:name="com.nhn.android.band.mediapicker.brandnew.MediaEditorActivity"
+            android:configChanges="0x6a0"
+            android:windowSoftInputMode="0x3" />
+
+        <provider
+            android:name="com.nhn.android.band.mediapicker.MediaPickerFileProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.mediapicker.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f180007" />
+        </provider>
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.setting.activity.band.notification.NotificationSettingsActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.setting.activity.band.notification.NotificationOverviewActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.setting.activity.band.join.JoinApprovalSettingsActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f15036d"
+            android:name="com.nhn.android.band.setting.activity.application.MyApplicationsActivity"
+            android:exported="true" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.nhn.android.band.invitation.activity.BandInvitationUrlListActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.nhn.android.band.invitation.qrcode.activity.BandDownloadInvitationQRCodeActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150012"
+            android:name="com.linecorp.linesdk.openchat.ui.CreateOpenChatActivity" />
+
+        <activity
+            android:theme="@ref/0x7f150249"
+            android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <activity
+            android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity"
+            android:exported="true"
+            android:configChanges="0x4a0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="lineauth" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:name="com.theartofdev.edmodo.cropper.BandCropImageActivity"
+            android:configChanges="0x680"
+            android:windowSoftInputMode="0x3" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="com.naver.nelo.sdk.android.buffer.NeloDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.NeloDataContentProvider"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.naver.nelo.sdk.android.crash.CrashReportDialog"
+            android:process=":crash_error_activity"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:launchMode="3" />
+
+        <meta-data
+            android:name="com.naver.nelo.sdk.android.MainProcessName"
+            android:value="com.nhn.android.band" />
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.mobileadsinitprovider"
+            android:initOrder="100" />
+
+        <service
+            android:name="com.google.android.gms.ads.AdService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+            android:exported="false"
+            android:configChanges="0xfb0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+            android:exported="false"
+            android:taskAffinity="@string/0x3f"
+            android:excludeFromRecents="true"
+            android:launchMode="2" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050005"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050004"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050003"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.work.impl.background.gcm.WorkManagerGcmService"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+            android:exported="@ref/0x7f050002"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <activity
+            android:theme="@ref/0x7f15037d"
+            android:name="com.navercorp.nid.oauth.NidOAuthBridgeActivity"
+            android:configChanges="0x480" />
+
+        <activity
+            android:theme="@ref/0x7f15037c"
+            android:label="OAuth2.0 by Custom tabs"
+            android:name="com.navercorp.nid.oauth.activity.NidOAuthCustomTabActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="3"
+            android:configChanges="0x480">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="naver3rdpartylogin"
+                    android:host="authorize"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.cast.framework.ReconnectionService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:theme="@ref/0x7f15067d"
+            android:label="@ref/0x7f14137e"
+            android:name="com.naver.maps.map.app.LegendActivity"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:theme="@ref/0x7f15067d"
+            android:label="@ref/0x7f14137d"
+            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:theme="@ref/0x7f15067d"
+            android:label="@ref/0x7f141381"
+            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+            android:configChanges="0xd80" />
+
+        <activity
+            android:theme="@ref/0x7f150134"
+            android:name="com.naver.gfpsdk.internal.provider.fullscreen.FullScreenActivity"
+            android:exported="false"
+            android:launchMode="1"
+            android:configChanges="0x40003f7f"
+            android:resizeableActivity="false" />
+
+        <activity
+            android:name="com.facebook.CustomTabMainActivity" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.nhn.android.band" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.1.1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:exported="false"
+            android:configChanges="0xda0" />
+
+        <provider
+            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.AudienceNetworkContentProvider" />
+
+        <provider
+            android:name="org.jetbrains.compose.resources.AndroidContextProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.resources.AndroidContextProvider" />
+
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.FacebookInitProvider" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.naver.ads.NasInitProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.NasInitProvider">
+
+            <meta-data
+                android:name="com.naver.gfpsdk.GfpInitializer"
+                android:value="com.naver.ads.nasinitializer" />
+        </provider>
+
+        <activity
+            android:name="com.navercorp.vtech.filterrecipe.facedetection.SurfaceViewActivity" />
+
+        <activity
+            android:name="com.navercorp.vtech.filterrecipe.SurfaceViewActivity" />
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <service
+            android:name="com.evernote.android.job.v21.PlatformJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.evernote.android.job.v14.PlatformAlarmService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.evernote.android.job.v14.PlatformAlarmReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.evernote.android.job.v14.RUN_JOB" />
+
+                <action
+                    android:name="net.vrallev.android.job.v14.RUN_JOB" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.evernote.android.job.JobBootReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+
+                <action
+                    android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.evernote.android.job.gcm.PlatformGcmService"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+            android:enabled="false"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.evernote.android.job.JobRescheduleService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:exported="false"
+            android:authorities="com.nhn.android.band.com.squareup.picasso" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.navercorp.vtech.V2SurfaceAndTextureViewActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.jakewharton.processphoenix.PhoenixActivity"
+            android:exported="false"
+            android:process=":phoenix" />
+
+        <service
+            android:name="com.jakewharton.processphoenix.PhoenixService"
+            android:exported="false"
+            android:process=":phoenix" />
+
+        <service
+            android:name="com.naver.logrider.android.monitor.LogMonitorService" />
+
+        <activity
+            android:theme="@ref/0x7f1503ee"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:label="@ref/0x7f14010f"
+            android:name="com.campmobile.bandpix.features.camera.CameraActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="bandpix_v2"
+                    android:host="camera" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.mediapicker.CollagePreviewActivity"
+            android:exported="true"
+            android:screenOrientation="1">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="bandpix_v2"
+                    android:host="collage" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.mediapicker.MediaPickerActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.mediaview.MediaBrowserActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.mediapicker.CollageEditActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.mediapicker.AlbumPickActivity" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:label="@ref/0x7f14010f"
+            android:name="com.campmobile.bandpix.features.editor.EditorActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0xd80"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:scheme="bandpix_v2"
+                    android:host="edit" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.collage.CustomCollageActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.share.ShareActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.bandlist.BandPickActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f15037a"
+            android:name="com.campmobile.bandpix.features.bandlist.BandAlbumPickActivity"
+            android:screenOrientation="1" />
+
+        <meta-data
+            android:name="com.campmobile.bandpix.BandPixGlideModule"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f180010" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="3" />
+    </application>
+</manifest>

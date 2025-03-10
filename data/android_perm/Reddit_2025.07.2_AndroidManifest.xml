@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.reddit.reddit"
+    android:versionCode="2507170"
+    android:versionName="2025.07.2"
+    android:sharedUserLabel="@ref/0x7f13102e"
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    android:sharedUserMaxSdkVersion="32"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes="@string/0x39"
+    package="com.reddit.frontpage"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15">
+
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="35" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <queries>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:scheme="https" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SENDTO" />
+
+            <data
+                android:scheme="*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="image/*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="@ref/0x7f131e49" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="@ref/0x7f131e41" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="@ref/0x7f131e4a" />
+        </intent>
+
+        <package
+            android:name="com.instagram.android" />
+
+        <package
+            android:name="com.snapchat.android" />
+
+        <package
+            android:name="com.facebook.katana" />
+
+        <package
+            android:name="com.twitter.android" />
+
+        <package
+            android:name="com.google.android.apps.messaging" />
+
+        <package
+            android:name="com.facebook.orca" />
+
+        <package
+            android:name="com.google.android.gm" />
+
+        <package
+            android:name="com.nextdoor" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+
+        <package
+            android:name="com.android.vending" />
+
+        <package
+            android:name="com.google.android.engage.verifyapp" />
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.DETECT_SCREEN_CAPTURE" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission
+        android:name="com.android.vending.BILLING" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission
+        android:name="com.reddit.frontpage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="com.reddit.frontpage.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.READ" />
+
+    <uses-permission
+        android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+
+    <uses-permission
+        android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-permission
+        android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+
+    <uses-permission
+        android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission
+        android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.READ_APP_BADGE" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission
+        android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission
+        android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <application
+        android:theme="@ref/0x7f140018"
+        android:label="@ref/0x7f130306"
+        android:icon="@ref/0x7f100002"
+        android:name="com.reddit.frontpage.FrontpageApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@ref/0x7f160002"
+        android:networkSecurityConfig="@ref/0x7f160006"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:preserveLegacyExternalStorage="true"
+        android:localeConfig="@ref/0x7f160000"
+        android:enableOnBackInvokedCallback="true">
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.androidx-startup">
+
+            <meta-data
+                android:name="com.reddit.frontpage.startup.FirebaseInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.reddit.logging.LoggingInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.reddit.frontpage.di.DaggerComponentInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.reddit.experiments.initializer.StartupExperimentInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="com.apollographql.apollo.cache.normalized.sql.ApolloInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <meta-data
+            android:name="google_analytics_automatic_screen_reporting_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.google.android.engage.service.ENV"
+            android:value="PRODUCTION" />
+
+        <activity
+            android:theme="@ref/0x7f140177"
+            android:name="com.reddit.session.ui.SessionChangeActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f140177"
+            android:name="com.reddit.session.ui.external.ExternalAuthActivity"
+            android:exported="true"
+            android:noHistory="true" />
+
+        <activity
+            android:name="com.reddit.auth.login.screen.welcome.IntroductionActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f140171"
+            android:name="com.reddit.launch.main.MainActivity"
+            android:exported="true"
+            android:launchMode="1"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@ref/0x7f16000d" />
+        </activity>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100034"
+            android:name="launcher.planet"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100005"
+            android:name="launcher.astronaut"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100004"
+            android:name="launcher.amazedoge"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10001b"
+            android:name="launcher.doge"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100039"
+            android:name="launcher.stocks"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100038"
+            android:name="launcher.rocket"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10003a"
+            android:name="launcher.tothemoon"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10003d"
+            android:name="launcher.wallstreet"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10001a"
+            android:name="launcher.classic"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100003"
+            android:name="launcher.alien_blue"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10003c"
+            android:name="launcher.vitruvian"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f10003b"
+            android:name="launcher.vaporwave"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100037"
+            android:name="launcher.retro"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100019"
+            android:name="launcher.chibi"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100031"
+            android:name="launcher.mechasnoo"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100033"
+            android:name="launcher.pixels"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100032"
+            android:name="launcher.neon"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100035"
+            android:name="launcher.pullover"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100018"
+            android:name="launcher.brrr"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100036"
+            android:name="launcher.redditgifts"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:label="@ref/0x7f130306"
+            android:icon="@ref/0x7f100002"
+            android:name="launcher.default"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name="com.reddit.frontpage.StartActivity"
+            android:exported="true"
+            android:targetActivity="com.reddit.launch.main.MainActivity">
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="com.reddit.webembed.browser.WebBrowserActivity"
+            android:screenOrientation="1"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <activity
+            android:label="@ref/0x7f13104a"
+            android:name="com.reddit.screen.settings.preferences.PreferencesActivity"
+            android:screenOrientation="1"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.reddit.deeplink.ui.DeepLinkFallbackActivity"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x01030055"
+            android:name="com.reddit.notification.impl.action.NotificationActivity" />
+
+        <activity
+            android:theme="@ref/0x7f140171"
+            android:name="com.reddit.frontpage.RedditDeepLinkActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="www.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="www.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="m.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="m.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="accounts.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="np.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="np.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="new.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="new.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="old.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="old.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="*.redd.it" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="*.redd.it" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="s.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="s.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="mod.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="mod.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="reddit.onelink.me"
+                    android:pathPrefix="/r0wa" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="reddit.onelink.me"
+                    android:pathPrefix="/MRHZ" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="reddit" />
+
+                <data
+                    android:host="reddit" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="chat.reddit.com" />
+            </intent-filter>
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:host="chat.reddit.com" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f140177"
+            android:name="com.reddit.branch.ui.BranchLinkActivity"
+            android:exported="true"
+            android:launchMode="2"
+            android:screenOrientation="1">
+
+            <intent-filter
+                android:autoVerify="true">
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https" />
+
+                <data
+                    android:scheme="http" />
+
+                <data
+                    android:host="reddit.app.link" />
+
+                <data
+                    android:host="reddit-alternate.app.link" />
+
+                <data
+                    android:host="click.redditmail.com" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f130edf"
+            android:name="com.reddit.branch.ui.BranchEventListActivity" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:label="@ref/0x7f13019a"
+            android:name="com.reddit.sharing.ShareActivity"
+            android:exported="true"
+            android:excludeFromRecents="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.SEND" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e49" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e47" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e46" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e45" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e43" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e48" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e44" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e42" />
+
+                <data
+                    android:mimeType="@ref/0x7f131e4a" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x0103000f"
+            android:label="@ref/0x7f130ff8"
+            android:name="com.reddit.notification.impl.ui.push.PushNotificationSettingsLauncherActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.NOTIFICATION_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@ref/0x7f13104a"
+            android:name="com.reddit.settings.impl.SettingsScreenActivity" />
+
+        <activity
+            android:theme="@ref/0x7f140177"
+            android:name="com.reddit.appshortcut.screens.AppShortcutNavigationActivity"
+            android:launchMode="2"
+            android:screenOrientation="1" />
+
+        <receiver
+            android:name="com.reddit.startup.boot.BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.reddit.data.postsubmit.SubmitService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.reddit.data.customemojis.EmojiUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.reddit.auth.login.impl.AuthService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@ref/0x7f160001" />
+        </service>
+
+        <receiver
+            android:name="com.reddit.notification.impl.controller.CancelNotificationReceiver" />
+
+        <receiver
+            android:name="com.reddit.notification.impl.controller.DismissNotificationReceiver" />
+
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@ref/0x7f130461" />
+
+        <service
+            android:name="com.reddit.notification.impl.fcm.RedditMessagingService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.reddit.data.postsubmit.VideoUploadService" />
+
+        <receiver
+            android:name="com.reddit.session.SessionResetReceiver" />
+
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@ref/0x7f13033b" />
+
+        <activity
+            android:name="com.reddit.ads.impl.screens.hybridvideo.compose.PromotedHybridVideoActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <activity
+            android:label="debug"
+            android:name="com.reddit.debug.DebugActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:label="@ref/0x7f130ee0"
+            android:name="com.reddit.debug.logging.DataLoggingActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:name="com.reddit.fullbleedplayer.common.FbpActivity"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <activity
+            android:theme="@ref/0x7f14001b"
+            android:name="com.reddit.fullbleedplayer.common.FbpActivityTranslucent"
+            android:screenOrientation="2"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x10"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <receiver
+            android:name="com.reddit.cubes.AppEngageBroadcastReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.engage.action.PUBLISH_RECOMMENDATION" />
+
+                <action
+                    android:name="com.google.android.engage.action.PUBLISH_FEATURED" />
+
+                <action
+                    android:name="com.google.android.engage.action.PUBLISH_CONTINUATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f14016f"
+            android:name="com.reddit.frontpage.LightboxActivity"
+            android:launchMode="1"
+            android:screenOrientation="2"
+            android:configChanges="0x480"
+            android:parentActivityName="com.reddit.launch.main.MainActivity" />
+
+        <service
+            android:name="com.reddit.postsubmit.data.service.ImageUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f140000"
+            android:label="@ref/0x7f13193f"
+            android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity" />
+
+        <activity
+            android:theme="@ref/0x7f140000"
+            android:name="com.google.android.gms.oss.licenses.OssLicensesActivity" />
+
+        <activity
+            android:label="@ref/0x7f131054"
+            android:name="com.reddit.auth.login.screen.AuthActivityKt"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x10" />
+
+        <provider
+            android:name="com.reddit.data.events.AnalyticsContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.analyticscontentprovider" />
+
+        <receiver
+            android:name="com.reddit.sharing.ShareIntentReceiver" />
+
+        <receiver
+            android:name="com.reddit.sharing.custom.ExternalShareResultReceiver" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.reddit.vault.feature.cloudbackup.restore.RedditVaultFileActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.OPENABLE" />
+
+                <data
+                    android:scheme="content" />
+
+                <data
+                    android:scheme="file" />
+
+                <data
+                    android:mimeType="application/octet-stream" />
+
+                <data
+                    android:pathPattern=".*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\..*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\..*\..*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\..*\..*\..*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\..*\..*\..*\..*\.redditvault" />
+
+                <data
+                    android:pathPattern=".*\..*\..*\..*\..*\..*\..*\.redditvault" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.reddit.activityflows.ActivityFlowsContentProvider"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.ActivityFlowsBootstrap.authority" />
+
+        <activity
+            android:theme="@ref/0x7f14016a"
+            android:name="com.reddit.appupdate.ui.AppDisabledActivity" />
+
+        <provider
+            android:name="com.reddit.domain.session.foreground.lifecycleowner.PreStartProcessLifecycleOwnerContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.pre_start_process_lifecycle_owner_content_provider" />
+
+        <activity
+            android:theme="@ref/0x7f140250"
+            android:name="com.reddit.screen.screenshot.ScreenTestActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.reddit.homeshortcuts.HomeShortcutPlacedReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@ref/0x7f030018" />
+
+        <provider
+            android:name="org.matrix.android.sdk.api.session.file.MatrixSDKFileProvider"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.mx-sdk.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f16000c" />
+        </provider>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="@ref/0x7f131b99"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f16000b" />
+        </provider>
+
+        <service
+            android:name="androidx.camera.core.impl.MetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="2">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            android:enabled="true"
+            android:exported="false">
+
+            <meta-data
+                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+        </service>
+
+        <activity
+            android:theme="@ref/0x7f14025e"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            android:enabled="true"
+            android:exported="false"
+            android:configChanges="0x5a0"
+            android:fitsSystemWindows="true" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            android:visibleToInstantApps="true" />
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="7.0.0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+            android:exported="false"
+            android:configChanges="0x5b0" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@ref/0x7f160004" />
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.reddit.frontpage.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050004"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050006"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050005"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050004"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0c000f" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <activity
+            android:theme="@ref/0x7f14018b"
+            android:name="com.vanniktech.rxpermission.ShadowActivity"
+            android:launchMode="1" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.jakewharton.processphoenix.PhoenixActivity"
+            android:exported="false"
+            android:process=":phoenix" />
+
+        <service
+            android:name="com.jakewharton.processphoenix.PhoenixService"
+            android:exported="false"
+            android:process=":phoenix" />
+
+        <activity
+            android:theme="@ref/0x7f140290"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true" />
+
+        <meta-data
+            android:name="com.facebook.soloader.enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store" />
+
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@ref/0x7f160013" />
+
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2" />
+    </application>
+</manifest>
